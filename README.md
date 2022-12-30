@@ -1,8 +1,11 @@
-- 👋 Hi, I’m @kaentovidal
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👋 Hello, I’m Kaento
+- 👀 I’m interested in Fronted Development
+- 🌱 I’m currently learning Javascript
+- 💞️ I’m looking to collaborate on Fronted Development Projects
+- 📫 How to reach me...
+- [facebook](fb.com/kaentov)
+- [facebook](instagram.com/kaentov)
+- 
 
 <!---
 kaentovidal/kaentovidal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
