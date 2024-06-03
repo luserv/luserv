@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Javascript
 - 💞️ I’m looking to collaborate on Fronted Development Projects
 - 📫 How to reach me...
-- [Facebook](https://www.facebook.com/kaentov)
+- [Facebook](https://www.facebook.com/userti007)
 - [Instagram](https://www.instagram.com/kaentov)
 - 
 
