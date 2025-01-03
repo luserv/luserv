@@ -2,8 +2,8 @@
 
 <span aling="left">
    <br>
-   <img align="right" alt="GIF" height=300px width= 400px src="https://giphy.com/embed/26tn33aiTi1jkl6H6"/>
-   <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6">via GIPHY</a></p>
+   <img align="right" alt="GIF" height=300px width= 400px src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3h4ZTJxa25qajlyNzVjZHR5bTR6Zmg3b3hkMGJodHIzb255N28xZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif"/>
+   
    <p>
     <ul>
       <li> 🌱 👀 I’m interested in Fronted Development </li>
