@@ -2,7 +2,7 @@
 
 <span aling="left">
    <br>
-   <img align="right" alt="GIF" height=300px width= 400px src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
+   <img align="right" alt="GIF" height=300px width= 400px src="https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6"
    <p>
     <ul>
       <li> 🌱 👀 I’m interested in Fronted Development </li>
