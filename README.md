@@ -2,7 +2,7 @@
 
 <span aling="left">
    <br>
-   <img align="right" alt="GIF" height=300px width= 400px src="![alt text](https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif)"/>
+   <img align="right" alt="GIF" height=300px width= 400px src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"/>
    
    <p>
     <ul>
