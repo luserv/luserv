@@ -6,9 +6,9 @@
    
    <p>
     <ul>
-      <li> 🌱 👀 I’m interested in Fronted Development </li>
+      <li> 🌱 I’m interested in Fronted Development. 👀</li>
       <br/>
-      <li> 🌱 I’m currently learning Javascript </li>
+      <li> 🌱 I’m currently learning Javascript. </li>
       <br/>
       <li> 👯 I’m looking to collaborate on Fronted Development Projects. </li>
     </ul> 
@@ -19,5 +19,5 @@
 <div align="center">
   <h3 style="text-align: center;"> ¡Contact Me! 🤝 </h3>
   <a href="https://www.linkedin.com/in/kaento/"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width=40px height=40px alt="LINKEDIN"> </a>
-  <a href="mailto:kv.contact@yahoo.com"> <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" width=40px height=40px> </a>
+  <a href="mailto:kv.contact@yahoo.com"> <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" width=50px height=50px> </a>
 </div>
