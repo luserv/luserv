@@ -1,4 +1,4 @@
-<h1 align="center"> 👋 Hi, I'm a Fronted Developer Enthusiast 💻 </h1>
+<h1 align="center"> 👋 Hi, I'm a Fronted Development Enthusiast 💻 </h1>
 
 <span aling="left">
    <br>
