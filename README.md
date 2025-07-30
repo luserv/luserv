@@ -12,7 +12,7 @@
     </ul> 
   </p>
    </div>
-   <div style="flex: 1; min-width: 100px; text-align: center;">
+   <div style="flex: 1; min-width: 300px; text-align: center;">
       <img alt="GIF" style="max-width: 400px; width: 100%; height: auto; border-radius: 10px;" src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"/>
    </div>
 </div>
