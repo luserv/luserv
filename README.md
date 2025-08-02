@@ -1,19 +1,19 @@
 <h1 align="center"> 👋 Hi, I'm a Fronted Development Enthusiast 💻 </h1>
 
-<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap-reverse; gap: 2rem;">
-   <div style="flex: 1; min-width: 300px;">
+<div style="display: flex;  gap: 2rem;">
+   <div style="width:49%; ">
     <p>
     <ul>
-      <li> 🌱 I’m interested in Fronted Development. 👀</li>
+      <li>I’m a Frontend Junior JS Dev. 👀</li>
       <br/>
-      <li> 🌱 I’m currently learning Javascript. </li>
+      <li>I’m currently focus on frontend development using next challenges by frontend mentor. </li>
       <br/>
-      <li> 👯 I’m looking to collaborate on Fronted Development Projects. </li>
+      <li>I’m looking to collaborate on Fronted Development Projects. </li>
     </ul> 
   </p>
    </div>
-   <div style="flex: 1; min-width: 300px; text-align: center;">
-      <img alt="GIF" style="max-width: 400px; width: 100%; height: auto; border-radius: 10px;" src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"/>
+   <div style="width:50%; text-align: center;">
+      <img alt="GIF" style="max-width: 300px; width: 100%; height: auto; border-radius: 10px;" src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"/>
    </div>
 </div>
 <br/>
@@ -24,7 +24,7 @@
   <a href="mailto:kv.contact@yahoo.com"> <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" height=40px> </a>
 </div>
 
-## 🛠️ Tecnologías y Herramientas
+## 🛠️ Tools & Technologies
 <p align="center">
   <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" alt="CSS3"/>
@@ -32,7 +32,7 @@
   <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python"/>
 </p>
 
-## 📊 Estadísticas
+## 📊 Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luserv&layout=compact&langs_count=10&theme=radical" />
 </p>
