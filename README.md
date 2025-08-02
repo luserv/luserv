@@ -12,9 +12,7 @@
     </ul> 
   </p>
    </div>
-   <div style="width:50%; text-align: center;">
-      <img alt="GIF" style="max-width: 300px; width: 100%; height: auto; border-radius: 10px;" src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"/>
-   </div>
+
 </div>
 <br/>
 
