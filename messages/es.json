@@ -1,0 +1,19 @@
+{
+    "Manifest": {
+        "name": "next-intl example"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "contact": "Contacto"
+    },
+    "LocaleLayout": {
+        "title": "Perfil de Luserv",
+        "description": "Este es el portafolio de luserv donde puedes conocer más sobre mí",
+        "keywords": "kv, kaentovidal, luserv, nextjs"
+    },
+    "home": {
+        "title": "Pagina de Inicio",
+        "welcomeMessage": "¡Bienvenido a la página de inicio!"
+    }
+}

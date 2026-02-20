@@ -1,9 +1,6 @@
-import Image from "next/image";
+import { redirect } from '../i18n/navigation';
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      
-    </div>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect({ href: '/', locale: 'en' });
 }

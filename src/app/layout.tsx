@@ -1,24 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import {ReactNode} from 'react';
 
-
-export const metadata: Metadata = {
-  title: "Fronted projects",
-  description: "Frontend projects backup",
+type Props = {
+  children: ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className=''
-      >
-        {children}
-      </body>
-    </html>
-  );
+// Since we have a `not-found.tsx` page on the root, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({children}: Props) {
+  return children;
 }
