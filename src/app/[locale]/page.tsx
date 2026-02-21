@@ -1,6 +1,6 @@
 import { Locale, useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { use } from 'react';
+import { use, Suspense } from 'react';
 import PageLayout from '@/components/PageLayout';
 import NavBar from "../../components/NavBar";
 
@@ -15,7 +15,9 @@ export default function Home({ params }: PageProps<'/[locale]'>) {
 
   return (
     <div className='max-w-5xl mx-auto'>
-      <NavBar />
+      <Suspense fallback={<div />}> 
+        <NavBar />
+      </Suspense>
       <PageLayout title={t('title')}>
 
       </PageLayout>

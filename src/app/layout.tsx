@@ -1,5 +1,6 @@
 import {ReactNode} from 'react';
 import { metadata } from "./metadata";
+import { Analytics } from '@vercel/analytics/next';
 
 export { metadata };
 
@@ -7,8 +8,17 @@ type Props = {
   children: ReactNode;
 };
 
-// Since we have a `not-found.tsx` page on the root, a layout file
-// is required, even if it's just passing children through.
+
 export default function RootLayout({children}: Props) {
-  return children;
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );;
 }
