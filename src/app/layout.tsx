@@ -1,4 +1,7 @@
 import {ReactNode} from 'react';
+import { metadata } from "./metadata";
+
+export { metadata };
 
 type Props = {
   children: ReactNode;
