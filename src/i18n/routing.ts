@@ -7,9 +7,11 @@ import {defineRouting} from 'next-intl/routing';
  * 3. Header Accept-Language de la petición (idioma del navegador)
  * 4. defaultLocale si no hay coincidencia
  */
+import { locales, defaultLocale } from './locales';
+
 export const routing = defineRouting({
-  locales: ['en-US', 'es-ES'],
-  defaultLocale: 'en-US',
+  locales: locales.map((l) => l.code),
+  defaultLocale,
   localePrefix: 'always',
   localeDetection: true,
 });

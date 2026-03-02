@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@vercel/analytics": "^1.6.1",
+    "gsap": "^3.14.2",
     "next": "^16.1.6",
     "next-intl": "4.7.0",
     "react": "19.1.0",
@@ -26,6 +28,11 @@
     "eslint-config-next": "^0.2.4",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "webpack": "^5.101.0"
+    "webpack": "^5.105.3"
+  },
+  "overrides": {
+    "terser-webpack-plugin": {
+      "serialize-javascript": "7.0.3"
+    }
   }
 }
