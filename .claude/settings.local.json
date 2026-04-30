@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/Users/kv/Documents/projects/programming/3d-portfolio/.env*)",
+      "Bash(npm install *)",
+      "Bash(cp *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

@@ -1,19 +1,137 @@
 {
     "Manifest": {
-        "name": "next-intl example"
+        "name": "Kaento Vidal - Portafolio"
     },
     "navbar": {
         "home": "Inicio",
-        "about": "Sobre mí",
-        "contact": "Contacto"
+        "work": "Proyectos",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "testimonials": "Testimonios",
+        "contact": "Contacto",
+        "contactMe": "Contáctame"
     },
     "LocaleLayout": {
-        "title": "Perfil de Luserv",
-        "description": "Este es el portafolio de luserv donde puedes conocer más sobre mí",
-        "keywords": "kv, kaentovidal, luserv, nextjs"
+        "title": "Kaento Vidal | Desarrollador de Software",
+        "description": "Desarrollador full-stack especializado en Next.js, NestJS, Node.js, PostgreSQL e infraestructura en la nube.",
+        "keywords": "kaentovidal, luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "Pagina de Inicio",
-        "welcomeMessage": "¡Bienvenido a la página de inicio!"
+        "title": "Kaento Vidal - Desarrollador Full Stack",
+        "welcomeMessage": "¡Bienvenido a mi portafolio!"
+    },
+    "hero": {
+        "line1": "Convirtiendo",
+        "line2": "en Proyectos Reales",
+        "line3": "que Generan Resultados",
+        "description": "Hola, soy Kaento, desarrollador full-stack radicado en Ecuador con pasión por construir software escalable.",
+        "cta": "Ver Mi Trabajo",
+        "words": ["Ideas", "Conceptos", "Diseños", "Código", "Ideas", "Conceptos", "Diseños", "Código"]
+    },
+    "counter": {
+        "items": [
+            { "label": "Años de Experiencia" },
+            { "label": "Clientes Satisfechos" },
+            { "label": "Proyectos Completados" },
+            { "label": "Tasa de Retención" }
+        ]
+    },
+    "showcase": {
+        "project1Title": "Plataforma SaaS moderna con Next.js y NestJS para soluciones empresariales escalables",
+        "project1Desc": "Una aplicación full-stack construida con Next.js, NestJS y PostgreSQL para una experiencia rápida y lista para producción.",
+        "project2Title": "Panel de Gestión de APIs REST",
+        "project3Title": "Herramienta de Automatización de Infraestructura Cloud"
+    },
+    "abilities": {
+        "items": [
+            {
+                "title": "Enfoque en Calidad",
+                "desc": "Entregando resultados de alta calidad con atención a cada detalle."
+            },
+            {
+                "title": "Comunicación Confiable",
+                "desc": "Manteniéndote informado en cada paso para garantizar transparencia y claridad."
+            },
+            {
+                "title": "Entrega a Tiempo",
+                "desc": "Asegurando que los proyectos se completen a tiempo, con calidad y atención al detalle."
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experiencia Profesional",
+        "sub": "💼 Resumen de mi Carrera",
+        "responsibilities": "Responsabilidades",
+        "cards": [
+            {
+                "review": "Kaento aportó una profundidad técnica increíble a nuestra plataforma. Su trabajo en nuestro backend Node.js y la capa PostgreSQL mejoró significativamente la fiabilidad y la experiencia del desarrollador.",
+                "title": "Desarrollador Backend",
+                "date": "Enero 2023 - Presente",
+                "responsibilities": [
+                    "Diseñé y mantuve APIs RESTful con NestJS y PostgreSQL para servicios en producción.",
+                    "Colaboré con equipos frontend para garantizar integraciones de API sin problemas.",
+                    "Optimicé el rendimiento de consultas e implementé estrategias de caché con Redis."
+                ]
+            },
+            {
+                "review": "Las contribuciones full-stack de Kaento elevaron la calidad de nuestro producto. Entregó consistentemente soluciones limpias y mantenibles en todo el stack.",
+                "title": "Desarrollador Full Stack",
+                "date": "Junio 2021 - Diciembre 2022",
+                "responsibilities": [
+                    "Construí y desplegué aplicaciones full-stack con Next.js y NestJS.",
+                    "Implementé pipelines CI/CD en servidores Debian con Docker.",
+                    "Trabajé con ingenieros backend para integrar servicios y APIs de terceros."
+                ]
+            },
+            {
+                "review": "La experiencia de Kaento en arquitectura cloud nos ayudó a escalar nuestra infraestructura de manera confiable. Su conocimiento de sistemas Linux y automatización nos ahorró innumerables horas.",
+                "title": "Ingeniero Cloud & DevOps",
+                "date": "Marzo 2020 - Mayo 2021",
+                "responsibilities": [
+                    "Gestioné infraestructura de servidores Debian y automaticé despliegues con Ansible.",
+                    "Configuré monitoreo y alertas con Prometheus y Grafana.",
+                    "Contenerizé servicios con Docker y orchestré con Docker Compose."
+                ]
+            }
+        ]
+    },
+    "techStack": {
+        "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",
+        "sub": "🤝 Lo que Aporto",
+        "items": [
+            { "name": "Desarrollador Next.js" },
+            { "name": "Desarrollador TypeScript" },
+            { "name": "Desarrollador Backend" },
+            { "name": "Ingeniero de Base de Datos" },
+            { "name": "DevOps & Linux" }
+        ]
+    },
+    "testimonials": {
+        "title": "¿Qué Dicen de Mí?",
+        "sub": "⭐ Destacados de clientes",
+        "items": [
+            { "review": "Kaento es un desarrollador excepcional. Tomó nuestros complejos requerimientos y entregó una API robusta lista para producción. Sus habilidades de resolución de problemas y atención al rendimiento son sobresalientes." },
+            { "review": "Trabajar con Kaento fue una experiencia fantástica. Modernizó nuestro backend heredado hacia una arquitectura NestJS limpia. Su dedicación a la calidad de código y buenas prácticas es inigualable." },
+            { "review": "Colaborar con Kaento fue un placer absoluto. Su profesionalismo y profundo conocimiento de TypeScript y PostgreSQL fueron evidentes durante todo el proyecto. Es el socio ideal para cualquier iniciativa de software seria." },
+            { "review": "Kaento convirtió nuestra inestable configuración de servidores en una infraestructura confiable y automatizada. Entregó todo a tiempo con documentación clara. Un trabajo fantástico en general." },
+            { "review": "La experiencia de Kaento en Next.js y despliegues en la nube es verdaderamente impresionante. Desde que renovó nuestra plataforma, el rendimiento ha mejorado significativamente y nuestros usuarios están mucho más satisfechos." },
+            { "review": "Kaento entendió nuestros requerimientos perfectamente y entregó una solución full-stack que superó las expectativas. Sus habilidades en frontend, backend y DevOps son de primera clase." }
+        ]
+    },
+    "contact": {
+        "title": "Contáctame – Conectemos",
+        "sub": "💬 ¿Tienes preguntas o ideas? ¡Hablemos! 🚀",
+        "nameLabel": "Tu nombre",
+        "namePlaceholder": "¿Cómo te llamas?",
+        "emailLabel": "Tu Email",
+        "emailPlaceholder": "¿Cuál es tu correo?",
+        "messageLabel": "Tu Mensaje",
+        "messagePlaceholder": "¿En qué puedo ayudarte?",
+        "sending": "Enviando...",
+        "send": "Enviar Mensaje"
+    },
+    "footer": {
+        "terms": "Términos y Condiciones",
+        "rights": "Todos los derechos reservados."
     }
 }

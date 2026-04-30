@@ -1,27 +1,31 @@
-import { Locale, useTranslations } from 'next-intl';
+import { Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use, Suspense } from 'react';
-import PageLayout from '@/components/PageLayout';
-import NavBar from "../../components/NavBar";
-
+import NavBar from "@/components/NavBar";
+import Hero from "@/sections/Hero";
+import ShowcaseSection from "@/sections/ShowcaseSection";
+import LogoShowcase from "@/sections/LogoShowcase";
+import FeatureCards from "@/sections/FeatureCards";
+import Experience from "@/sections/Experience";
+import TechStack from "@/sections/TechStack";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 export default function Home({ params }: PageProps<'/[locale]'>) {
   const { locale } = use(params);
-
-  // Enable static rendering
   setRequestLocale(locale as Locale);
 
-  const t = useTranslations('home');
-
   return (
-    <div className='max-w-5xl mx-auto'>
-      <Suspense fallback={<div />}> 
-        <NavBar />
-      </Suspense>
-      <PageLayout title={t('title')}>
-
-      </PageLayout>
-
-    </div>
+    <>
+      <Suspense fallback={null}><NavBar /></Suspense>
+      <Hero />
+      <ShowcaseSection />
+      <LogoShowcase />
+      <FeatureCards />
+      <Experience />
+      <TechStack />
+      <Contact />
+      <Footer />
+    </>
   );
 }
