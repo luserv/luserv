@@ -133,5 +133,22 @@
     "footer": {
         "terms": "Términos y Condiciones",
         "rights": "Todos los derechos reservados."
+    },
+    "chiroDelete": {
+        "metaTitle": "Eliminar cuenta · Chiro",
+        "title": "Eliminar cuenta de Chiro",
+        "intro": "Al eliminar tu cuenta se borrarán de forma permanente y no se podrán recuperar:",
+        "item1": "Tu licencia y datos de acceso",
+        "item2": "Tu historial de uso en nuestros servidores",
+        "localNote": "Los gastos guardados localmente en tu dispositivo no se eliminan automáticamente. Podés borrarlos desde Ajustes del dispositivo → Aplicaciones → Chiro → Borrar datos.",
+        "signInHint": "Iniciá sesión con la cuenta que querés eliminar:",
+        "signInBtn": "Iniciar sesión con Google",
+        "account": "Cuenta: {email}",
+        "deleteBtn": "Eliminar mi cuenta",
+        "deleting": "Eliminando…",
+        "confirm": "¿Estás seguro? Esta acción eliminará tu cuenta y todos tus datos de forma permanente. No se puede deshacer.",
+        "doneTitle": "Cuenta eliminada",
+        "doneText": "Tu cuenta y todos tus datos en nuestros servidores fueron eliminados permanentemente.",
+        "errorGeneric": "Ocurrió un error al eliminar la cuenta. Intentá de nuevo."
     }
 }

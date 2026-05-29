@@ -133,5 +133,22 @@
     "footer": {
         "terms": "Terms & Conditions",
         "rights": "All rights reserved."
+    },
+    "chiroDelete": {
+        "metaTitle": "Delete account · Chiro",
+        "title": "Delete your Chiro account",
+        "intro": "Deleting your account will permanently and irreversibly remove:",
+        "item1": "Your license and sign-in data",
+        "item2": "Your usage history on our servers",
+        "localNote": "Expenses stored locally on your device are not deleted automatically. You can remove them from your device Settings → Apps → Chiro → Clear data.",
+        "signInHint": "Sign in with the account you want to delete:",
+        "signInBtn": "Sign in with Google",
+        "account": "Account: {email}",
+        "deleteBtn": "Delete my account",
+        "deleting": "Deleting…",
+        "confirm": "Are you sure? This will permanently delete your account and all your data. This cannot be undone.",
+        "doneTitle": "Account deleted",
+        "doneText": "Your account and all your data on our servers have been permanently deleted.",
+        "errorGeneric": "Something went wrong while deleting your account. Please try again."
     }
 }
