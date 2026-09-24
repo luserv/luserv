@@ -198,6 +198,18 @@ section {
     }
   }
 
+  .deployment-badges {
+    @apply flex flex-wrap items-center gap-2 mt-3;
+  }
+
+  .deployment-icon {
+    @apply flex items-center justify-center size-7 rounded-full bg-black-100 border border-black-50;
+  }
+
+  .deployment-text {
+    @apply text-white-50 text-xs md:text-sm;
+  }
+
   .cta-wrapper {
     @apply relative z-20 cursor-pointer;
   }
@@ -263,11 +275,27 @@ section {
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
   }
 
   .tech-icon-wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
+  }
+
+  .skill-chip-grid {
+    @apply grid grid-cols-2 gap-3 mt-8 md:grid-cols-3 xl:grid-cols-5 md:gap-4;
+  }
+
+  .skill-chip {
+    @apply flex items-center gap-3 rounded-lg px-4 py-3 min-h-11;
+
+    svg {
+      @apply flex-none;
+    }
+
+    span {
+      @apply text-white-50 text-sm md:text-base font-medium;
+    }
   }
 
   form {

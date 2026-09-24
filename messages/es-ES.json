@@ -40,7 +40,8 @@
         "project1Title": "Chiro: app de finanzas personales para gastos, presupuestos y préstamos",
         "project1Desc": "App web y Android con frontend en SvelteKit y backend en Go para registrar gastos, definir presupuestos y gestionar préstamos.",
         "project2Title": "Contacts: SaaS de gestión de contactos con Go, SvelteKit y PostgreSQL",
-        "project3Title": "Herramienta de Automatización de Infraestructura Cloud"
+        "project3Title": "Herramienta de Automatización de Infraestructura Cloud",
+        "deployment": "Frontend en Cloudflare · API en Vercel · BD en Supabase"
     },
     "abilities": {
         "items": [
@@ -97,21 +98,16 @@
         "sub": "🤝 Lo que Aporto",
         "items": [
             {
-                "name": "Desarrollador Next.js"
+                "name": "React, Next.js y React Native"
             },
             {
-                "name": "Desarrollador TypeScript"
+                "name": "Node.js y NestJS"
             },
             {
-                "name": "Desarrollador Backend"
-            },
-            {
-                "name": "Ingeniero de Base de Datos"
-            },
-            {
-                "name": "DevOps & Linux"
+                "name": "Git, CI/CD y Linux"
             }
-        ]
+        ],
+        "skillsTitle": "Stack Completo"
     },
     "contact": {
         "title": "Contáctame – Conectemos",

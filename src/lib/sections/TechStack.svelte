@@ -5,7 +5,8 @@
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
   import TitleHeader from '$components/TitleHeader.svelte';
-  import { techStackIcons } from '$lib/constants';
+  import { techStackIcons, skillChips } from '$lib/constants';
+  import { brandIcons } from '$lib/icons';
   import { Canvas } from '@threlte/core';
 
   gsap.registerPlugin(ScrollTrigger);
@@ -33,6 +34,19 @@
         scrollTrigger: { trigger: '#skills', start: 'top center' }
       }
     );
+
+    gsap.fromTo(
+      '.skill-chip',
+      { y: 30, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        ease: 'power2.inOut',
+        stagger: 0.08,
+        scrollTrigger: { trigger: '.skill-chip-grid', start: 'top bottom-=50' }
+      }
+    );
   });
 </script>
 
@@ -54,6 +68,21 @@
               <p>{icon.name}</p>
             </div>
           </div>
+        </div>
+      {/each}
+    </div>
+
+    <h3 class="text-white-50 text-xl md:text-2xl font-semibold text-center mt-16">{t('techStack.skillsTitle')}</h3>
+    <div class="skill-chip-grid">
+      {#each skillChips as chip (chip.name)}
+        {@const icon = brandIcons[chip.icon]}
+        <div class="skill-chip card-border">
+          {#if icon}
+            <svg viewBox="0 0 24 24" role="img" aria-label={chip.name} width="28" height="28" style={`fill: ${chip.color}`}>
+              <path d={icon.path} />
+            </svg>
+          {/if}
+          <span>{chip.name}</span>
         </div>
       {/each}
     </div>
