@@ -95,3 +95,4 @@ export const socialImgs = [
 
 // Chiro lives on its own site; update here when it moves to a custom domain.
 export const CHIRO_URL = 'https://chiro-4rs.pages.dev';
+export const CONTACTS_URL = 'https://contacts-9m7.pages.dev';

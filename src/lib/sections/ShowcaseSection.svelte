@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { t } from '$lib/i18n';
+  import { CHIRO_URL, CONTACTS_URL } from '$constants';
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -35,21 +36,25 @@
   <div class="w-full">
     <div class="showcaselayout">
       <div bind:this={project1El} class="first-project-wrapper">
-        <div class="image-wrapper">
-          <img src="/images/project1.png" alt="SaaS Platform" />
-        </div>
-        <div class="text-content">
-          <h2>{t('showcase.project1Title')}</h2>
-          <p class="text-white-50 md:text-xl">{t('showcase.project1Desc')}</p>
-        </div>
+        <a href={CHIRO_URL} target="_blank" rel="noopener noreferrer" class="flex h-full flex-col justify-between">
+          <div class="image-wrapper">
+            <img src="/images/projects/chiro.webp" alt="Chiro landing page" />
+          </div>
+          <div class="text-content">
+            <h2>{t('showcase.project1Title')}</h2>
+            <p class="text-white-50 md:text-xl">{t('showcase.project1Desc')}</p>
+          </div>
+        </a>
       </div>
 
       <div class="project-list-wrapper overflow-hidden">
         <div bind:this={project2El}>
-          <div class="image-wrapper bg-[#FFEFDB]">
-            <img src="/images/project2.png" alt="API Management Dashboard" />
-          </div>
-          <h2>{t('showcase.project2Title')}</h2>
+          <a href={CONTACTS_URL} target="_blank" rel="noopener noreferrer">
+            <div class="image-wrapper bg-[#F2F2F7]">
+              <img src="/images/projects/contacts.webp" alt="Contacts sign-in screen" />
+            </div>
+            <h2>{t('showcase.project2Title')}</h2>
+          </a>
         </div>
 
         <div bind:this={project3El}>

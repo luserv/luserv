@@ -37,9 +37,9 @@
         ]
     },
     "showcase": {
-        "project1Title": "Plataforma SaaS moderna con Next.js y NestJS para soluciones empresariales escalables",
-        "project1Desc": "Una aplicación full-stack construida con Next.js, NestJS y PostgreSQL para una experiencia rápida y lista para producción.",
-        "project2Title": "Panel de Gestión de APIs REST",
+        "project1Title": "Chiro: app de finanzas personales para gastos, presupuestos y préstamos",
+        "project1Desc": "App web y Android con frontend en SvelteKit y backend en Go para registrar gastos, definir presupuestos y gestionar préstamos.",
+        "project2Title": "Contacts: SaaS de gestión de contactos con Go, SvelteKit y PostgreSQL",
         "project3Title": "Herramienta de Automatización de Infraestructura Cloud"
     },
     "abilities": {
