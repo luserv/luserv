@@ -13,9 +13,12 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# sveltekit
+/.svelte-kit/
+
+# local tooling
+/.playwright-mcp/
+/.atl/
 
 # production
 /build
@@ -38,4 +41,4 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+vite.config.ts.timestamp-*
