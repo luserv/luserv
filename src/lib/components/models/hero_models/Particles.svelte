@@ -9,20 +9,25 @@
     speed: number;
   }
 
-  const particles: Particle[] = Array.from({ length: count }, () => ({
-    position: [
-      (Math.random() - 0.5) * 10,
-      Math.random() * 10 + 5,
-      (Math.random() - 0.5) * 10
-    ] as [number, number, number],
-    speed: 0.005 + Math.random() * 0.001
-  }));
+  const particles: Particle[] = $derived(
+    Array.from({ length: count }, () => ({
+      position: [
+        (Math.random() - 0.5) * 10,
+        Math.random() * 10 + 5,
+        (Math.random() - 0.5) * 10
+      ] as [number, number, number],
+      speed: 0.005 + Math.random() * 0.001
+    }))
+  );
 
-  const positions = new Float32Array(count * 3);
-  particles.forEach((p, i) => {
-    positions[i * 3] = p.position[0];
-    positions[i * 3 + 1] = p.position[1];
-    positions[i * 3 + 2] = p.position[2];
+  const positions = $derived.by(() => {
+    const arr = new Float32Array(particles.length * 3);
+    particles.forEach((p, i) => {
+      arr[i * 3] = p.position[0];
+      arr[i * 3 + 1] = p.position[1];
+      arr[i * 3 + 2] = p.position[2];
+    });
+    return arr;
   });
 
   let pointsRef: THREE.Points | undefined = $state();
