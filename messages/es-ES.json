@@ -7,7 +7,6 @@
         "work": "Proyectos",
         "experience": "Experiencia",
         "skills": "Habilidades",
-        "testimonials": "Testimonios",
         "contact": "Contacto",
         "contactMe": "Contáctame"
     },
@@ -26,14 +25,15 @@
         "line3": "que Generan Resultados",
         "description": "Somos LUSER, una startup de desarrollo de software que construye soluciones escalables y de alta calidad para negocios en todo el mundo.",
         "cta": "Ver Mi Trabajo",
-        "words": ["Ideas", "Conceptos", "Diseños", "Código", "Ideas", "Conceptos", "Diseños", "Código"]
-    },
-    "counter": {
-        "items": [
-            { "label": "Años de Experiencia" },
-            { "label": "Clientes Satisfechos" },
-            { "label": "Proyectos Completados" },
-            { "label": "Tasa de Retención" }
+        "words": [
+            "Ideas",
+            "Conceptos",
+            "Diseños",
+            "Código",
+            "Ideas",
+            "Conceptos",
+            "Diseños",
+            "Código"
         ]
     },
     "showcase": {
@@ -64,7 +64,6 @@
         "responsibilities": "Responsabilidades",
         "cards": [
             {
-                "review": "Kaento aportó una profundidad técnica increíble a nuestra plataforma. Su trabajo en nuestro backend Node.js y la capa PostgreSQL mejoró significativamente la fiabilidad y la experiencia del desarrollador.",
                 "title": "Desarrollador Backend",
                 "date": "Enero 2023 - Presente",
                 "responsibilities": [
@@ -74,7 +73,6 @@
                 ]
             },
             {
-                "review": "Las contribuciones full-stack de Kaento elevaron la calidad de nuestro producto. Entregó consistentemente soluciones limpias y mantenibles en todo el stack.",
                 "title": "Desarrollador Full Stack",
                 "date": "Junio 2021 - Diciembre 2022",
                 "responsibilities": [
@@ -84,7 +82,6 @@
                 ]
             },
             {
-                "review": "La experiencia de Kaento en arquitectura cloud nos ayudó a escalar nuestra infraestructura de manera confiable. Su conocimiento de sistemas Linux y automatización nos ahorró innumerables horas.",
                 "title": "Ingeniero Cloud & DevOps",
                 "date": "Marzo 2020 - Mayo 2021",
                 "responsibilities": [
@@ -99,23 +96,21 @@
         "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",
         "sub": "🤝 Lo que Aporto",
         "items": [
-            { "name": "Desarrollador Next.js" },
-            { "name": "Desarrollador TypeScript" },
-            { "name": "Desarrollador Backend" },
-            { "name": "Ingeniero de Base de Datos" },
-            { "name": "DevOps & Linux" }
-        ]
-    },
-    "testimonials": {
-        "title": "¿Qué Dicen de Mí?",
-        "sub": "⭐ Destacados de clientes",
-        "items": [
-            { "review": "Kaento es un desarrollador excepcional. Tomó nuestros complejos requerimientos y entregó una API robusta lista para producción. Sus habilidades de resolución de problemas y atención al rendimiento son sobresalientes." },
-            { "review": "Trabajar con Kaento fue una experiencia fantástica. Modernizó nuestro backend heredado hacia una arquitectura NestJS limpia. Su dedicación a la calidad de código y buenas prácticas es inigualable." },
-            { "review": "Colaborar con Kaento fue un placer absoluto. Su profesionalismo y profundo conocimiento de TypeScript y PostgreSQL fueron evidentes durante todo el proyecto. Es el socio ideal para cualquier iniciativa de software seria." },
-            { "review": "Kaento convirtió nuestra inestable configuración de servidores en una infraestructura confiable y automatizada. Entregó todo a tiempo con documentación clara. Un trabajo fantástico en general." },
-            { "review": "La experiencia de Kaento en Next.js y despliegues en la nube es verdaderamente impresionante. Desde que renovó nuestra plataforma, el rendimiento ha mejorado significativamente y nuestros usuarios están mucho más satisfechos." },
-            { "review": "Kaento entendió nuestros requerimientos perfectamente y entregó una solución full-stack que superó las expectativas. Sus habilidades en frontend, backend y DevOps son de primera clase." }
+            {
+                "name": "Desarrollador Next.js"
+            },
+            {
+                "name": "Desarrollador TypeScript"
+            },
+            {
+                "name": "Desarrollador Backend"
+            },
+            {
+                "name": "Ingeniero de Base de Datos"
+            },
+            {
+                "name": "DevOps & Linux"
+            }
         ]
     },
     "contact": {

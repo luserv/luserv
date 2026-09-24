@@ -9,7 +9,7 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  type CardData = { review: string; title: string; date: string; responsibilities: string[] };
+  type CardData = { title: string; date: string; responsibilities: string[] };
 
   const cards = $derived(
     ((tRaw('experience.cards') as CardData[]) ?? []).map((card, i) => ({

@@ -7,7 +7,6 @@
         "work": "Work",
         "experience": "Experience",
         "skills": "Skills",
-        "testimonials": "Testimonials",
         "contact": "Contact",
         "contactMe": "Contact me"
     },
@@ -26,14 +25,15 @@
         "line3": "that Deliver Results",
         "description": "We are LUSER, a software development startup building scalable, high-quality solutions for businesses worldwide.",
         "cta": "See My Work",
-        "words": ["Ideas", "Concepts", "Designs", "Code", "Ideas", "Concepts", "Designs", "Code"]
-    },
-    "counter": {
-        "items": [
-            { "label": "Years of Experience" },
-            { "label": "Satisfied Clients" },
-            { "label": "Completed Projects" },
-            { "label": "Client Retention Rate" }
+        "words": [
+            "Ideas",
+            "Concepts",
+            "Designs",
+            "Code",
+            "Ideas",
+            "Concepts",
+            "Designs",
+            "Code"
         ]
     },
     "showcase": {
@@ -64,7 +64,6 @@
         "responsibilities": "Responsibilities",
         "cards": [
             {
-                "review": "Kaento brought incredible technical depth to our platform. His work on our Node.js backend and PostgreSQL layer significantly improved reliability and developer experience.",
                 "title": "Backend Developer",
                 "date": "January 2023 - Present",
                 "responsibilities": [
@@ -74,7 +73,6 @@
                 ]
             },
             {
-                "review": "Kaento's full-stack contributions elevated our product quality. He consistently delivered clean, maintainable solutions across the entire stack.",
                 "title": "Full Stack Developer",
                 "date": "June 2021 - December 2022",
                 "responsibilities": [
@@ -84,7 +82,6 @@
                 ]
             },
             {
-                "review": "Kaento's expertise in cloud architecture helped us scale our infrastructure reliably. His knowledge of Linux systems and automation saved us countless hours.",
                 "title": "Cloud & DevOps Engineer",
                 "date": "March 2020 - May 2021",
                 "responsibilities": [
@@ -99,23 +96,21 @@
         "title": "How I Can Contribute & My Key Skills",
         "sub": "🤝 What I Bring to the Table",
         "items": [
-            { "name": "Next.js Developer" },
-            { "name": "TypeScript Developer" },
-            { "name": "Backend Developer" },
-            { "name": "Database Engineer" },
-            { "name": "DevOps & Linux" }
-        ]
-    },
-    "testimonials": {
-        "title": "What People Say About Me?",
-        "sub": "⭐ Customer feedback highlights",
-        "items": [
-            { "review": "Kaento is an exceptional developer. He took our complex requirements and delivered a robust, production-ready API. His problem-solving skills and attention to performance are outstanding." },
-            { "review": "Working with Kaento was a fantastic experience. He modernized our legacy backend into a clean NestJS architecture. His dedication to code quality and best practices is unmatched." },
-            { "review": "Collaborating with Kaento was an absolute pleasure. His professionalism and deep knowledge of TypeScript and PostgreSQL were evident throughout the project. He is the ideal partner for any serious software initiative." },
-            { "review": "Kaento turned our unstable server setup into a reliable, automated infrastructure. He delivered everything on time with clear documentation. Fantastic work overall." },
-            { "review": "Kaento's expertise in Next.js and cloud deployments is truly impressive. Since he revamped our platform, performance has significantly improved and our users are much happier." },
-            { "review": "Kaento understood our requirements perfectly and delivered a full-stack solution that exceeded expectations. His skills across frontend, backend, and DevOps are top-notch." }
+            {
+                "name": "Next.js Developer"
+            },
+            {
+                "name": "TypeScript Developer"
+            },
+            {
+                "name": "Backend Developer"
+            },
+            {
+                "name": "Database Engineer"
+            },
+            {
+                "name": "DevOps & Linux"
+            }
         ]
     },
     "contact": {

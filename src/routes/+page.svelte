@@ -2,7 +2,6 @@
   import { t, getLocale, toggleLocale } from '$lib/i18n';
   import Hero from '$sections/Hero.svelte';
   import ShowcaseSection from '$sections/ShowcaseSection.svelte';
-  import LogoShowcase from '$sections/LogoShowcase.svelte';
   import FeatureCards from '$sections/FeatureCards.svelte';
   import Experience from '$sections/Experience.svelte';
   import TechStack from '$sections/TechStack.svelte';
@@ -19,7 +18,6 @@
 <NavBar />
 <Hero />
 <ShowcaseSection />
-<LogoShowcase />
 <FeatureCards />
 <Experience />
 <TechStack />

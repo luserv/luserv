@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import { t, tRaw } from '$lib/i18n';
   import gsap from 'gsap';
-  import AnimatedCounter from '$components/AnimatedCounter.svelte';
   import Button from '$components/Button.svelte';
   import { words as wordImgPaths } from '$lib/constants';
 
@@ -52,10 +51,8 @@
           {t('hero.description')}
         </p>
 
-        <Button text={t('hero.cta')} className="md:w-80 md:h-16 w-60 h-12" id="counter" />
+        <Button text={t('hero.cta')} className="md:w-80 md:h-16 w-60 h-12" id="work" />
       </div>
     </header>
   </div>
-
-  <AnimatedCounter />
 </section>

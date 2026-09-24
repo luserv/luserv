@@ -4,7 +4,7 @@
   function handleClick(e: Event) {
     e.preventDefault();
     if (!id) return;
-    const target = document.getElementById('counter');
+    const target = document.getElementById(id);
     if (target) {
       const offset = window.innerHeight * 0.15;
       const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
@@ -13,7 +13,7 @@
   }
 </script>
 
-<a onclick={handleClick} class="{className} cta-wrapper" href="#counter">
+<a onclick={handleClick} class="{className} cta-wrapper" href="#{id}">
   <div class="cta-button group">
     <div class="bg-circle"></div>
     <p class="text">{text}</p>
