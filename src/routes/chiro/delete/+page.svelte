@@ -8,7 +8,7 @@
 
   const c = $derived(getChiroContent(getLocale()));
 
-  let btnEl: HTMLButtonElement;
+  let handleClick = $state<() => Promise<void>>();
   let btnText = $state('');
   let btnClass = $state('chiro-del__btn chiro-del__btn--primary');
   let status = $state<'idle' | 'working' | 'done'>('idle');
@@ -28,6 +28,8 @@
   let deleting = $state('');
   let confirmText = $state('');
   let accountText = $state('');
+  let accountLabel = $state('');
+  let errorGeneric = $state('');
 
   const chiroDeleteMessages = {
     es: {
@@ -43,6 +45,7 @@
       confirm: '¿Estás seguro? Esta acción eliminará tu cuenta y todos tus datos de forma permanente. No se puede deshacer.',
       doneTitle: 'Cuenta eliminada',
       doneText: 'Tu cuenta y todos tus datos en nuestros servidores fueron eliminados permanentemente.',
+      account: 'Cuenta',
       errorGeneric: 'Ocurrió un error al eliminar la cuenta. Intentá de nuevo.'
     },
     en: {
@@ -58,6 +61,7 @@
       confirm: 'Are you sure? This will permanently delete your account and all your data. This cannot be undone.',
       doneTitle: 'Account deleted',
       doneText: 'Your account and all your data on our servers have been permanently deleted.',
+      account: 'Account',
       errorGeneric: 'Something went wrong while deleting your account. Please try again.'
     }
   };
@@ -78,6 +82,8 @@
     deleteBtn = msgs.deleteBtn;
     deleting = msgs.deleting;
     confirmText = msgs.confirm;
+    accountLabel = msgs.account;
+    errorGeneric = msgs.errorGeneric;
   }
 
   onMount(async () => {
@@ -87,50 +93,48 @@
     const { deleteDoc, doc } = await import('firebase/firestore');
     const { auth, db } = await loadChiroFirebase();
 
-    ready = true;
-
     onAuthStateChanged(auth, (u) => {
       user = u;
       if (u) {
         btnText = deleteBtn;
         btnClass = 'chiro-del__btn chiro-del__btn--danger';
-        accountText = `Cuenta: ${u.email}`;
+        accountText = `${accountLabel}: ${u.email}`;
       }
     });
 
-    if (btnEl) {
-      btnEl.addEventListener('click', async () => {
-        if (user) {
-          if (!confirm(confirmText)) return;
-          status = 'working';
-          try {
-            try { await deleteDoc(doc(db, 'licenses', user.uid)); } catch {}
-            try { await deleteUser(user); } catch (e: any) {
-              if (e.code === 'auth/requires-recent-login') {
-                const p = new GoogleAuthProvider();
-                p.setCustomParameters({ prompt: 'select_account' });
-                await reauthenticateWithPopup(user, p);
-                await deleteUser(user);
-              } else throw e;
-            }
-            await signOut(auth);
-            status = 'done';
-          } catch (e: any) {
-            error = e.message ?? 'Error';
-            status = 'idle';
+    handleClick = async () => {
+      if (user) {
+        if (!confirm(confirmText)) return;
+        status = 'working';
+        try {
+          try { await deleteDoc(doc(db, 'licenses', user.uid)); } catch {}
+          try { await deleteUser(user); } catch (e: any) {
+            if (e.code === 'auth/requires-recent-login') {
+              const p = new GoogleAuthProvider();
+              p.setCustomParameters({ prompt: 'select_account' });
+              await reauthenticateWithPopup(user, p);
+              await deleteUser(user);
+            } else throw e;
           }
-        } else {
-          const p = new GoogleAuthProvider();
-          p.setCustomParameters({ prompt: 'select_account' });
-          await signInWithPopup(auth, p);
+          await signOut(auth);
+          status = 'done';
+        } catch (e: any) {
+          error = e.message ?? errorGeneric;
+          status = 'idle';
         }
-      });
-    }
+      } else {
+        const p = new GoogleAuthProvider();
+        p.setCustomParameters({ prompt: 'select_account' });
+        await signInWithPopup(auth, p);
+      }
+    };
+
+    ready = true;
   });
 </script>
 
 <svelte:head>
-  <title>Eliminar cuenta de Chiro</title>
+  <title>{titleText || 'Chiro'}</title>
   <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
@@ -157,14 +161,14 @@
           <p class="chiro-del__hint">…</p>
         {:else if !user}
           <p class="chiro-del__hint">{signInHint}</p>
-          <button bind:this={btnEl} class={btnClass}>
+          <button class={btnClass} onclick={handleClick}>
             {signInBtn}
           </button>
         {:else}
           <p class="chiro-del__account">{accountText}</p>
           <button
-            bind:this={btnEl}
             class={btnClass}
+            onclick={handleClick}
             disabled={status === 'working'}
           >
             {status === 'working' ? deleting : deleteBtn}
