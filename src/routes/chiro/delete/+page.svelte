@@ -4,6 +4,7 @@
   import ChiroFooter from '../ChiroFooter.svelte';
   import { getChiroContent } from '../content';
   import { onMount } from 'svelte';
+  import { loadChiroFirebase } from '$lib/firebase/chiro';
 
   const c = $derived(getChiroContent(getLocale()));
 
@@ -82,22 +83,9 @@
   onMount(async () => {
     setTranslations(getLocale());
 
-    const { initializeApp, getApps } = await import('firebase/app');
-    const { getAuth, GoogleAuthProvider, signInWithPopup, deleteUser, reauthenticateWithPopup, signOut, onAuthStateChanged } = await import('firebase/auth');
-    const { getFirestore, deleteDoc, doc } = await import('firebase/firestore');
-
-    const firebaseConfig = {
-      apiKey: 'AIzaSyB-dFd0BZJY38tU8nOY788oyFT8OevUDck',
-      authDomain: 'segast0.firebaseapp.com',
-      projectId: 'segast0',
-      storageBucket: 'segast0.firebasestorage.app',
-      messagingSenderId: '282199354699',
-      appId: '1:282199354699:web:0cf2417fc5e93bb47accce'
-    };
-
-    const app = getApps().find(a => a.name === 'chiro') ?? initializeApp(firebaseConfig, 'chiro');
-    const auth = getAuth(app);
-    const db = getFirestore(app);
+    const { GoogleAuthProvider, signInWithPopup, deleteUser, reauthenticateWithPopup, signOut, onAuthStateChanged } = await import('firebase/auth');
+    const { deleteDoc, doc } = await import('firebase/firestore');
+    const { auth, db } = await loadChiroFirebase();
 
     ready = true;
 
