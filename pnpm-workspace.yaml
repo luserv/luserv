@@ -1,5 +1,2 @@
 allowBuilds:
-  '@firebase/util': true
-  es5-ext: true
   esbuild: true
-  protobufjs: true

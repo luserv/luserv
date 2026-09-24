@@ -1,7 +1,7 @@
 import { redirect, type Handle } from '@sveltejs/kit';
 import { detectLocale, locales } from '$lib/i18n/locales';
 
-// Legacy Next.js URLs were prefixed with the locale (e.g. /es-ES/chiro/privacy).
+// Legacy Next.js URLs were prefixed with the locale (e.g. /es-ES).
 const legacyLocalePrefix = new RegExp(`^/(${locales.map((l) => l.code).join('|')})(/.*)?$`);
 
 export const handle: Handle = async ({ event, resolve }) => {
