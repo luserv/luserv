@@ -86,9 +86,10 @@
 
         <div bind:this={project3El}>
           <div class="image-wrapper bg-[#FFE7EB]">
-            <img src="/images/project3.png" alt="Cloud Infrastructure App" />
+            <img src="/images/projects/planner.webp" alt="Planner dashboard" />
           </div>
           <h2>{t('showcase.project3Title')}</h2>
+          <p class="deployment-text mt-3">{t('showcase.inProgress')}</p>
         </div>
       </div>
     </div>

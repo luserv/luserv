@@ -4,6 +4,7 @@
   import { t, tRaw } from '$lib/i18n';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
   import { expCards } from '$lib/constants';
+  import { brandIcons } from '$lib/icons';
   import TitleHeader from '$components/TitleHeader.svelte';
   import GlowCard from '$components/GlowCard.svelte';
 
@@ -64,8 +65,10 @@
           <div class="exp-card-wrapper">
             <div class="xl:w-2/6">
               <GlowCard {card}>
-                <div>
-                  <img src={card.imgPath} alt="exp-img" />
+                <div class="flex flex-col gap-4">
+                  {#each card.imgPaths as imgPath (imgPath)}
+                    <img src={imgPath} alt={card.title} />
+                  {/each}
                 </div>
               </GlowCard>
             </div>
@@ -77,15 +80,19 @@
                 </div>
                 <div class="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                   <div class="timeline-logo">
-                    <img src={card.logoPath} alt="logo" />
+                    {#if brandIcons[card.icon]}
+                      <svg viewBox="0 0 24 24" role="img" aria-label={brandIcons[card.icon].title} width="60%" height="60%" style={`fill: ${card.color}`}>
+                        <path d={brandIcons[card.icon].path} />
+                      </svg>
+                    {/if}
                   </div>
                   <div>
                     <h1 class="font-semibold text-3xl">{card.title}</h1>
-                    <p class="my-5 text-white-50">🗓️&nbsp;{card.date}</p>
+                    <p class="my-5 text-white-50">{card.date}</p>
                     <p class="text-[#839CB5] italic">{t('experience.responsibilities')}</p>
                     <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                       {#each card.responsibilities as responsibility, index}
-                        <li class="text-lg">{responsibility}</li>
+                        <li class="text-lg break-words">{responsibility}</li>
                       {/each}
                     </ul>
                   </div>

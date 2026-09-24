@@ -52,38 +52,53 @@ export const deploymentStack = [
   { name: 'Supabase', icon: 'siSupabase', color: '#3FCF8E' }
 ];
 
+// Real project & learning timeline (no formal jobs — see odd/tasks/portfolio-real-content.md).
+// icon/color follow the same brandIcons lookup as skillChips/deploymentStack.
 export const expCards = [
   {
-    imgPath: '/images/exp1.png',
-    logoPath: '/images/logo1.png',
-    title: 'Backend Developer',
-    date: 'January 2023 - Present',
+    imgPaths: ['/images/projects/contacts.webp'],
+    icon: 'siReact',
+    color: '#61DAFB',
+    title: 'Contacts — offline-first contacts app',
+    date: 'Early 2024',
     responsibilities: [
-      'Designed and maintained RESTful APIs with NestJS and PostgreSQL for production services.',
-      'Collaborated with frontend teams to ensure seamless API integrations.',
-      'Optimized query performance and implemented caching strategies using Redis.'
+      'Built a cross-platform contacts manager with React Native (Android) and Electron (Windows and Linux) on a local SQLite database.',
+      'Backed up the .db file to Google Drive (app-created files only, drive.file scope) and restored it on another device after Google Sign-In through Firebase.',
+      'Features: VCF/vCard import, birthday calendar and notifications, advanced search filters, English/Spanish i18n.'
     ]
   },
   {
-    imgPath: '/images/exp2.png',
-    logoPath: '/images/logo2.png',
-    title: 'Full Stack Developer',
-    date: 'June 2021 - December 2022',
+    imgPaths: ['/images/projects/chiro.webp'],
+    icon: 'siReact',
+    color: '#61DAFB',
+    title: 'Chiro — offline-first personal finance app',
+    date: 'Late 2024',
     responsibilities: [
-      'Built and deployed full-stack applications using Next.js and NestJS.',
-      'Implemented CI/CD pipelines on Debian-based servers with Docker.',
-      'Worked with backend engineers to integrate third-party services and APIs.'
+      'Reused the same offline-first architecture (Expo / React Native + Electron + expo-sqlite, Google Drive backup, Firebase Google Sign-In) for expenses, budgets and loans.',
+      'The Android app is in closed testing on Google Play.'
     ]
   },
   {
-    imgPath: '/images/exp3.png',
-    logoPath: '/images/logo3.png',
-    title: 'Cloud & DevOps Engineer',
-    date: 'March 2020 - May 2021',
+    imgPaths: ['/images/projects/chiro.webp', '/images/projects/contacts.webp'],
+    icon: 'siGo',
+    color: '#00ADD8',
+    title: 'Scaling to the web: Go, SvelteKit and PostgreSQL',
+    date: '2026',
     responsibilities: [
-      'Managed Debian-based server infrastructure and automated deployments with Ansible.',
-      'Set up monitoring and alerting with Prometheus and Grafana.',
-      'Containerized services using Docker and orchestrated with Docker Compose.'
+      'Rebuilt Chiro and Contacts as web apps with a SvelteKit frontend, a Go API and PostgreSQL.',
+      'Deployed the frontend on Cloudflare, the API on Vercel and the database on Supabase.',
+      'All projects remain active and maintained.'
+    ]
+  },
+  {
+    imgPaths: ['/images/projects/planner.webp'],
+    icon: 'siGo',
+    color: '#00ADD8',
+    title: 'Planner — task planner with visual countdown timers',
+    date: 'Now — in progress',
+    responsibilities: [
+      'Task planner with visual countdown timers, class schedules and day planning.',
+      'Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL.'
     ]
   }
 ];

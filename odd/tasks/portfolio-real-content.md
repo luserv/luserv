@@ -20,7 +20,7 @@ or formal jobs yet, so credibility must come from real projects and verifiable e
 ## Tasks
 - [x] T1 Remove placeholder testimonials, counters, client logos — commit 85f02f7 (inline)
 - [x] T2 Real skills stack + deployment info on project cards (delegated writer: 4+ files; verified pnpm check 0/0, 375px screenshots)
-- [ ] T3 Project and learning timeline in Experience (pending owner confirmation of dates)
+- [x] T3 Project and learning timeline (Contacts 2024, Chiro 2024, web 2026, Planner now) + Planner as 3rd showcase project (delegated writer; pnpm check 0/0, 375px verified)
 
 ## Checks
 - `pnpm check` (svelte-check) with 0 errors/warnings
@@ -30,4 +30,4 @@ or formal jobs yet, so credibility must come from real projects and verifiable e
 Off: no test runner configured in the project (package.json has no test script). Ordinary checks apply.
 
 ## Progress
-T1, T2 done. Next: T3 timeline, waiting on Contacts date and learning milestones from owner.
+T1-T3 done. Remaining template content: hero "Somos LUSER" copy, feature cards, social links.

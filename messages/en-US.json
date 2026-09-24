@@ -40,8 +40,9 @@
         "project1Title": "Chiro: Personal Finance App for Expenses, Budgets and Loans",
         "project1Desc": "A web and Android app with a SvelteKit frontend and a Go backend to track spending, set budgets and manage loans.",
         "project2Title": "Contacts: Contact Management SaaS with Go, SvelteKit and PostgreSQL",
-        "project3Title": "Cloud Infrastructure Automation Tool",
-        "deployment": "Frontend on Cloudflare · API on Vercel · DB on Supabase"
+        "project3Title": "Planner: task planner with visual countdown timers, built with Go, SvelteKit and PostgreSQL",
+        "deployment": "Frontend on Cloudflare · API on Vercel · DB on Supabase",
+        "inProgress": "In progress"
     },
     "abilities": {
         "items": [
@@ -60,35 +61,42 @@
         ]
     },
     "experience": {
-        "title": "Professional Work Experience",
-        "sub": "💼 My Career Overview",
-        "responsibilities": "Responsibilities",
+        "title": "Projects & Learning Journey",
+        "sub": "How my projects evolved",
+        "responsibilities": "What I built",
         "cards": [
             {
-                "title": "Backend Developer",
-                "date": "January 2023 - Present",
+                "title": "Contacts — offline-first contacts app",
+                "date": "Early 2024",
                 "responsibilities": [
-                    "Designed and maintained RESTful APIs with NestJS and PostgreSQL for production services.",
-                    "Collaborated with frontend teams to ensure seamless API integrations.",
-                    "Optimized query performance and implemented caching strategies using Redis."
+                    "Built a cross-platform contacts manager with React Native (Android) and Electron (Windows and Linux) on a local SQLite database.",
+                    "Backed up the .db file to Google Drive (app-created files only, drive.file scope) and restored it on another device after Google Sign-In through Firebase.",
+                    "Features: VCF/vCard import, birthday calendar and notifications, advanced search filters, English/Spanish i18n."
                 ]
             },
             {
-                "title": "Full Stack Developer",
-                "date": "June 2021 - December 2022",
+                "title": "Chiro — offline-first personal finance app",
+                "date": "Late 2024",
                 "responsibilities": [
-                    "Built and deployed full-stack applications using Next.js and NestJS.",
-                    "Implemented CI/CD pipelines on Debian-based servers with Docker.",
-                    "Worked with backend engineers to integrate third-party services and APIs."
+                    "Reused the same offline-first architecture (Expo / React Native + Electron + expo-sqlite, Google Drive backup, Firebase Google Sign-In) for expenses, budgets and loans.",
+                    "The Android app is in closed testing on Google Play."
                 ]
             },
             {
-                "title": "Cloud & DevOps Engineer",
-                "date": "March 2020 - May 2021",
+                "title": "Scaling to the web: Go, SvelteKit and PostgreSQL",
+                "date": "2026",
                 "responsibilities": [
-                    "Managed Debian-based server infrastructure and automated deployments with Ansible.",
-                    "Set up monitoring and alerting with Prometheus and Grafana.",
-                    "Containerized services using Docker and orchestrated with Docker Compose."
+                    "Rebuilt Chiro and Contacts as web apps with a SvelteKit frontend, a Go API and PostgreSQL.",
+                    "Deployed the frontend on Cloudflare, the API on Vercel and the database on Supabase.",
+                    "All projects remain active and maintained."
+                ]
+            },
+            {
+                "title": "Planner — task planner with visual countdown timers",
+                "date": "Now — in progress",
+                "responsibilities": [
+                    "Task planner with visual countdown timers, class schedules and day planning.",
+                    "Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL."
                 ]
             }
         ]
