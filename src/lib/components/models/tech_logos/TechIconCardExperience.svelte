@@ -1,6 +1,6 @@
 <script lang="ts">
   import { T } from '@threlte/core';
-  import { GLTF, Float, OrbitControls } from '@threlte/extras';
+  import { GLTF, Float, OrbitControls, useDraco } from '@threlte/extras';
   import * as THREE from 'three';
 
   let { model }: { model: { name: string; modelPath: string; scale: number; rotation: [number, number, number] } } = $props();
@@ -27,6 +27,7 @@
 <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
   <GLTF
     url={model.modelPath}
+    dracoLoader={useDraco()}
     scale={model.scale}
     rotation={model.rotation}
     onloaded={handleLoad}

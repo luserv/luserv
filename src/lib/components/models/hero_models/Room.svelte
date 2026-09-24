@@ -1,13 +1,14 @@
 <script lang="ts">
   import { T } from '@threlte/core';
-  import { useTexture } from '@threlte/extras';
+  import { useDraco, useGltf, useTexture } from '@threlte/extras';
   import * as THREE from 'three';
-  import { onMount } from 'svelte';
 
   const matcapTexture = useTexture('/images/textures/mat1.png');
 
-  let nodes = $state<any>(null);
-  let materials = $state<any>(null);
+  // useGltf builds the nodes/materials graph (like drei's useGLTF); a plain GLTFLoader does not.
+  const gltf = useGltf('/models/optimized-room.glb', { dracoLoader: useDraco() });
+  const nodes = $derived($gltf?.nodes);
+  const materials = $derived($gltf?.materials);
 
   const curtainMaterial = new THREE.MeshPhongMaterial({ color: '#d90429' });
   const tableMaterial = new THREE.MeshPhongMaterial({ color: '#582f0e' });
@@ -15,18 +16,9 @@
   const compMaterial = new THREE.MeshStandardMaterial({ color: '#fff' });
   const pillowMaterial = new THREE.MeshPhongMaterial({ color: '#8338ec' });
   const chairMaterial = new THREE.MeshPhongMaterial({ color: '#000' });
-
-  onMount(async () => {
-    const { GLTFLoader } = await import('three/examples/jsm/loaders/GLTFLoader.js');
-    const loader = new GLTFLoader();
-    loader.load('/models/optimized-room.glb', (gltf) => {
-      nodes = (gltf as any).nodes;
-      materials = (gltf as any).materials;
-    });
-  });
 </script>
 
-{#if nodes}
+{#if nodes && materials}
   <T.Group>
     {#if nodes._________6_blinn1_0}
       <T.Mesh geometry={nodes._________6_blinn1_0.geometry} material={curtainMaterial} />
