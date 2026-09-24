@@ -92,3 +92,6 @@ export const socialImgs = [
   { name: 'x', imgPath: '/images/x.png' },
   { name: 'linkedin', imgPath: '/images/linkedin.png' }
 ];
+
+// Chiro lives on its own site; update here when it moves to a custom domain.
+export const CHIRO_URL = 'https://chiro-4rs.pages.dev';
