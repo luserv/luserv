@@ -7,9 +7,8 @@
 
 <footer class="footer">
   <div class="footer-container">
-    <div class="flex flex-col justify-center">
-      <p>{t('footer.terms')}</p>
-    </div>
+    <!-- Keeps the socials centered in the desktop three-column grid. -->
+    <div class="hidden md:block"></div>
     <div class="socials">
       {#each socialLinks as social (social.name)}
         {@const brand = brandIcons[social.icon]}
