@@ -91,6 +91,15 @@
                 ]
             },
             {
+                "title": "tims — sitio de la carrera de TI, ESPOCH",
+                "date": "Agosto de 2025",
+                "responsibilities": [
+                    "Sitio oficial de la carrera de Ingeniería en Tecnologías de la Información de la ESPOCH, sede Morona Santiago, con secciones de horarios, club, consejo estudiantil y docentes en español e inglés.",
+                    "Construido con Next.js 15, TypeScript, PostgreSQL con Prisma, NextAuth v5, next-intl y subida de imágenes con Cloudinary.",
+                    "Panel de administración para noticias, eventos, docentes y usuarios, en desarrollo."
+                ]
+            },
+            {
                 "title": "grapi — analizador de seguidores de Instagram",
                 "date": "Junio de 2026",
                 "responsibilities": [
@@ -116,7 +125,8 @@
                     "Construido con una API en Go (router Chi, pgx), frontend en SvelteKit 5 y PostgreSQL."
                 ]
             }
-        ]
+        ],
+        "visitSite": "Ver sitio"
     },
     "techStack": {
         "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",

@@ -82,6 +82,7 @@ export const expCards = [
   },
   {
     imgPaths: ['/images/projects/frontend-mentor.webp'],
+    url: 'https://frontendmentor-sandy.vercel.app',
     icon: 'siNextdotjs',
     color: '#FFFFFF',
     title: 'Frontend Mentor challenges',
@@ -89,6 +90,19 @@ export const expCards = [
     responsibilities: [
       'Solved 9 Frontend Mentor challenges across newbie, junior and intermediate levels, from a QR code component to a todo app.',
       'Built with Next.js 15, React 19, TypeScript and Tailwind CSS 4, following each design closely and responsive down to mobile.'
+    ]
+  },
+  {
+    imgPaths: ['/images/projects/tims.webp'],
+    url: 'https://timacas.vercel.app',
+    icon: 'siNextdotjs',
+    color: '#FFFFFF',
+    title: 'tims — ESPOCH IT program website',
+    date: 'August 2025',
+    responsibilities: [
+      'Official website for the Information Technology Engineering program at the ESPOCH Morona Santiago campus, with schedule, club, student council and faculty sections in Spanish and English.',
+      'Built with Next.js 15, TypeScript, PostgreSQL with Prisma, NextAuth v5, next-intl and Cloudinary image uploads.',
+      'Admin panel for news, events, faculty and users, in development.'
     ]
   },
   {

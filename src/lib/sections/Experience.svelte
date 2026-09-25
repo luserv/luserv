@@ -5,6 +5,7 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
   import { expCards } from '$lib/constants';
   import { brandIcons } from '$lib/icons';
+  import { ExternalLink } from '@lucide/svelte';
   import TitleHeader from '$components/TitleHeader.svelte';
   import GlowCard from '$components/GlowCard.svelte';
 
@@ -103,6 +104,17 @@
                   <div>
                     <h1 class="font-semibold text-3xl">{card.title}</h1>
                     <p class="my-5 text-white-50">{card.date}</p>
+                    {#if card.url}
+                      <a
+                        href={card.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mb-5 inline-flex min-h-11 items-center gap-2 rounded-lg border border-black-50 bg-black-100 px-4 text-white-50 transition-colors duration-300 hover:bg-black-50"
+                      >
+                        <ExternalLink size={18} aria-hidden="true" />
+                        <span>{t('experience.visitSite')}</span>
+                      </a>
+                    {/if}
                     <p class="text-[#839CB5] italic">{t('experience.responsibilities')}</p>
                     <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                       {#each card.responsibilities as responsibility, index}

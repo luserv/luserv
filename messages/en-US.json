@@ -91,6 +91,15 @@
                 ]
             },
             {
+                "title": "tims — ESPOCH IT program website",
+                "date": "August 2025",
+                "responsibilities": [
+                    "Official website for the Information Technology Engineering program at the ESPOCH Morona Santiago campus, with schedule, club, student council and faculty sections in Spanish and English.",
+                    "Built with Next.js 15, TypeScript, PostgreSQL with Prisma, NextAuth v5, next-intl and Cloudinary image uploads.",
+                    "Admin panel for news, events, faculty and users, in development."
+                ]
+            },
+            {
                 "title": "grapi — Instagram follower analyzer",
                 "date": "June 2026",
                 "responsibilities": [
@@ -116,7 +125,8 @@
                     "Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL."
                 ]
             }
-        ]
+        ],
+        "visitSite": "Visit site"
     },
     "techStack": {
         "title": "How I Can Contribute & My Key Skills",
