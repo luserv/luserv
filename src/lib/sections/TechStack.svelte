@@ -55,7 +55,7 @@
     <TitleHeader title={t('techStack.title')} sub={t('techStack.sub')} />
     <div class="tech-grid">
       {#each icons as icon (icon.name)}
-        <div class="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
+        <div class="card-border tech-card overflow-hidden group rounded-2xl">
           <div class="tech-card-content">
             <div class="tech-icon-wrapper">
               {#if TechIconCardExperience}
