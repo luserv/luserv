@@ -106,7 +106,7 @@ export const expCards = [
 export const socialLinks = [
   { name: 'GitHub', icon: 'siGithub', href: 'https://github.com/luserv' },
   { name: 'Instagram', icon: 'siInstagram', href: 'https://www.instagram.com/luser.v2/' },
-  { name: 'Facebook', icon: 'siFacebook', href: 'https://www.facebook.com/Luserv' },
+  { name: 'Facebook', icon: 'siFacebook', href: 'https://www.facebook.com/profile.php?id=61579794090838' },
   { name: 'Email', icon: 'mail', href: 'mailto:u3.dev@icloud.com' }
 ];
 
