@@ -42,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 vite.config.ts.timestamp-*
+
+# Cloudflare local dev state
+/.wrangler/

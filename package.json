@@ -11,7 +11,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-vercel": "^5",
+    "@sveltejs/adapter-cloudflare": "^7.2.9",
     "@sveltejs/kit": "^2",
     "@sveltejs/vite-plugin-svelte": "^5",
     "@types/three": "^0.185.1",
@@ -26,7 +26,6 @@
     "@tailwindcss/vite": "^4",
     "@threlte/core": "^8",
     "@threlte/extras": "^9",
-    "@vercel/analytics": "^1.6.1",
     "gsap": "^3.14.2",
     "simple-icons": "^16.32.0",
     "tailwindcss": "^4",
