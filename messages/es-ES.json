@@ -92,7 +92,7 @@
             },
             {
                 "title": "Escalando a la web: Go, SvelteKit y PostgreSQL",
-                "date": "2026",
+                "date": "Julio de 2026",
                 "responsibilities": [
                     "Reconstruí Chiro y Contacts como aplicaciones web con un frontend en SvelteKit, una API en Go y PostgreSQL.",
                     "Desplegué el frontend en Cloudflare, la API en Vercel y la base de datos en Supabase.",
@@ -101,7 +101,7 @@
             },
             {
                 "title": "Planner — planificador de tareas con temporizadores visuales",
-                "date": "Actualmente — en desarrollo",
+                "date": "Septiembre de 2026 — en desarrollo",
                 "responsibilities": [
                     "Planificador de tareas con temporizadores visuales, horario de clases y planificación del día.",
                     "Construido con una API en Go (router Chi, pgx), frontend en SvelteKit 5 y PostgreSQL."

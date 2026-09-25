@@ -94,7 +94,7 @@ export const expCards = [
     icon: 'siGo',
     color: '#00ADD8',
     title: 'Scaling to the web: Go, SvelteKit and PostgreSQL',
-    date: '2026',
+    date: 'July 2026',
     responsibilities: [
       'Rebuilt Chiro and Contacts as web apps with a SvelteKit frontend, a Go API and PostgreSQL.',
       'Deployed the frontend on Cloudflare, the API on Vercel and the database on Supabase.',
@@ -106,7 +106,7 @@ export const expCards = [
     icon: 'siGo',
     color: '#00ADD8',
     title: 'Planner — task planner with visual countdown timers',
-    date: 'Now — in progress',
+    date: 'September 2026 — in progress',
     responsibilities: [
       'Task planner with visual countdown timers, class schedules and day planning.',
       'Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL.'
