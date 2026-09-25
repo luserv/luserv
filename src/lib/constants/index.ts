@@ -83,7 +83,7 @@ export const expCards = [
     icon: 'siNextdotjs',
     color: '#FFFFFF',
     title: 'Frontend Mentor challenges',
-    date: 'Mid 2025',
+    date: 'July 2025',
     responsibilities: [
       'Solved 9 Frontend Mentor challenges across newbie, junior and intermediate levels, from a QR code component to a todo app.',
       'Built with Next.js 15, React 19, TypeScript and Tailwind CSS 4, following each design closely and responsive down to mobile.'

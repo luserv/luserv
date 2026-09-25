@@ -30,7 +30,7 @@ Chiro and Contacts deploy the frontend on Cloudflare, the API on Vercel and the 
 
 - **Early 2024 — Contacts, offline-first.** React Native (Android) and Electron (Windows, Linux) on SQLite. The `.db` file backs up to Google Drive and restores on another device after Google Sign-In through Firebase.
 - **Late 2024 — Chiro, offline-first.** Same architecture with Expo, applied to personal finance.
-- **Mid 2025 — Frontend Mentor challenges.** 9 UI challenges with Next.js, React, TypeScript and Tailwind CSS.
+- **July 2025 — Frontend Mentor challenges.** 9 UI challenges with Next.js, React, TypeScript and Tailwind CSS.
 - **2026 — Scaling to the web.** Both apps rebuilt with a SvelteKit frontend, a Go API and PostgreSQL.
 - **Now — Planner.** Go, SvelteKit 5 and PostgreSQL.
 
