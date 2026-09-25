@@ -17,7 +17,7 @@
     </div>
     <div class="flex flex-col justify-center">
       <p class="text-center md:text-end">
-        © {new Date().getFullYear()} Kaento Vidal. {t('footer.rights')}
+        © {new Date().getFullYear()} LUSER. {t('footer.rights')}
       </p>
     </div>
   </div>

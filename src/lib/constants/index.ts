@@ -16,9 +16,9 @@ export const words = [
 ];
 
 export const abilities = [
-  { imgPath: '/images/seo.png', title: 'Quality Focus', desc: 'Delivering high-quality results while maintaining attention to every detail.' },
-  { imgPath: '/images/chat.png', title: 'Reliable Communication', desc: 'Keeping you updated at every step to ensure transparency and clarity.' },
-  { imgPath: '/images/time.png', title: 'On-Time Delivery', desc: 'Making sure projects are completed on schedule, with quality & attention to detail.' }
+  { icon: 'wifi-off', title: 'Offline-first', desc: 'Apps that work without a connection and back up to Google Drive.' },
+  { icon: 'monitor-smartphone', title: 'Cross-platform', desc: 'Android, Windows, Linux and the web from one product.' },
+  { icon: 'layers', title: 'End-to-end', desc: 'Frontend, API, database and deployment, all owned by me.' }
 ];
 
 export const techStackIcons = [

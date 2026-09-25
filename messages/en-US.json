@@ -1,6 +1,6 @@
 {
     "Manifest": {
-        "name": "Kaento Vidal - Portfolio"
+        "name": "LUSER - Portfolio"
     },
     "navbar": {
         "home": "Home",
@@ -11,19 +11,19 @@
         "contactMe": "Contact me"
     },
     "LocaleLayout": {
-        "title": "Kaento Vidal | Software Developer",
+        "title": "LUSER | Software Developer",
         "description": "Full-stack developer specializing in Next.js, NestJS, Node.js, PostgreSQL, and cloud infrastructure.",
-        "keywords": "kaentovidal, luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "Kaento Vidal - Full Stack Developer",
+        "title": "LUSER - Full Stack Developer",
         "welcomeMessage": "Welcome to my portfolio!"
     },
     "hero": {
         "line1": "Shaping",
         "line2": "into Real Projects",
         "line3": "that Deliver Results",
-        "description": "I am LUSER (Kaento Vidal), a full-stack developer. I build offline-first and web apps with Go, SvelteKit and PostgreSQL, from idea to deployment.",
+        "description": "I am LUSER, a full-stack developer. I build offline-first and web apps with Go, SvelteKit and PostgreSQL, from idea to deployment.",
         "cta": "See My Work",
         "words": [
             "Ideas",
@@ -47,16 +47,16 @@
     "abilities": {
         "items": [
             {
-                "title": "Quality Focus",
-                "desc": "Delivering high-quality results while maintaining attention to every detail."
+                "title": "Offline-first",
+                "desc": "Apps that work without a connection and back up their data to Google Drive."
             },
             {
-                "title": "Reliable Communication",
-                "desc": "Keeping you updated at every step to ensure transparency and clarity."
+                "title": "Cross-platform",
+                "desc": "Android, Windows, Linux and the web from one product."
             },
             {
-                "title": "On-Time Delivery",
-                "desc": "Making sure projects are completed on schedule, with quality & attention to detail."
+                "title": "End-to-end",
+                "desc": "Frontend, API, database and deployment, all owned by me."
             }
         ]
     },

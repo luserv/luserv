@@ -1,6 +1,6 @@
 {
     "Manifest": {
-        "name": "Kaento Vidal - Portafolio"
+        "name": "LUSER - Portafolio"
     },
     "navbar": {
         "home": "Inicio",
@@ -11,19 +11,19 @@
         "contactMe": "Contáctame"
     },
     "LocaleLayout": {
-        "title": "Kaento Vidal | Desarrollador de Software",
+        "title": "LUSER | Desarrollador de Software",
         "description": "Desarrollador full-stack especializado en Next.js, NestJS, Node.js, PostgreSQL e infraestructura en la nube.",
-        "keywords": "kaentovidal, luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "Kaento Vidal - Desarrollador Full Stack",
+        "title": "LUSER - Desarrollador Full Stack",
         "welcomeMessage": "¡Bienvenido a mi portafolio!"
     },
     "hero": {
         "line1": "Convirtiendo",
         "line2": "en Proyectos Reales",
         "line3": "que Generan Resultados",
-        "description": "Soy LUSER (Kaento Vidal), desarrollador full-stack. Construyo apps offline-first y web con Go, SvelteKit y PostgreSQL, desde la idea hasta el despliegue.",
+        "description": "Soy LUSER, desarrollador full-stack. Construyo apps offline-first y web con Go, SvelteKit y PostgreSQL, desde la idea hasta el despliegue.",
         "cta": "Ver Mi Trabajo",
         "words": [
             "Ideas",
@@ -47,16 +47,16 @@
     "abilities": {
         "items": [
             {
-                "title": "Enfoque en Calidad",
-                "desc": "Entregando resultados de alta calidad con atención a cada detalle."
+                "title": "Offline-first",
+                "desc": "Apps que funcionan sin conexión y respaldan sus datos en Google Drive."
             },
             {
-                "title": "Comunicación Confiable",
-                "desc": "Manteniéndote informado en cada paso para garantizar transparencia y claridad."
+                "title": "Multiplataforma",
+                "desc": "Android, Windows, Linux y web desde un mismo producto."
             },
             {
-                "title": "Entrega a Tiempo",
-                "desc": "Asegurando que los proyectos se completen a tiempo, con calidad y atención al detalle."
+                "title": "De punta a punta",
+                "desc": "Frontend, API, base de datos y despliegue, todo a mi cargo."
             }
         ]
     },
