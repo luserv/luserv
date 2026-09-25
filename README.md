@@ -22,7 +22,7 @@
 | [**Chiro**](https://chiro-4rs.pages.dev) | Personal finance app for expenses, budgets and loans | SvelteKit, Go, PostgreSQL · Android app with Expo / React Native | Live · Android in closed testing on Google Play |
 | [**Contacts**](https://contacts-9m7.pages.dev) | Contact management SaaS | SvelteKit, Go, PostgreSQL | Live |
 | [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app) | 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)) | Next.js 15, React 19, TypeScript, Tailwind CSS 4 | Live |
-| [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15, Docker Compose | Source available |
+| [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
 | **Planner** | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | In progress |
 
 Chiro and Contacts deploy the frontend on Cloudflare, the API on Vercel and the database on Supabase.

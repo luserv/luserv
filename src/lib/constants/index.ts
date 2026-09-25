@@ -106,7 +106,7 @@ export const expCards = [
     date: 'June 2026',
     responsibilities: [
       'Analyzes Instagram followers and following and downloads galleries and stories, built on the instagrapi library.',
-      'FastAPI backend with PostgreSQL (Alembic migrations) caching profiles and run history, plus a Next.js 15 frontend.',
+      'FastAPI backend with PostgreSQL (Alembic migrations) caching profiles and run history, plus a Next.js 15 frontend migrated from an earlier Vue single-page app served by nginx.',
       'Runs the whole stack with a single docker compose command, with live sync for development.'
     ]
   },
