@@ -55,7 +55,6 @@ section {
     @apply xl:mt-20 md:mt-0 mt-40;
   }
 
-  /* General Grids */
   .grid-base {
     @apply grid grid-cols-1;
   }
@@ -89,9 +88,6 @@ section {
     img {
       @apply size-8 md:size-10 object-contain;
     }
-    .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
-    }
   }
 
   .hero-badge {
@@ -106,7 +102,7 @@ section {
     @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
     &.scrolled {
-      @apply top-0 bg-black;
+      @apply top-0 bg-black/75 backdrop-blur-md border-b border-black-50 shadow-lg shadow-black/40;
     }
 
     &.not-scrolled {
@@ -115,6 +111,30 @@ section {
 
     .inner {
       @apply mx-auto flex items-center justify-between;
+    }
+
+    .lang-switch {
+      @apply flex items-center gap-2 rounded-full border border-black-50 bg-black-100/80 p-1 pl-3 text-white-50;
+    }
+
+    .lang-track {
+      @apply relative grid grid-cols-2;
+    }
+
+    .lang-pill {
+      @apply absolute inset-y-0 left-0 w-1/2 rounded-full bg-white-50 transition-transform duration-300 ease-out;
+
+      &.is-right {
+        @apply translate-x-full;
+      }
+    }
+
+    .lang-option {
+      @apply relative z-10 min-h-11 min-w-11 rounded-full px-3 text-sm font-semibold text-white-50 transition-colors duration-300 cursor-pointer;
+
+      &.is-active {
+        @apply text-black;
+      }
     }
 
     .logo {
@@ -202,6 +222,18 @@ section {
     }
   }
 
+  .deployment-badges {
+    @apply flex flex-wrap items-center gap-2 mt-3;
+  }
+
+  .deployment-icon {
+    @apply flex items-center justify-center size-7 rounded-full bg-black-100 border border-black-50;
+  }
+
+  .deployment-text {
+    @apply text-white-50 text-xs md:text-sm;
+  }
+
   .cta-wrapper {
     @apply relative z-20 cursor-pointer;
   }
@@ -258,24 +290,36 @@ section {
     @apply w-36 h-full absolute bottom-0 z-20;
   }
 
-  .tech-card-animated-bg {
-    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700;
-  }
-
   .tech-card-content {
-    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
+    @apply flex flex-col items-center gap-2 pb-6 overflow-hidden relative z-10 group-hover:cursor-grab bg-[radial-gradient(circle_at_50%_35%,rgba(217,236,255,0.08),transparent_65%)];
 
     & p {
-      @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center;
+      @apply text-lg xl:text-xl font-semibold text-white-50 text-center;
     }
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply grid grid-cols-1 gap-5 mt-16 md:grid-cols-3 md:gap-6 xl:gap-10;
   }
 
   .tech-icon-wrapper {
-    @apply flex justify-center items-center w-52 h-60 relative;
+    @apply flex justify-center items-center w-full h-48 md:h-56 relative;
+  }
+
+  .skill-chip-grid {
+    @apply grid grid-cols-2 gap-3 mt-8 md:grid-cols-3 xl:grid-cols-5 md:gap-4;
+  }
+
+  .skill-chip {
+    @apply flex items-center gap-3 rounded-lg px-4 py-3 min-h-11;
+
+    svg {
+      @apply flex-none;
+    }
+
+    span {
+      @apply text-white-50 text-sm md:text-base font-medium;
+    }
   }
 
   form {
@@ -312,7 +356,7 @@ section {
       @apply flex items-center justify-center gap-5;
 
       .icon {
-        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
+        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-11 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
       }
 
       img {
@@ -322,11 +366,24 @@ section {
   }
 }
 
-/* Hero text slider starts */
+/* Hero text slider */
 .slide {
   display: inline-block;
+  position: relative;
+  overflow: hidden;
   flex-direction: column;
+  height: 48px;
+  padding: 0 8px;
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .slide {
+    height: 78px;
+    padding: 0 20px;
+    transform: translateY(4px);
+  }
 }
 
 .wrapper {
@@ -336,65 +393,32 @@ section {
 }
 
 @keyframes wordSlider {
-  0% {
-    transform: translateY(0.5%);
-  }
-  12.5% {
-    transform: translateY(-12.5%);
-  }
-  25% {
-    transform: translateY(-25%);
-  }
-  37.5% {
-    transform: translateY(-37.5%);
-  }
-  50% {
-    transform: translateY(-50%);
-  }
-  62.5% {
-    transform: translateY(-62.5%);
-  }
-  75% {
-    transform: translateY(-75%);
-  }
-  87.5% {
-    transform: translateY(-87.5%);
-  }
+  0% { transform: translateY(0.5%); }
+  12.5% { transform: translateY(-12.5%); }
+  25% { transform: translateY(-25%); }
+  37.5% { transform: translateY(-37.5%); }
+  50% { transform: translateY(-50%); }
+  62.5% { transform: translateY(-62.5%); }
+  75% { transform: translateY(-75%); }
+  87.5% { transform: translateY(-87.5%); }
 }
-
-/* Hero Text slider ends */
 
 .gradient-line {
   width: 2px;
-  background: linear-gradient(
-    0deg,
-    rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
-  );
+  background: linear-gradient(0deg, rgba(69, 222, 196, 0) 0%, #62e0ff 25%, #52aeff 37.51%, #fd5c79 62.83%, #6d45ce 92.91%);
 }
 
 .gradient-edge:nth-of-type(1) {
   left: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .gradient-edge:nth-of-type(2) {
   right: 0;
-  background: linear-gradient(
-    -90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-/* marquee */
+/* Marquee */
 .marquee {
   width: 100dvw;
   overflow: hidden;
@@ -413,15 +437,11 @@ section {
   float: left;
 }
 @keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+  0% { left: 0; }
+  100% { left: -100%; }
 }
-/* marquee end */
 
+/* Glow card */
 .card {
   --start: 0;
   position: relative;

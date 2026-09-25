@@ -1,96 +1,102 @@
 {
     "Manifest": {
-        "name": "Kaento Vidal - Portafolio"
+        "name": "LUSER - Portafolio"
     },
     "navbar": {
         "home": "Inicio",
         "work": "Proyectos",
         "experience": "Experiencia",
         "skills": "Habilidades",
-        "testimonials": "Testimonios",
         "contact": "Contacto",
         "contactMe": "Contáctame"
     },
     "LocaleLayout": {
-        "title": "Kaento Vidal | Desarrollador de Software",
+        "title": "LUSER | Desarrollador de Software",
         "description": "Desarrollador full-stack especializado en Next.js, NestJS, Node.js, PostgreSQL e infraestructura en la nube.",
-        "keywords": "kaentovidal, luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "Kaento Vidal - Desarrollador Full Stack",
+        "title": "LUSER - Desarrollador Full Stack",
         "welcomeMessage": "¡Bienvenido a mi portafolio!"
     },
     "hero": {
         "line1": "Convirtiendo",
         "line2": "en Proyectos Reales",
         "line3": "que Generan Resultados",
-        "description": "Hola, soy Kaento, desarrollador full-stack radicado en Ecuador con pasión por construir software escalable.",
+        "description": "Soy LUSER, desarrollador full-stack. Construyo apps offline-first y web con Go, SvelteKit y PostgreSQL, desde la idea hasta el despliegue.",
         "cta": "Ver Mi Trabajo",
-        "words": ["Ideas", "Conceptos", "Diseños", "Código", "Ideas", "Conceptos", "Diseños", "Código"]
-    },
-    "counter": {
-        "items": [
-            { "label": "Años de Experiencia" },
-            { "label": "Clientes Satisfechos" },
-            { "label": "Proyectos Completados" },
-            { "label": "Tasa de Retención" }
+        "words": [
+            "Ideas",
+            "Conceptos",
+            "Diseños",
+            "Código",
+            "Ideas",
+            "Conceptos",
+            "Diseños",
+            "Código"
         ]
     },
     "showcase": {
-        "project1Title": "Plataforma SaaS moderna con Next.js y NestJS para soluciones empresariales escalables",
-        "project1Desc": "Una aplicación full-stack construida con Next.js, NestJS y PostgreSQL para una experiencia rápida y lista para producción.",
-        "project2Title": "Panel de Gestión de APIs REST",
-        "project3Title": "Herramienta de Automatización de Infraestructura Cloud"
+        "project1Title": "Chiro: app de finanzas personales para gastos, presupuestos y préstamos",
+        "project1Desc": "App web y Android con frontend en SvelteKit y backend en Go para registrar gastos, definir presupuestos y gestionar préstamos.",
+        "project2Title": "Contacts: SaaS de gestión de contactos con Go, SvelteKit y PostgreSQL",
+        "project3Title": "Planner: planificador de tareas con temporizadores visuales, hecho con Go, SvelteKit y PostgreSQL",
+        "deployment": "Frontend en Cloudflare · API en Vercel · BD en Supabase",
+        "inProgress": "En desarrollo"
     },
     "abilities": {
         "items": [
             {
-                "title": "Enfoque en Calidad",
-                "desc": "Entregando resultados de alta calidad con atención a cada detalle."
+                "title": "Offline-first",
+                "desc": "Apps que funcionan sin conexión y respaldan sus datos en Google Drive."
             },
             {
-                "title": "Comunicación Confiable",
-                "desc": "Manteniéndote informado en cada paso para garantizar transparencia y claridad."
+                "title": "Multiplataforma",
+                "desc": "Android, Windows, Linux y web desde un mismo producto."
             },
             {
-                "title": "Entrega a Tiempo",
-                "desc": "Asegurando que los proyectos se completen a tiempo, con calidad y atención al detalle."
+                "title": "De punta a punta",
+                "desc": "Frontend, API, base de datos y despliegue, todo a mi cargo."
             }
         ]
     },
     "experience": {
-        "title": "Experiencia Profesional",
-        "sub": "💼 Resumen de mi Carrera",
-        "responsibilities": "Responsabilidades",
+        "title": "Trayectoria de Proyectos y Aprendizaje",
+        "sub": "Cómo evolucionaron mis proyectos",
+        "responsibilities": "Qué construí",
         "cards": [
             {
-                "review": "Kaento aportó una profundidad técnica increíble a nuestra plataforma. Su trabajo en nuestro backend Node.js y la capa PostgreSQL mejoró significativamente la fiabilidad y la experiencia del desarrollador.",
-                "title": "Desarrollador Backend",
-                "date": "Enero 2023 - Presente",
+                "title": "Contacts — app de contactos offline-first",
+                "date": "Inicios de 2024",
                 "responsibilities": [
-                    "Diseñé y mantuve APIs RESTful con NestJS y PostgreSQL para servicios en producción.",
-                    "Colaboré con equipos frontend para garantizar integraciones de API sin problemas.",
-                    "Optimicé el rendimiento de consultas e implementé estrategias de caché con Redis."
+                    "Construí un gestor de contactos multiplataforma con React Native (Android) y Electron (Windows y Linux) sobre una base de datos SQLite local.",
+                    "Respaldé el archivo .db en Google Drive (solo archivos creados por la app, alcance drive.file) y lo restauré en otro dispositivo tras iniciar sesión con Google mediante Firebase.",
+                    "Funciones: importación de VCF/vCard, calendario y notificaciones de cumpleaños, filtros de búsqueda avanzados, i18n en inglés y español."
                 ]
             },
             {
-                "review": "Las contribuciones full-stack de Kaento elevaron la calidad de nuestro producto. Entregó consistentemente soluciones limpias y mantenibles en todo el stack.",
-                "title": "Desarrollador Full Stack",
-                "date": "Junio 2021 - Diciembre 2022",
+                "title": "Chiro — app de finanzas personales offline-first",
+                "date": "Finales de 2024",
                 "responsibilities": [
-                    "Construí y desplegué aplicaciones full-stack con Next.js y NestJS.",
-                    "Implementé pipelines CI/CD en servidores Debian con Docker.",
-                    "Trabajé con ingenieros backend para integrar servicios y APIs de terceros."
+                    "Reutilicé la misma arquitectura offline-first (Expo / React Native + Electron + expo-sqlite, respaldo en Google Drive, inicio de sesión con Google mediante Firebase) para gastos, presupuestos y préstamos.",
+                    "La app de Android está en pruebas cerradas en Google Play."
                 ]
             },
             {
-                "review": "La experiencia de Kaento en arquitectura cloud nos ayudó a escalar nuestra infraestructura de manera confiable. Su conocimiento de sistemas Linux y automatización nos ahorró innumerables horas.",
-                "title": "Ingeniero Cloud & DevOps",
-                "date": "Marzo 2020 - Mayo 2021",
+                "title": "Escalando a la web: Go, SvelteKit y PostgreSQL",
+                "date": "2026",
                 "responsibilities": [
-                    "Gestioné infraestructura de servidores Debian y automaticé despliegues con Ansible.",
-                    "Configuré monitoreo y alertas con Prometheus y Grafana.",
-                    "Contenerizé servicios con Docker y orchestré con Docker Compose."
+                    "Reconstruí Chiro y Contacts como aplicaciones web con un frontend en SvelteKit, una API en Go y PostgreSQL.",
+                    "Desplegué el frontend en Cloudflare, la API en Vercel y la base de datos en Supabase.",
+                    "Todos los proyectos siguen activos y mantenidos."
+                ]
+            },
+            {
+                "title": "Planner — planificador de tareas con temporizadores visuales",
+                "date": "Actualmente — en desarrollo",
+                "responsibilities": [
+                    "Planificador de tareas con temporizadores visuales, horario de clases y planificación del día.",
+                    "Construido con una API en Go (router Chi, pgx), frontend en SvelteKit 5 y PostgreSQL."
                 ]
             }
         ]
@@ -99,24 +105,17 @@
         "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",
         "sub": "🤝 Lo que Aporto",
         "items": [
-            { "name": "Desarrollador Next.js" },
-            { "name": "Desarrollador TypeScript" },
-            { "name": "Desarrollador Backend" },
-            { "name": "Ingeniero de Base de Datos" },
-            { "name": "DevOps & Linux" }
-        ]
-    },
-    "testimonials": {
-        "title": "¿Qué Dicen de Mí?",
-        "sub": "⭐ Destacados de clientes",
-        "items": [
-            { "review": "Kaento es un desarrollador excepcional. Tomó nuestros complejos requerimientos y entregó una API robusta lista para producción. Sus habilidades de resolución de problemas y atención al rendimiento son sobresalientes." },
-            { "review": "Trabajar con Kaento fue una experiencia fantástica. Modernizó nuestro backend heredado hacia una arquitectura NestJS limpia. Su dedicación a la calidad de código y buenas prácticas es inigualable." },
-            { "review": "Colaborar con Kaento fue un placer absoluto. Su profesionalismo y profundo conocimiento de TypeScript y PostgreSQL fueron evidentes durante todo el proyecto. Es el socio ideal para cualquier iniciativa de software seria." },
-            { "review": "Kaento convirtió nuestra inestable configuración de servidores en una infraestructura confiable y automatizada. Entregó todo a tiempo con documentación clara. Un trabajo fantástico en general." },
-            { "review": "La experiencia de Kaento en Next.js y despliegues en la nube es verdaderamente impresionante. Desde que renovó nuestra plataforma, el rendimiento ha mejorado significativamente y nuestros usuarios están mucho más satisfechos." },
-            { "review": "Kaento entendió nuestros requerimientos perfectamente y entregó una solución full-stack que superó las expectativas. Sus habilidades en frontend, backend y DevOps son de primera clase." }
-        ]
+            {
+                "name": "React, Next.js y React Native"
+            },
+            {
+                "name": "Node.js y NestJS"
+            },
+            {
+                "name": "Git, CI/CD y Linux"
+            }
+        ],
+        "skillsTitle": "Stack Completo"
     },
     "contact": {
         "title": "Contáctame – Conectemos",
@@ -128,27 +127,12 @@
         "messageLabel": "Tu Mensaje",
         "messagePlaceholder": "¿En qué puedo ayudarte?",
         "sending": "Enviando...",
-        "send": "Enviar Mensaje"
+        "send": "Enviar Mensaje",
+        "privacy": "Solo uso tus datos para responder tu mensaje. Se envían a través de EmailJS y no los comparto con nadie más.",
+        "success": "¡Mensaje enviado! Te responderé lo antes posible.",
+        "error": "No se pudo enviar tu mensaje. Inténtalo de nuevo o escríbeme a u3.dev@icloud.com."
     },
     "footer": {
-        "terms": "Términos y Condiciones",
         "rights": "Todos los derechos reservados."
-    },
-    "chiroDelete": {
-        "metaTitle": "Eliminar cuenta · Chiro",
-        "title": "Eliminar cuenta de Chiro",
-        "intro": "Al eliminar tu cuenta se borrarán de forma permanente y no se podrán recuperar:",
-        "item1": "Tu licencia y datos de acceso",
-        "item2": "Tu historial de uso en nuestros servidores",
-        "localNote": "Los gastos guardados localmente en tu dispositivo no se eliminan automáticamente. Podés borrarlos desde Ajustes del dispositivo → Aplicaciones → Chiro → Borrar datos.",
-        "signInHint": "Iniciá sesión con la cuenta que querés eliminar:",
-        "signInBtn": "Iniciar sesión con Google",
-        "account": "Cuenta: {email}",
-        "deleteBtn": "Eliminar mi cuenta",
-        "deleting": "Eliminando…",
-        "confirm": "¿Estás seguro? Esta acción eliminará tu cuenta y todos tus datos de forma permanente. No se puede deshacer.",
-        "doneTitle": "Cuenta eliminada",
-        "doneText": "Tu cuenta y todos tus datos en nuestros servidores fueron eliminados permanentemente.",
-        "errorGeneric": "Ocurrió un error al eliminar la cuenta. Intentá de nuevo."
     }
 }

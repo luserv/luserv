@@ -1,96 +1,102 @@
 {
     "Manifest": {
-        "name": "Kaento Vidal - Portfolio"
+        "name": "LUSER - Portfolio"
     },
     "navbar": {
         "home": "Home",
         "work": "Work",
         "experience": "Experience",
         "skills": "Skills",
-        "testimonials": "Testimonials",
         "contact": "Contact",
         "contactMe": "Contact me"
     },
     "LocaleLayout": {
-        "title": "Kaento Vidal | Software Developer",
+        "title": "LUSER | Software Developer",
         "description": "Full-stack developer specializing in Next.js, NestJS, Node.js, PostgreSQL, and cloud infrastructure.",
-        "keywords": "kaentovidal, luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "Kaento Vidal - Full Stack Developer",
+        "title": "LUSER - Full Stack Developer",
         "welcomeMessage": "Welcome to my portfolio!"
     },
     "hero": {
         "line1": "Shaping",
         "line2": "into Real Projects",
         "line3": "that Deliver Results",
-        "description": "Hi, I'm Kaento, a full-stack developer based in Ecuador with a passion for building scalable software.",
+        "description": "I am LUSER, a full-stack developer. I build offline-first and web apps with Go, SvelteKit and PostgreSQL, from idea to deployment.",
         "cta": "See My Work",
-        "words": ["Ideas", "Concepts", "Designs", "Code", "Ideas", "Concepts", "Designs", "Code"]
-    },
-    "counter": {
-        "items": [
-            { "label": "Years of Experience" },
-            { "label": "Satisfied Clients" },
-            { "label": "Completed Projects" },
-            { "label": "Client Retention Rate" }
+        "words": [
+            "Ideas",
+            "Concepts",
+            "Designs",
+            "Code",
+            "Ideas",
+            "Concepts",
+            "Designs",
+            "Code"
         ]
     },
     "showcase": {
-        "project1Title": "Modern SaaS Platform Built with Next.js & NestJS for Scalable Business Solutions",
-        "project1Desc": "A full-stack application built with Next.js, NestJS, and PostgreSQL for a fast, production-ready experience.",
-        "project2Title": "REST API Management Dashboard",
-        "project3Title": "Cloud Infrastructure Automation Tool"
+        "project1Title": "Chiro: Personal Finance App for Expenses, Budgets and Loans",
+        "project1Desc": "A web and Android app with a SvelteKit frontend and a Go backend to track spending, set budgets and manage loans.",
+        "project2Title": "Contacts: Contact Management SaaS with Go, SvelteKit and PostgreSQL",
+        "project3Title": "Planner: task planner with visual countdown timers, built with Go, SvelteKit and PostgreSQL",
+        "deployment": "Frontend on Cloudflare · API on Vercel · DB on Supabase",
+        "inProgress": "In progress"
     },
     "abilities": {
         "items": [
             {
-                "title": "Quality Focus",
-                "desc": "Delivering high-quality results while maintaining attention to every detail."
+                "title": "Offline-first",
+                "desc": "Apps that work without a connection and back up their data to Google Drive."
             },
             {
-                "title": "Reliable Communication",
-                "desc": "Keeping you updated at every step to ensure transparency and clarity."
+                "title": "Cross-platform",
+                "desc": "Android, Windows, Linux and the web from one product."
             },
             {
-                "title": "On-Time Delivery",
-                "desc": "Making sure projects are completed on schedule, with quality & attention to detail."
+                "title": "End-to-end",
+                "desc": "Frontend, API, database and deployment, all owned by me."
             }
         ]
     },
     "experience": {
-        "title": "Professional Work Experience",
-        "sub": "💼 My Career Overview",
-        "responsibilities": "Responsibilities",
+        "title": "Projects & Learning Journey",
+        "sub": "How my projects evolved",
+        "responsibilities": "What I built",
         "cards": [
             {
-                "review": "Kaento brought incredible technical depth to our platform. His work on our Node.js backend and PostgreSQL layer significantly improved reliability and developer experience.",
-                "title": "Backend Developer",
-                "date": "January 2023 - Present",
+                "title": "Contacts — offline-first contacts app",
+                "date": "Early 2024",
                 "responsibilities": [
-                    "Designed and maintained RESTful APIs with NestJS and PostgreSQL for production services.",
-                    "Collaborated with frontend teams to ensure seamless API integrations.",
-                    "Optimized query performance and implemented caching strategies using Redis."
+                    "Built a cross-platform contacts manager with React Native (Android) and Electron (Windows and Linux) on a local SQLite database.",
+                    "Backed up the .db file to Google Drive (app-created files only, drive.file scope) and restored it on another device after Google Sign-In through Firebase.",
+                    "Features: VCF/vCard import, birthday calendar and notifications, advanced search filters, English/Spanish i18n."
                 ]
             },
             {
-                "review": "Kaento's full-stack contributions elevated our product quality. He consistently delivered clean, maintainable solutions across the entire stack.",
-                "title": "Full Stack Developer",
-                "date": "June 2021 - December 2022",
+                "title": "Chiro — offline-first personal finance app",
+                "date": "Late 2024",
                 "responsibilities": [
-                    "Built and deployed full-stack applications using Next.js and NestJS.",
-                    "Implemented CI/CD pipelines on Debian-based servers with Docker.",
-                    "Worked with backend engineers to integrate third-party services and APIs."
+                    "Reused the same offline-first architecture (Expo / React Native + Electron + expo-sqlite, Google Drive backup, Firebase Google Sign-In) for expenses, budgets and loans.",
+                    "The Android app is in closed testing on Google Play."
                 ]
             },
             {
-                "review": "Kaento's expertise in cloud architecture helped us scale our infrastructure reliably. His knowledge of Linux systems and automation saved us countless hours.",
-                "title": "Cloud & DevOps Engineer",
-                "date": "March 2020 - May 2021",
+                "title": "Scaling to the web: Go, SvelteKit and PostgreSQL",
+                "date": "2026",
                 "responsibilities": [
-                    "Managed Debian-based server infrastructure and automated deployments with Ansible.",
-                    "Set up monitoring and alerting with Prometheus and Grafana.",
-                    "Containerized services using Docker and orchestrated with Docker Compose."
+                    "Rebuilt Chiro and Contacts as web apps with a SvelteKit frontend, a Go API and PostgreSQL.",
+                    "Deployed the frontend on Cloudflare, the API on Vercel and the database on Supabase.",
+                    "All projects remain active and maintained."
+                ]
+            },
+            {
+                "title": "Planner — task planner with visual countdown timers",
+                "date": "Now — in progress",
+                "responsibilities": [
+                    "Task planner with visual countdown timers, class schedules and day planning.",
+                    "Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL."
                 ]
             }
         ]
@@ -99,24 +105,17 @@
         "title": "How I Can Contribute & My Key Skills",
         "sub": "🤝 What I Bring to the Table",
         "items": [
-            { "name": "Next.js Developer" },
-            { "name": "TypeScript Developer" },
-            { "name": "Backend Developer" },
-            { "name": "Database Engineer" },
-            { "name": "DevOps & Linux" }
-        ]
-    },
-    "testimonials": {
-        "title": "What People Say About Me?",
-        "sub": "⭐ Customer feedback highlights",
-        "items": [
-            { "review": "Kaento is an exceptional developer. He took our complex requirements and delivered a robust, production-ready API. His problem-solving skills and attention to performance are outstanding." },
-            { "review": "Working with Kaento was a fantastic experience. He modernized our legacy backend into a clean NestJS architecture. His dedication to code quality and best practices is unmatched." },
-            { "review": "Collaborating with Kaento was an absolute pleasure. His professionalism and deep knowledge of TypeScript and PostgreSQL were evident throughout the project. He is the ideal partner for any serious software initiative." },
-            { "review": "Kaento turned our unstable server setup into a reliable, automated infrastructure. He delivered everything on time with clear documentation. Fantastic work overall." },
-            { "review": "Kaento's expertise in Next.js and cloud deployments is truly impressive. Since he revamped our platform, performance has significantly improved and our users are much happier." },
-            { "review": "Kaento understood our requirements perfectly and delivered a full-stack solution that exceeded expectations. His skills across frontend, backend, and DevOps are top-notch." }
-        ]
+            {
+                "name": "React, Next.js & React Native"
+            },
+            {
+                "name": "Node.js & NestJS"
+            },
+            {
+                "name": "Git, CI/CD & Linux"
+            }
+        ],
+        "skillsTitle": "Full Stack"
     },
     "contact": {
         "title": "Get in Touch – Let's Connect",
@@ -128,27 +127,12 @@
         "messageLabel": "Your Message",
         "messagePlaceholder": "How can I help you?",
         "sending": "Sending...",
-        "send": "Send Message"
+        "send": "Send Message",
+        "privacy": "I only use your details to reply to your message. They are sent through EmailJS and never shared with anyone else.",
+        "success": "Message sent! I will get back to you as soon as possible.",
+        "error": "Your message could not be sent. Please try again or email me at u3.dev@icloud.com."
     },
     "footer": {
-        "terms": "Terms & Conditions",
         "rights": "All rights reserved."
-    },
-    "chiroDelete": {
-        "metaTitle": "Delete account · Chiro",
-        "title": "Delete your Chiro account",
-        "intro": "Deleting your account will permanently and irreversibly remove:",
-        "item1": "Your license and sign-in data",
-        "item2": "Your usage history on our servers",
-        "localNote": "Expenses stored locally on your device are not deleted automatically. You can remove them from your device Settings → Apps → Chiro → Clear data.",
-        "signInHint": "Sign in with the account you want to delete:",
-        "signInBtn": "Sign in with Google",
-        "account": "Account: {email}",
-        "deleteBtn": "Delete my account",
-        "deleting": "Deleting…",
-        "confirm": "Are you sure? This will permanently delete your account and all your data. This cannot be undone.",
-        "doneTitle": "Account deleted",
-        "doneText": "Your account and all your data on our servers have been permanently deleted.",
-        "errorGeneric": "Something went wrong while deleting your account. Please try again."
     }
 }
