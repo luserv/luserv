@@ -128,7 +128,9 @@
         "messagePlaceholder": "How can I help you?",
         "sending": "Sending...",
         "send": "Send Message",
-        "privacy": "I only use your details to reply to your message. They are sent through EmailJS and never shared with anyone else."
+        "privacy": "I only use your details to reply to your message. They are sent through EmailJS and never shared with anyone else.",
+        "success": "Message sent! I will get back to you as soon as possible.",
+        "error": "Your message could not be sent. Please try again or email me at u3.dev@icloud.com."
     },
     "footer": {
         "rights": "All rights reserved."

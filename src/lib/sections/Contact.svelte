@@ -5,10 +5,12 @@
   import emailjs from '@emailjs/browser';
   import TitleHeader from '$components/TitleHeader.svelte';
   import { Canvas } from '@threlte/core';
+  import { CircleCheck, CircleAlert } from '@lucide/svelte';
 
   let HeroExperience: any = $state(null);
   let formEl: HTMLFormElement;
   let loading = $state(false);
+  let status: 'idle' | 'success' | 'error' = $state('idle');
   let form = $state({ name: '', email: '', message: '' });
 
   function handleChange(e: Event) {
@@ -19,16 +21,23 @@
   async function handleSubmit(e: Event) {
     e.preventDefault();
     loading = true;
+    status = 'idle';
     try {
+      const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY } = import.meta.env;
+      if (!VITE_EMAILJS_SERVICE_ID || !VITE_EMAILJS_TEMPLATE_ID || !VITE_EMAILJS_PUBLIC_KEY) {
+        throw new Error('EmailJS environment variables are not configured');
+      }
       await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        VITE_EMAILJS_SERVICE_ID,
+        VITE_EMAILJS_TEMPLATE_ID,
         formEl,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        VITE_EMAILJS_PUBLIC_KEY
       );
       form = { name: '', email: '', message: '' };
+      status = 'success';
     } catch (error) {
       console.error('EmailJS Error:', error);
+      status = 'error';
     } finally {
       loading = false;
     }
@@ -85,7 +94,7 @@
                 required
               ></textarea>
             </div>
-            <button type="submit">
+            <button type="submit" disabled={loading}>
               <div class="cta-button group">
                 <div class="bg-circle"></div>
                 <p class="text">{loading ? t('contact.sending') : t('contact.send')}</p>
@@ -94,6 +103,19 @@
                 </div>
               </div>
             </button>
+            <div aria-live="polite">
+              {#if status === 'success'}
+                <p class="flex items-start gap-2 rounded-lg border border-green-500/40 bg-green-500/10 p-3 text-green-300">
+                  <CircleCheck size={20} class="mt-0.5 shrink-0" aria-hidden="true" />
+                  <span>{t('contact.success')}</span>
+                </p>
+              {:else if status === 'error'}
+                <p role="alert" class="flex items-start gap-2 rounded-lg border border-red-500/40 bg-red-500/10 p-3 text-red-300">
+                  <CircleAlert size={20} class="mt-0.5 shrink-0" aria-hidden="true" />
+                  <span>{t('contact.error')}</span>
+                </p>
+              {/if}
+            </div>
             <p class="text-white-50 text-sm">{t('contact.privacy')}</p>
           </form>
         </div>
