@@ -94,6 +94,7 @@
                 </div>
               </div>
             </button>
+            <p class="text-white-50 text-sm">{t('contact.privacy')}</p>
           </form>
         </div>
       </div>

@@ -127,7 +127,8 @@
         "messageLabel": "Tu Mensaje",
         "messagePlaceholder": "¿En qué puedo ayudarte?",
         "sending": "Enviando...",
-        "send": "Enviar Mensaje"
+        "send": "Enviar Mensaje",
+        "privacy": "Solo uso tus datos para responder tu mensaje. Se envían a través de EmailJS y no los comparto con nadie más."
     },
     "footer": {
         "rights": "Todos los derechos reservados."
