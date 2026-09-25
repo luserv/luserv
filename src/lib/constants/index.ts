@@ -103,11 +103,11 @@ export const expCards = [
   }
 ];
 
-export const socialImgs = [
-  { name: 'insta', imgPath: '/images/insta.png' },
-  { name: 'fb', imgPath: '/images/fb.png' },
-  { name: 'x', imgPath: '/images/x.png' },
-  { name: 'linkedin', imgPath: '/images/linkedin.png' }
+export const socialLinks = [
+  { name: 'GitHub', icon: 'siGithub', href: 'https://github.com/luserv' },
+  { name: 'Instagram', icon: 'siInstagram', href: 'https://www.instagram.com/luser.v2/' },
+  { name: 'Facebook', icon: 'siFacebook', href: 'https://www.facebook.com/Luserv' },
+  { name: 'Email', icon: 'mail', href: 'mailto:u3.dev@icloud.com' }
 ];
 
 // Chiro lives on its own site; update here when it moves to a custom domain.
