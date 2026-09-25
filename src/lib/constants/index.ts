@@ -38,6 +38,8 @@ export const skillChips = [
   { name: 'NestJS', icon: 'siNestjs', color: '#E0234E' },
   { name: 'PostgreSQL', icon: 'siPostgresql', color: '#4169E1' },
   { name: 'React Native', icon: 'siReact', color: '#61DAFB' },
+  { name: 'Python', icon: 'siPython', color: '#3776AB' },
+  { name: 'Docker', icon: 'siDocker', color: '#2496ED' },
   { name: 'Supabase', icon: 'siSupabase', color: '#3FCF8E' },
   { name: 'Cloudflare', icon: 'siCloudflare', color: '#F38020' },
   { name: 'Vercel', icon: 'siVercel', color: '#FFFFFF' }
@@ -87,6 +89,25 @@ export const expCards = [
     responsibilities: [
       'Solved 9 Frontend Mentor challenges across newbie, junior and intermediate levels, from a QR code component to a todo app.',
       'Built with Next.js 15, React 19, TypeScript and Tailwind CSS 4, following each design closely and responsive down to mobile.'
+    ]
+  },
+  {
+    imgPaths: [],
+    stackIcons: [
+      { name: 'Python', icon: 'siPython', color: '#3776AB' },
+      { name: 'FastAPI', icon: 'siFastapi', color: '#009688' },
+      { name: 'Next.js', icon: 'siNextdotjs', color: '#FFFFFF' },
+      { name: 'PostgreSQL', icon: 'siPostgresql', color: '#4169E1' },
+      { name: 'Docker', icon: 'siDocker', color: '#2496ED' }
+    ],
+    icon: 'siDocker',
+    color: '#2496ED',
+    title: 'grapi — Instagram follower analyzer',
+    date: 'June 2026',
+    responsibilities: [
+      'Analyzes Instagram followers and following and downloads galleries and stories, built on the instagrapi library.',
+      'FastAPI backend with PostgreSQL (Alembic migrations) caching profiles and run history, plus a Next.js 15 frontend.',
+      'Runs the whole stack with a single docker compose command, with live sync for development.'
     ]
   },
   {

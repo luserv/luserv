@@ -91,6 +91,15 @@
                 ]
             },
             {
+                "title": "grapi — analizador de seguidores de Instagram",
+                "date": "Junio de 2026",
+                "responsibilities": [
+                    "Analiza seguidores y seguidos de Instagram y descarga galerías e historias, usando la librería instagrapi.",
+                    "Backend en FastAPI con PostgreSQL (migraciones con Alembic) que cachea perfiles e historial de ejecuciones, y frontend en Next.js 15.",
+                    "Levanta todo el stack con un solo comando de docker compose, con sincronización en vivo para desarrollo."
+                ]
+            },
+            {
                 "title": "Escalando a la web: Go, SvelteKit y PostgreSQL",
                 "date": "Julio de 2026",
                 "responsibilities": [

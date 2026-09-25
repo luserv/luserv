@@ -65,11 +65,25 @@
           <div class="exp-card-wrapper">
             <div class="xl:w-2/6">
               <GlowCard {card}>
-                <div class="flex flex-col gap-4">
-                  {#each card.imgPaths as imgPath (imgPath)}
-                    <img src={imgPath} alt={card.title} />
-                  {/each}
-                </div>
+                {#if card.imgPaths.length}
+                  <div class="flex flex-col gap-4">
+                    {#each card.imgPaths as imgPath (imgPath)}
+                      <img src={imgPath} alt={card.title} />
+                    {/each}
+                  </div>
+                {:else if card.stackIcons}
+                  <ul class="grid grid-cols-3 gap-4 md:grid-cols-5 xl:grid-cols-3" aria-label={card.title}>
+                    {#each card.stackIcons as tech (tech.name)}
+                      {@const brand = brandIcons[tech.icon]}
+                      <li class="flex flex-col items-center gap-2 text-sm text-white-50">
+                        {#if brand}
+                          <svg viewBox="0 0 24 24" width="40" height="40" fill={tech.color} aria-hidden="true"><path d={brand.path} /></svg>
+                        {/if}
+                        <span>{tech.name}</span>
+                      </li>
+                    {/each}
+                  </ul>
+                {/if}
               </GlowCard>
             </div>
             <div class="xl:w-4/6">

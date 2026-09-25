@@ -91,6 +91,15 @@
                 ]
             },
             {
+                "title": "grapi — Instagram follower analyzer",
+                "date": "June 2026",
+                "responsibilities": [
+                    "Analyzes Instagram followers and following and downloads galleries and stories, built on the instagrapi library.",
+                    "FastAPI backend with PostgreSQL (Alembic migrations) caching profiles and run history, plus a Next.js 15 frontend.",
+                    "Runs the whole stack with a single docker compose command, with live sync for development."
+                ]
+            },
+            {
                 "title": "Scaling to the web: Go, SvelteKit and PostgreSQL",
                 "date": "July 2026",
                 "responsibilities": [
