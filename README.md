@@ -18,7 +18,6 @@
 
 <div align="center">
   <h3> ¡Contact Me! 🤝 </h3>
-  <a href="https://www.linkedin.com/in/kaento/"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width=40px height=40px alt="LINKEDIN"> </a>
   <a href="mailto:u3.dev@icloud.com"> <img src="https://img.icons8.com/?size=100&id=xLIkjgcmFOsC&format=png&color=000000" height=40px> </a>
 </div>
 
