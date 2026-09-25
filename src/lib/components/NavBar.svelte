@@ -1,9 +1,11 @@
 <script lang="ts">
-  import { t, getLocale, toggleLocale } from '$lib/i18n';
+  import { t, getLocale, setLocale } from '$lib/i18n';
+  import { locales } from '$lib/i18n/locales';
   import { navLinks } from '$lib/constants';
-  import { onMount } from 'svelte';
+  import { Languages } from '@lucide/svelte';
 
-  let scrolled = $state(false);
+  let scrollY = $state(0);
+  const scrolled = $derived(scrollY > 10);
 
   const navKeys: Record<string, string> = {
     Work: 'work',
@@ -11,6 +13,8 @@
     Skills: 'skills'
   };
 </script>
+
+<svelte:window bind:scrollY />
 
 <header class="navbar {scrolled ? 'scrolled' : 'not-scrolled'}">
   <div class="inner">
@@ -29,15 +33,21 @@
       </ul>
     </nav>
 
-    <div class="flex items-center gap-4">
-      <button
-        type="button"
-        onclick={toggleLocale}
-        aria-label="Change language"
-        class="bg-black-200 text-white-50 font-semibold px-3 py-1 rounded-lg border border-black-50 hover:bg-black-50 transition-colors duration-300 cursor-pointer"
-      >
-        {getLocale() === 'en-US' ? 'ES' : 'EN'}
-      </button>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <Languages size={18} class="lang-icon" aria-hidden="true" />
+      <div class="lang-track">
+        <span class="lang-pill {getLocale() === 'es-ES' ? 'is-right' : ''}" aria-hidden="true"></span>
+        {#each locales as { code, label } (code)}
+          <button
+            type="button"
+            class="lang-option {getLocale() === code ? 'is-active' : ''}"
+            aria-pressed={getLocale() === code}
+            onclick={() => setLocale(code)}
+          >
+            {label}
+          </button>
+        {/each}
+      </div>
     </div>
   </div>
 </header>
