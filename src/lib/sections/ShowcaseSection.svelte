@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { t } from '$lib/i18n';
-  import { CHIRO_URL, CONTACTS_URL, deploymentStack } from '$constants';
+  import { CHIRO_URL, CONTACTS_URL, PLANNER_URL, deploymentStack } from '$constants';
   import { brandIcons } from '$lib/icons';
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -85,11 +85,25 @@
         </div>
 
         <div bind:this={project3El}>
-          <div class="image-wrapper bg-[#FFE7EB]">
-            <img src="/images/projects/planner.webp" alt="Planner dashboard" />
-          </div>
-          <h2>{t('showcase.project3Title')}</h2>
-          <p class="deployment-text mt-3">{t('showcase.inProgress')}</p>
+          <a href={PLANNER_URL} target="_blank" rel="noopener noreferrer">
+            <div class="image-wrapper bg-[#FFE7EB]">
+              <img src="/images/projects/planner.webp" alt="Planner dashboard" />
+            </div>
+            <h2>{t('showcase.project3Title')}</h2>
+            <div class="deployment-badges">
+              {#each deploymentStack as chip (chip.name)}
+                {@const icon = brandIcons[chip.icon]}
+                {#if icon}
+                  <span class="deployment-icon" title={chip.name}>
+                    <svg viewBox="0 0 24 24" role="img" aria-label={chip.name} width="16" height="16" style={`fill: ${chip.color}`}>
+                      <path d={icon.path} />
+                    </svg>
+                  </span>
+                {/if}
+              {/each}
+              <span class="deployment-text">{t('showcase.deployment')}</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>

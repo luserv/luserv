@@ -138,10 +138,11 @@ export const expCards = [
   },
   {
     imgPaths: ['/images/projects/planner.webp'],
+    url: 'https://planner-etr.pages.dev',
     icon: 'siGo',
     color: '#00ADD8',
     title: 'Planner — task planner with visual countdown timers',
-    date: 'September 2026 — in progress',
+    date: 'September 2026',
     responsibilities: [
       'Task planner with visual countdown timers, class schedules and day planning.',
       'Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL.'
@@ -159,3 +160,4 @@ export const socialLinks = [
 // Chiro lives on its own site; update here when it moves to a custom domain.
 export const CHIRO_URL = 'https://chiro-4rs.pages.dev';
 export const CONTACTS_URL = 'https://contacts-9m7.pages.dev';
+export const PLANNER_URL = 'https://planner-etr.pages.dev';

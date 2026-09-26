@@ -41,8 +41,7 @@
         "project1Desc": "A web and Android app with a SvelteKit frontend and a Go backend to track spending, set budgets and manage loans.",
         "project2Title": "Contacts: Contact Management SaaS with Go, SvelteKit and PostgreSQL",
         "project3Title": "Planner: task planner with visual countdown timers, built with Go, SvelteKit and PostgreSQL",
-        "deployment": "Frontend on Cloudflare · API on Vercel · DB on Supabase",
-        "inProgress": "In progress"
+        "deployment": "Frontend on Cloudflare · API on Vercel · DB on Supabase"
     },
     "abilities": {
         "items": [
@@ -119,7 +118,7 @@
             },
             {
                 "title": "Planner — task planner with visual countdown timers",
-                "date": "September 2026 — in progress",
+                "date": "September 2026",
                 "responsibilities": [
                     "Task planner with visual countdown timers, class schedules and day planning.",
                     "Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL."

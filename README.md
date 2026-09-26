@@ -13,7 +13,7 @@
 
 - I build products end to end: frontend, API, database and deployment.
 - I started with offline-first apps (React Native + Electron + SQLite) and scaled them to the web with Go, SvelteKit and PostgreSQL.
-- Currently building **Planner**, a task planner with visual countdown timers.
+- Latest project: [**Planner**](https://planner-etr.pages.dev), a task planner with visual countdown timers.
 
 ## Projects
 
@@ -24,9 +24,9 @@
 | [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app) | 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)) | Next.js 15, React 19, TypeScript, Tailwind CSS 4 | Live |
 | [**tims**](https://timacas.vercel.app) | Official website for the IT Engineering program at ESPOCH Morona Santiago; admin CMS in development | Next.js 15, TypeScript, PostgreSQL, Prisma, NextAuth v5, next-intl, Cloudinary | Live · CMS in progress |
 | [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
-| **Planner** | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | In progress |
+| [**Planner**](https://planner-etr.pages.dev) | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | Live |
 
-Chiro and Contacts deploy the frontend on Cloudflare, the API on Vercel and the database on Supabase.
+Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel and the database on Supabase.
 
 ## Journey
 
@@ -36,7 +36,7 @@ Chiro and Contacts deploy the frontend on Cloudflare, the API on Vercel and the 
 - **August 2025 — tims.** Official website for the IT Engineering program at ESPOCH Morona Santiago, with an admin CMS in development.
 - **June 2026 — grapi.** Instagram follower analyzer with FastAPI, PostgreSQL, Next.js and Docker Compose.
 - **July 2026 — Scaling to the web.** Both apps rebuilt with a SvelteKit frontend, a Go API and PostgreSQL.
-- **September 2026 — Planner (in progress).** Go, SvelteKit 5 and PostgreSQL.
+- **September 2026 — Planner.** Go, SvelteKit 5 and PostgreSQL.
 
 ## Tech stack
 
