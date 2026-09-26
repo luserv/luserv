@@ -23,6 +23,7 @@
 | [**Contacts**](https://contacts-9m7.pages.dev) | Contact management SaaS | SvelteKit, Go, PostgreSQL | Live |
 | [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app) | 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)) | Next.js 15, React 19, TypeScript, Tailwind CSS 4 | Live |
 | [**tims**](https://timacas.vercel.app) | Official website for the IT Engineering program at ESPOCH Morona Santiago; admin CMS in development | Next.js 15, TypeScript, PostgreSQL, Prisma, NextAuth v5, next-intl, Cloudinary | Live · CMS in progress |
+| [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login) | IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and transfer history | NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext) | Live |
 | [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
 | [**Planner**](https://planner-etr.pages.dev) | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | Live |
 
@@ -34,6 +35,7 @@ Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel
 - **Late 2024 — Chiro, offline-first.** Same architecture with Expo, applied to personal finance.
 - **July 2025 — Frontend Mentor challenges.** 9 UI challenges with Next.js, React, TypeScript and Tailwind CSS.
 - **August 2025 — tims.** Official website for the IT Engineering program at ESPOCH Morona Santiago, with an admin CMS in development.
+- **March 2026 — Parque Informático.** IT asset management with NestJS, Next.js and PostgreSQL; frontend on Cloudflare Workers.
 - **June 2026 — grapi.** Instagram follower analyzer with FastAPI, PostgreSQL, Next.js and Docker Compose.
 - **July 2026 — Scaling to the web.** Both apps rebuilt with a SvelteKit frontend, a Go API and PostgreSQL.
 - **September 2026 — Planner.** Go, SvelteKit 5 and PostgreSQL.

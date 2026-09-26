@@ -106,6 +106,19 @@ export const expCards = [
     ]
   },
   {
+    imgPaths: ['/images/projects/informaticpark.webp'],
+    url: 'https://informaticpark.systempwa.workers.dev/login',
+    icon: 'siNestjs',
+    color: '#E0234E',
+    title: 'Parque Informático — IT asset management',
+    date: 'March 2026',
+    responsibilities: [
+      'IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and users, with a full transfer history and public lookup pages.',
+      'Built with a NestJS 11 API (Prisma, JWT auth, Swagger), a Next.js 16 frontend with Leaflet location picking, and PostgreSQL.',
+      'Frontend on Cloudflare Workers via OpenNext, API on Vercel and database on Supabase.'
+    ]
+  },
+  {
     imgPaths: [],
     stackIcons: [
       { name: 'Python', icon: 'siPython', color: '#3776AB' },

@@ -99,6 +99,15 @@
                 ]
             },
             {
+                "title": "Parque Informático — gestión de activos informáticos",
+                "date": "Marzo de 2026",
+                "responsibilities": [
+                    "Sistema de gestión de activos informáticos para el GPMS en Morona Santiago: activos, custodios, ubicaciones y usuarios, con historial completo de traspasos y páginas de consulta pública.",
+                    "Construido con una API en NestJS 11 (Prisma, autenticación JWT, Swagger), frontend en Next.js 16 con selección de ubicación en Leaflet, y PostgreSQL.",
+                    "Frontend en Cloudflare Workers con OpenNext, API en Vercel y base de datos en Supabase."
+                ]
+            },
+            {
                 "title": "grapi — analizador de seguidores de Instagram",
                 "date": "Junio de 2026",
                 "responsibilities": [
