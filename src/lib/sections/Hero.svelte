@@ -3,10 +3,19 @@
   import { t, tRaw } from '$lib/i18n';
   import gsap from 'gsap';
   import Button from '$components/Button.svelte';
-  import { words as wordImgPaths } from '$lib/constants';
+  import { words as wordImgPaths, socialLinks, CHIRO_URL, CONTACTS_URL, PLANNER_URL } from '$lib/constants';
+  import { ArrowUpRight } from '@lucide/svelte';
   import { NO_REDUCED_MOTION_QUERY } from '$lib/motion';
 
   const wordTexts = $derived(tRaw('hero.words') as string[]);
+  const emailHref = socialLinks.find((l) => l.name === 'Email')?.href ?? '';
+  const proofUrls = [CHIRO_URL, CONTACTS_URL, PLANNER_URL];
+  const proofItems = $derived(
+    ((tRaw('hero.proof') as Array<{ name: string; status: string }>) ?? []).map((item, i) => ({
+      ...item,
+      href: proofUrls[i]
+    }))
+  );
   const words = $derived(wordImgPaths.map((w, i) => ({ ...w, text: wordTexts[i] })));
 
   onMount(() => {
@@ -28,7 +37,7 @@
   </div>
 
   <div class="hero-layout">
-    <header class="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+    <header class="grid w-full items-center gap-12 px-5 md:px-20 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-20">
       <div class="flex flex-col gap-7">
         <div class="hero-text">
           <h1>
@@ -56,8 +65,26 @@
           {t('hero.description')}
         </p>
 
-        <Button text={t('hero.cta')} className="md:w-80 md:h-16 w-60 h-12" id="work" />
+        <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
+          <Button text={t('hero.cta')} className="md:w-80 md:h-16 w-60 h-12" id="work" />
+          <a href={emailHref} class="hero-email">{t('hero.contactCta')}</a>
+        </div>
       </div>
+
+      <aside class="hero-proof" aria-labelledby="hero-proof-title">
+        <h2 id="hero-proof-title">{t('hero.proofTitle')}</h2>
+        <ul>
+          {#each proofItems as item (item.name)}
+            <li>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
+                <span class="name">{item.name}</span>
+                <span class="status">{item.status}</span>
+                <ArrowUpRight size={20} aria-hidden="true" />
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </aside>
     </header>
   </div>
 </section>

@@ -34,6 +34,22 @@
             "Conceptos",
             "Diseños",
             "Código"
+        ],
+        "contactCta": "Escríbeme",
+        "proofTitle": "En vivo",
+        "proof": [
+            {
+                "name": "Chiro",
+                "status": "En vivo · Android en pruebas cerradas"
+            },
+            {
+                "name": "Contacts",
+                "status": "En vivo"
+            },
+            {
+                "name": "Planner",
+                "status": "En vivo"
+            }
         ]
     },
     "showcase": {

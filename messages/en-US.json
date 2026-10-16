@@ -34,6 +34,22 @@
             "Concepts",
             "Designs",
             "Code"
+        ],
+        "contactCta": "Email me",
+        "proofTitle": "Live now",
+        "proof": [
+            {
+                "name": "Chiro",
+                "status": "Live · Android in closed testing"
+            },
+            {
+                "name": "Contacts",
+                "status": "Live"
+            },
+            {
+                "name": "Planner",
+                "status": "Live"
+            }
         ]
     },
     "showcase": {

@@ -80,13 +80,45 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:min-h-dvh min-h-[80vh] flex xl:items-center items-start justify-center;
   }
 
   .hero-text {
     @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
     img {
       @apply size-8 md:size-10 object-contain;
+    }
+  }
+
+  .hero-email {
+    @apply relative z-10 min-h-11 inline-flex items-center border-b border-white-50 text-white-50 text-base md:text-lg transition-colors duration-300 hover:text-white hover:border-white;
+  }
+
+  .hero-proof {
+    @apply relative z-10 w-full max-w-xl;
+
+    h2 {
+      @apply mb-4 text-sm font-medium text-white-50;
+    }
+
+    ul {
+      @apply flex flex-col rounded-xl border border-black-50 bg-black-100;
+    }
+
+    li + li {
+      @apply border-t border-black-50;
+    }
+
+    a {
+      @apply grid grid-cols-[auto_1fr_auto] items-center gap-x-4 px-5 py-4 text-white transition-colors duration-300 hover:bg-black-50;
+    }
+
+    .name {
+      @apply text-lg font-semibold;
+    }
+
+    .status {
+      @apply text-sm text-white-50 md:text-base;
     }
   }
 
