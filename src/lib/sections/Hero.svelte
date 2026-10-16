@@ -4,16 +4,21 @@
   import gsap from 'gsap';
   import Button from '$components/Button.svelte';
   import { words as wordImgPaths } from '$lib/constants';
+  import { NO_REDUCED_MOTION_QUERY } from '$lib/motion';
 
   const wordTexts = $derived(tRaw('hero.words') as string[]);
   const words = $derived(wordImgPaths.map((w, i) => ({ ...w, text: wordTexts[i] })));
 
   onMount(() => {
-    gsap.fromTo(
-      '.hero-text h1',
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power2.inOut' }
-    );
+    const mm = gsap.matchMedia();
+    mm.add(NO_REDUCED_MOTION_QUERY, () => {
+      gsap.fromTo(
+        '.hero-text h1',
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power2.out' }
+      );
+    });
+    return () => mm.revert();
   });
 </script>
 

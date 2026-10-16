@@ -18,7 +18,7 @@
     <div class="bg-circle"></div>
     <p class="text">{text}</p>
     <div class="arrow-wrapper">
-      <img src="/images/arrow-down.svg" alt="arrow" />
+      <img src="/images/arrow-down.svg" alt="" aria-hidden="true" />
     </div>
   </div>
 </a>

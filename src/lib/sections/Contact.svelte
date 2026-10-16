@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { browser } from '$app/environment';
   import { t } from '$lib/i18n';
   import emailjs from '@emailjs/browser';
   import TitleHeader from '$components/TitleHeader.svelte';
   import { Canvas } from '@threlte/core';
+  import { inview } from '$lib/inview';
   import { CircleCheck, CircleAlert } from '@lucide/svelte';
 
   let HeroExperience: any = $state(null);
@@ -43,12 +42,11 @@
     }
   }
 
-  onMount(async () => {
-    if (browser) {
-      const mod = await import('$components/models/hero_models/HeroExperience.svelte');
+  function loadScene() {
+    import('$components/models/hero_models/HeroExperience.svelte').then((mod) => {
       HeroExperience = mod.default;
-    }
-  });
+    });
+  }
 </script>
 
 <section id="contact" class="flex-center section-padding">
@@ -99,7 +97,7 @@
                 <div class="bg-circle"></div>
                 <p class="text">{loading ? t('contact.sending') : t('contact.send')}</p>
                 <div class="arrow-wrapper">
-                  <img src="/images/arrow-down.svg" alt="arrow" />
+                  <img src="/images/arrow-down.svg" alt="" aria-hidden="true" />
                 </div>
               </div>
             </button>
@@ -121,7 +119,7 @@
         </div>
       </div>
       <div class="xl:col-span-7 min-h-96">
-        <div class="bg-[#0a0a1a] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+        <div use:inview={loadScene} class="bg-[#0a0a1a] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
           {#if HeroExperience}
             <Canvas>
               <HeroExperience />

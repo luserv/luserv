@@ -1,6 +1,7 @@
 <script lang="ts">
   import { T, useTask } from '@threlte/core';
   import * as THREE from 'three';
+  import { prefersReducedMotion } from '$lib/motion';
 
   let { count = 200 }: { count?: number } = $props();
 
@@ -32,8 +33,10 @@
 
   let pointsRef: THREE.Points | undefined = $state();
 
+  const reduceMotion = prefersReducedMotion();
+
   useTask(() => {
-    if (!pointsRef) return;
+    if (reduceMotion || !pointsRef) return;
     const posAttr = pointsRef.geometry.attributes.position as THREE.BufferAttribute | undefined;
     if (!posAttr?.array) return;
     const arr = posAttr.array as Float32Array;

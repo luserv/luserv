@@ -1,27 +1,31 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { t, tRaw } from '$lib/i18n';
-  import { browser } from '$app/environment';
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
   import TitleHeader from '$components/TitleHeader.svelte';
   import { techStackIcons, skillChips } from '$lib/constants';
   import { brandIcons } from '$lib/icons';
   import { Canvas } from '@threlte/core';
+  import { NO_REDUCED_MOTION_QUERY } from '$lib/motion';
+  import { inview } from '$lib/inview';
 
   gsap.registerPlugin(ScrollTrigger);
 
   let TechIconCardExperience: any = $state(null);
 
+  function loadScene() {
+    import('$components/models/tech_logos/TechIconCardExperience.svelte').then((mod) => {
+      TechIconCardExperience = mod.default;
+    });
+  }
+
   const items = $derived((tRaw('techStack.items') as Array<{ name: string }>) ?? []);
   const icons = $derived(techStackIcons.map((icon, i) => ({ ...icon, name: items[i]?.name ?? icon.name })));
 
-  onMount(async () => {
-    if (browser) {
-      const mod = await import('$components/models/tech_logos/TechIconCardExperience.svelte');
-      TechIconCardExperience = mod.default;
-    }
-
+  onMount(() => {
+    const mm = gsap.matchMedia();
+    mm.add(NO_REDUCED_MOTION_QUERY, () => {
     gsap.fromTo(
       '.tech-card',
       { y: 50, opacity: 0 },
@@ -29,7 +33,7 @@
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'power2.out',
         stagger: 0.2,
         scrollTrigger: { trigger: '#skills', start: 'top center' }
       }
@@ -42,18 +46,20 @@
         y: 0,
         opacity: 1,
         duration: 0.6,
-        ease: 'power2.inOut',
+        ease: 'power2.out',
         stagger: 0.08,
         scrollTrigger: { trigger: '.skill-chip-grid', start: 'top bottom-=50' }
       }
     );
+    });
+    return () => mm.revert();
   });
 </script>
 
 <div id="skills" class="flex-center section-padding">
   <div class="w-full h-full md:px-10 px-5">
     <TitleHeader title={t('techStack.title')} sub={t('techStack.sub')} />
-    <div class="tech-grid">
+    <div class="tech-grid" use:inview={loadScene}>
       {#each icons as icon (icon.name)}
         <div class="card-border tech-card overflow-hidden group rounded-2xl">
           <div class="tech-card-content">

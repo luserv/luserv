@@ -7,7 +7,7 @@
 
 html,
 body {
-  width: 100dvw;
+  width: 100%;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
 }
 
 @theme {
@@ -110,7 +110,7 @@ section {
     }
 
     .inner {
-      @apply mx-auto flex items-center justify-between;
+      @apply mx-auto flex flex-wrap items-center justify-between gap-y-1 lg:flex-nowrap;
     }
 
     .lang-switch {
@@ -141,14 +141,18 @@ section {
       @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
     }
 
-    nav.desktop {
-      @apply hidden lg:flex items-center;
+    nav.primary {
+      @apply order-3 flex w-full items-center lg:order-none lg:w-auto;
 
       ul {
-        @apply flex space-x-8;
+        @apply flex w-full justify-between gap-x-4 lg:w-auto lg:justify-start lg:gap-x-8;
 
         li {
           @apply text-white-50 relative;
+
+          a {
+            @apply flex min-h-11 items-center;
+          }
 
           span {
             @apply transition-colors duration-300 hover:text-white;
@@ -257,7 +261,7 @@ section {
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {
-        @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+        @apply size-5 xl:-translate-y-32 translate-y-0 group-hover:translate-y-0 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)];
       }
     }
   }
@@ -389,7 +393,7 @@ section {
 .wrapper {
   display: flex;
   flex-direction: column;
-  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  animation: wordSlider 21s 2 cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
 @keyframes wordSlider {
@@ -405,7 +409,7 @@ section {
 
 .gradient-line {
   width: 2px;
-  background: linear-gradient(0deg, rgba(69, 222, 196, 0) 0%, #62e0ff 25%, #52aeff 37.51%, #fd5c79 62.83%, #6d45ce 92.91%);
+  background: linear-gradient(0deg, transparent 0%, var(--color-white-50) 40%, var(--color-white-50) 100%);
 }
 
 .gradient-edge:nth-of-type(1) {
@@ -420,7 +424,7 @@ section {
 
 /* Marquee */
 .marquee {
-  width: 100dvw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -489,4 +493,42 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+/* Reduced motion: stop loops, show static state */
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+
+  .wrapper,
+  .marquee-box {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Keyboard focus: one Frost Ink ring for every interactive element */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-white-50);
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+}
+
+form input:focus-visible,
+form textarea:focus-visible {
+  outline-offset: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }

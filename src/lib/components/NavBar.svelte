@@ -20,7 +20,7 @@
   <div class="inner">
     <a href="#hero" class="logo">LUSER</a>
 
-    <nav class="desktop">
+    <nav class="primary" aria-label="Primary">
       <ul>
         {#each navLinks as { link, name } (name)}
           <li class="group">

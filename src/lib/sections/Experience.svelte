@@ -8,6 +8,7 @@
   import { ExternalLink } from '@lucide/svelte';
   import TitleHeader from '$components/TitleHeader.svelte';
   import GlowCard from '$components/GlowCard.svelte';
+  import { NO_REDUCED_MOTION_QUERY } from '$lib/motion';
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -21,13 +22,15 @@
   );
 
   onMount(() => {
+    const mm = gsap.matchMedia();
+    mm.add(NO_REDUCED_MOTION_QUERY, () => {
     gsap.utils.toArray<HTMLElement>('.timeline-card').forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
         transformOrigin: 'left left',
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'power2.out',
         scrollTrigger: { trigger: card, start: 'top 80%' }
       });
     });
@@ -50,10 +53,12 @@
         opacity: 0,
         xPercent: 0,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'power2.out',
         scrollTrigger: { trigger: text, start: 'top 60%' }
       });
     });
+    });
+    return () => mm.revert();
   });
 </script>
 
@@ -69,7 +74,7 @@
                 {#if card.imgPaths.length}
                   <div class="flex flex-col gap-4">
                     {#each card.imgPaths as imgPath (imgPath)}
-                      <img src={imgPath} alt={card.title} />
+                      <img loading="lazy" decoding="async" src={imgPath} alt={card.title} />
                     {/each}
                   </div>
                 {:else if card.stackIcons}
