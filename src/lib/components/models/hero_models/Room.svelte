@@ -1,20 +1,20 @@
 <script lang="ts">
   import { T } from '@threlte/core';
-  import { useDraco, useGltf, useTexture } from '@threlte/extras';
+  import { useDraco, useGltf } from '@threlte/extras';
   import * as THREE from 'three';
 
-  const matcapTexture = useTexture('/images/textures/mat1.png');
 
   // useGltf builds the nodes/materials graph (like drei's useGLTF); a plain GLTFLoader does not.
   const gltf = useGltf('/models/optimized-room.glb', { dracoLoader: useDraco() });
   const nodes = $derived($gltf?.nodes);
   const materials = $derived($gltf?.materials);
 
-  const curtainMaterial = new THREE.MeshPhongMaterial({ color: '#d90429' });
-  const tableMaterial = new THREE.MeshPhongMaterial({ color: '#582f0e' });
+  const curtainMaterial = new THREE.MeshPhongMaterial({ color: '#839cb5' });
+  const tableMaterial = new THREE.MeshPhongMaterial({ color: '#3a3a46' });
   const radiatorMaterial = new THREE.MeshPhongMaterial({ color: '#fff' });
   const compMaterial = new THREE.MeshStandardMaterial({ color: '#fff' });
-  const pillowMaterial = new THREE.MeshPhongMaterial({ color: '#8338ec' });
+  const pillowMaterial = new THREE.MeshPhongMaterial({ color: '#d9ecff' });
+  const wallMaterial = new THREE.MeshStandardMaterial({ color: '#282732', roughness: 0.9 });
   const chairMaterial = new THREE.MeshPhongMaterial({ color: '#000' });
 </script>
 
@@ -24,7 +24,7 @@
       <T.Mesh geometry={nodes._________6_blinn1_0.geometry} material={curtainMaterial} />
     {/if}
     {#if nodes.body1_blinn1_0}
-      <T.Mesh geometry={nodes.body1_blinn1_0.geometry} material={new THREE.MeshPhongMaterial({ map: $matcapTexture })} />
+      <T.Mesh geometry={nodes.body1_blinn1_0.geometry} material={wallMaterial} />
     {/if}
     {#if nodes.cabin_blinn1_0}
       <T.Mesh geometry={nodes.cabin_blinn1_0.geometry} material={tableMaterial} />

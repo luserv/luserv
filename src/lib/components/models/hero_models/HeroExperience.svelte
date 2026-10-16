@@ -21,7 +21,7 @@
 </script>
 
 <T.PerspectiveCamera makeDefault position={[0, 0, 15]} fov={45} />
-<T.AmbientLight intensity={0.2} color="#1a1a40" />
+<T.AmbientLight intensity={0.2} color="#2d2d38" />
 
 <OrbitControls
   enablePan={false}

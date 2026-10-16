@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="xl:col-span-7 min-h-96">
-        <div use:inview={loadScene} class="bg-[#0a0a1a] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+        <div use:inview={loadScene} class="bg-black-100 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
           {#if HeroExperience}
             <Canvas>
               <HeroExperience />
