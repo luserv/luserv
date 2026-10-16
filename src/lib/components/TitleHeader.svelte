@@ -7,6 +7,6 @@
     <p>{sub}</p>
   </div>
   <div>
-    <h1 class="font-semibold md:text-5xl text-3xl text-center">{title}</h1>
+    <h2 class="font-semibold md:text-5xl text-3xl text-center">{title}</h2>
   </div>
 </div>

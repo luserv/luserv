@@ -154,8 +154,8 @@
         "showMore": "Ver más"
     },
     "techStack": {
-        "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",
-        "sub": "🤝 Lo que Aporto",
+        "title": "Habilidades y stack",
+        "sub": "Con qué trabajo",
         "items": [
             {
                 "name": "React, Next.js y React Native"
@@ -170,16 +170,16 @@
         "skillsTitle": "Stack Completo"
     },
     "contact": {
-        "title": "Contáctame – Conectemos",
-        "sub": "💬 ¿Tienes preguntas o ideas? ¡Hablemos! 🚀",
-        "nameLabel": "Tu nombre",
-        "namePlaceholder": "¿Cómo te llamas?",
-        "emailLabel": "Tu Email",
-        "emailPlaceholder": "¿Cuál es tu correo?",
-        "messageLabel": "Tu Mensaje",
-        "messagePlaceholder": "¿En qué puedo ayudarte?",
-        "sending": "Enviando...",
-        "send": "Enviar Mensaje",
+        "title": "Contáctame",
+        "sub": "¿Buscas a alguien o tienes un proyecto? Escríbeme.",
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "emailLabel": "Correo",
+        "emailPlaceholder": "tu@empresa.com",
+        "messageLabel": "Mensaje",
+        "messagePlaceholder": "¿De qué te gustaría hablar?",
+        "sending": "Enviando…",
+        "send": "Enviar mensaje",
         "privacy": "Solo uso tus datos para responder tu mensaje. Se envían a través de EmailJS y no los comparto con nadie más.",
         "success": "¡Mensaje enviado! Te responderé lo antes posible.",
         "error": "No se pudo enviar tu mensaje. Inténtalo de nuevo o escríbeme a u3.dev@icloud.com."
