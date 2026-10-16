@@ -150,7 +150,8 @@
                 ]
             }
         ],
-        "visitSite": "Visit site"
+        "visitSite": "Visit site",
+        "showMore": "Show more"
     },
     "techStack": {
         "title": "How I Can Contribute & My Key Skills",

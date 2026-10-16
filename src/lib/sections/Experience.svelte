@@ -66,7 +66,7 @@
   <div class="w-full h-full md:px-20 px-5">
     <TitleHeader title={t('experience.title')} sub={t('experience.sub')} />
     <div class="mt-32 relative">
-      <div class="relative z-50 xl:space-y-32 space-y-10">
+      <div class="relative z-50 xl:space-y-20 space-y-10">
         {#each cards as card (card.title)}
           <div class="exp-card-wrapper">
             <div class="xl:w-2/6">
@@ -107,7 +107,7 @@
                     {/if}
                   </div>
                   <div>
-                    <h1 class="font-semibold text-3xl">{card.title}</h1>
+                    <h3 class="font-semibold text-2xl md:text-3xl">{card.title}</h3>
                     <p class="my-5 text-white-50">{card.date}</p>
                     {#if card.url}
                       <a
@@ -122,10 +122,18 @@
                     {/if}
                     <p class="text-[#839CB5] italic">{t('experience.responsibilities')}</p>
                     <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                      {#each card.responsibilities as responsibility, index}
-                        <li class="text-lg break-words">{responsibility}</li>
-                      {/each}
+                      <li class="text-lg break-words">{card.responsibilities[0]}</li>
                     </ul>
+                    {#if card.responsibilities.length > 1}
+                      <details class="exp-details" ontoggle={() => ScrollTrigger.refresh()}>
+                        <summary>{t('experience.showMore')} ({card.responsibilities.length - 1})</summary>
+                        <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                          {#each card.responsibilities.slice(1) as responsibility}
+                            <li class="text-lg break-words">{responsibility}</li>
+                          {/each}
+                        </ul>
+                      </details>
+                    {/if}
                   </div>
                 </div>
               </div>

@@ -150,7 +150,8 @@
                 ]
             }
         ],
-        "visitSite": "Ver sitio"
+        "visitSite": "Ver sitio",
+        "showMore": "Ver más"
     },
     "techStack": {
         "title": "Cómo Puedo Contribuir y Mis Habilidades Clave",
