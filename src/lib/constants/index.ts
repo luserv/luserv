@@ -160,6 +160,19 @@ export const expCards = [
       'Task planner with visual countdown timers, class schedules and day planning.',
       'Built with a Go API (Chi router, pgx), a SvelteKit 5 frontend and PostgreSQL.'
     ]
+  },
+  {
+    imgPaths: ['/images/projects/cleanclassroom.webp'],
+    url: 'https://clean-classroom-reporter.pages.dev',
+    icon: 'siSvelte',
+    color: '#FF3E00',
+    title: 'Clean Classroom Reporter — classroom cleaning reports',
+    date: 'October 2026',
+    responsibilities: [
+      'Micro app where class presidents report whether a classroom is clean or dirty by scanning the QR code on its door, with a photo required as evidence when it is dirty.',
+      'Admin view with the full report history, evidence photos and the previous report for each dirty one; photos are compressed in the browser to under 1 MB before upload.',
+      'Built with SvelteKit (Svelte 5, TypeScript) on Cloudflare Pages and Supabase (Auth, Postgres with RLS, private Storage). The evidence rule and report history are enforced in the database, and the UI is available in Spanish and English.'
+    ]
   }
 ];
 

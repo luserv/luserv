@@ -13,7 +13,7 @@
 
 - I build products end to end: frontend, API, database and deployment.
 - I started with offline-first apps (React Native + Electron + SQLite) and scaled them to the web with Go, SvelteKit and PostgreSQL.
-- Latest project: [**Planner**](https://planner-etr.pages.dev), a task planner with visual countdown timers.
+- Latest project: [**Clean Classroom Reporter**](https://clean-classroom-reporter.pages.dev), classroom cleaning reports with photo evidence.
 
 ## Projects
 
@@ -26,6 +26,7 @@
 | [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login) | IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and transfer history | NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext) | Live |
 | [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
 | [**Planner**](https://planner-etr.pages.dev) | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | Live |
+| [**Clean Classroom Reporter**](https://clean-classroom-reporter.pages.dev) | Class presidents report classroom cleanliness by QR code, with photo evidence and an admin history ([source](https://github.com/c0mv4ty/clean-classroom-reporter)) | SvelteKit 5, Supabase (Auth, Postgres RLS, Storage) · Cloudflare Pages | Live |
 
 Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel and the database on Supabase.
 
@@ -39,6 +40,7 @@ Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel
 - **June 2026 — grapi.** Instagram follower analyzer with FastAPI, PostgreSQL, Next.js and Docker Compose.
 - **July 2026 — Scaling to the web.** Both apps rebuilt with a SvelteKit frontend, a Go API and PostgreSQL.
 - **September 2026 — Planner.** Go, SvelteKit 5 and PostgreSQL.
+- **October 2026 — Clean Classroom Reporter.** SvelteKit 5 and Supabase on Cloudflare Pages.
 
 ## Tech stack
 

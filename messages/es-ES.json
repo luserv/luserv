@@ -148,6 +148,15 @@
                     "Planificador de tareas con temporizadores visuales, horario de clases y planificación del día.",
                     "Construido con una API en Go (router Chi, pgx), frontend en SvelteKit 5 y PostgreSQL."
                 ]
+            },
+            {
+                "title": "Clean Classroom Reporter — reportes de limpieza de aulas",
+                "date": "Octubre de 2026",
+                "responsibilities": [
+                    "Micro app donde los presidentes de curso reportan si un aula está limpia o sucia escaneando el código QR de la puerta, con foto obligatoria como evidencia cuando está sucia.",
+                    "Vista de administración con el historial completo de reportes, las fotos de evidencia y el reporte anterior de cada uno sucio; las fotos se comprimen en el navegador a menos de 1 MB antes de subirse.",
+                    "Construida con SvelteKit (Svelte 5, TypeScript) en Cloudflare Pages y Supabase (Auth, Postgres con RLS, Storage privado). La regla de evidencia y el historial se aplican en la base de datos, y la interfaz está en español e inglés."
+                ]
             }
         ],
         "visitSite": "Ver sitio",
