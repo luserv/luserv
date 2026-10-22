@@ -138,6 +138,23 @@ export const expCards = [
     ]
   },
   {
+    imgPaths: [],
+    stackIcons: [
+      { name: 'PHP (iTop)', icon: 'siPhp', color: '#777BB4' },
+      { name: 'MariaDB', icon: 'siMariadb', color: '#FFFFFF' },
+      { name: 'Docker', icon: 'siDocker', color: '#2496ED' }
+    ],
+    icon: 'siDocker',
+    color: '#2496ED',
+    title: 'service-desk — iTop IT service management',
+    date: 'June 2026',
+    responsibilities: [
+      'IT service management portal based on iTop 3.2.1, deployed with Docker Compose: an Apache and PHP container and a MariaDB 10.6 database, both on persistent volumes.',
+      'Configured the ITIL modules (incidents, service requests, changes, problems and CMDB), a service catalog and role-based users for service desk agents, support agents, a problem manager, a change supervisor and portal users.',
+      'Documented the ticket flow from portal request to resolution, problem and change management, and troubleshooting for common iTop errors.'
+    ]
+  },
+  {
     imgPaths: ['/images/projects/chiro.webp', '/images/projects/contacts.webp'],
     icon: 'siGo',
     color: '#00ADD8',

@@ -133,6 +133,15 @@
                 ]
             },
             {
+                "title": "service-desk — iTop IT service management",
+                "date": "June 2026",
+                "responsibilities": [
+                    "IT service management portal based on iTop 3.2.1, deployed with Docker Compose: an Apache and PHP container and a MariaDB 10.6 database, both on persistent volumes.",
+                    "Configured the ITIL modules (incidents, service requests, changes, problems and CMDB), a service catalog and role-based users for service desk agents, support agents, a problem manager, a change supervisor and portal users.",
+                    "Documented the ticket flow from portal request to resolution, problem and change management, and troubleshooting for common iTop errors."
+                ]
+            },
+            {
                 "title": "Scaling to the web: Go, SvelteKit and PostgreSQL",
                 "date": "July 2026",
                 "responsibilities": [

@@ -14,7 +14,9 @@ import {
   siFacebook,
   siDocker,
   siFastapi,
-  siPython
+  siPython,
+  siMariadb,
+  siPhp
 } from 'simple-icons';
 
 // Lookup used by skillChips / deploymentStack entries (see $constants), which
@@ -35,5 +37,7 @@ export const brandIcons: Record<string, { path: string; title: string }> = {
   siFacebook,
   siDocker,
   siFastapi,
-  siPython
+  siPython,
+  siMariadb,
+  siPhp
 };

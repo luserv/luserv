@@ -133,6 +133,15 @@
                 ]
             },
             {
+                "title": "service-desk — gestión de servicios TI con iTop",
+                "date": "Junio de 2026",
+                "responsibilities": [
+                    "Portal de gestión de servicios TI basado en iTop 3.2.1, desplegado con Docker Compose: un contenedor con Apache y PHP y una base de datos MariaDB 10.6, ambos con volúmenes persistentes.",
+                    "Configuré los módulos ITIL (incidentes, solicitudes de servicio, cambios, problemas y CMDB), un catálogo de servicios y usuarios por rol para agentes de service desk, agentes de soporte, un gestor de problemas, un supervisor de cambios y usuarios del portal.",
+                    "Documenté el flujo de tickets desde la solicitud en el portal hasta la resolución, la gestión de problemas y cambios, y la solución de errores comunes de iTop."
+                ]
+            },
+            {
                 "title": "Escalando a la web: Go, SvelteKit y PostgreSQL",
                 "date": "Julio de 2026",
                 "responsibilities": [
