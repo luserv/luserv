@@ -162,7 +162,7 @@ export const expCards = [
     ]
   },
   {
-    imgPaths: ['/images/projects/cleanclassroom.webp', '/images/projects/cleanclassroom-report.webp'],
+    imgPaths: ['/images/projects/cleanclassroom.webp'],
     url: 'https://clean-classroom-reporter.pages.dev',
     icon: 'siSvelte',
     color: '#FF3E00',
