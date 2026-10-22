@@ -90,6 +90,23 @@
                 ]
             },
             {
+                "title": "server-cats — PHP site on Google Cloud Dataproc",
+                "date": "February 2024",
+                "responsibilities": [
+                    "Small PHP web app with login, home and logout pages served by Apache, backed by a MySQL users table.",
+                    "Docker Compose stack with PHP 7.4 and Apache, MySQL 5.7 and MongoDB 4.2, plus install scripts for Docker and the containers.",
+                    "Deployed on a Google Cloud Dataproc cluster created with gcloud, with a Cloud Storage bucket and the full setup documented step by step in the README."
+                ]
+            },
+            {
+                "title": "rtmp-gcloud — live streaming server",
+                "date": "February 2024",
+                "responsibilities": [
+                    "Docker Compose stack for live streaming: an nginx-rtmp server behind nginx-proxy, with automatic Let's Encrypt certificates.",
+                    "First attempt at running it on Google Cloud, with a script to install Docker and the configuration for the proxy and the RTMP server."
+                ]
+            },
+            {
                 "title": "Chiro — offline-first personal finance app",
                 "date": "Late 2024",
                 "responsibilities": [

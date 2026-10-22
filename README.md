@@ -21,6 +21,8 @@
 | --- | --- | --- | --- |
 | [**Chiro**](https://chiro-4rs.pages.dev) | Personal finance app for expenses, budgets and loans | SvelteKit, Go, PostgreSQL · Android app with Expo / React Native | Live · Android in closed testing on Google Play |
 | [**Contacts**](https://contacts-9m7.pages.dev) | Contact management SaaS | SvelteKit, Go, PostgreSQL | Live |
+| [**server-cats**](https://github.com/luserv/server-cats) | PHP login site deployed on a Google Cloud Dataproc cluster with Docker Compose | PHP 7.4, MySQL, MongoDB, Docker Compose, Google Cloud | Source available |
+| [**rtmp-gcloud**](https://github.com/luserv/rtmp-gcloud) | Live streaming server with nginx-rtmp, nginx-proxy and automatic HTTPS | nginx, Docker Compose, Let's Encrypt, Google Cloud | Source available |
 | [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app) | 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)) | Next.js 15, React 19, TypeScript, Tailwind CSS 4 | Live |
 | [**tims**](https://timacas.vercel.app) | Official website for the IT Engineering program at ESPOCH Morona Santiago; admin CMS in development | Next.js 15, TypeScript, PostgreSQL, Prisma, NextAuth v5, next-intl, Cloudinary | Live · CMS in progress |
 | [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login) | IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and transfer history | NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext) | Live |
@@ -35,6 +37,8 @@ Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel
 ## Journey
 
 - **Early 2024 — Contacts, offline-first.** React Native (Android) and Electron (Windows, Linux) on SQLite. The `.db` file backs up to Google Drive and restores on another device after Google Sign-In through Firebase.
+- **February 2024 — server-cats.** PHP site with MySQL and MongoDB on Docker Compose, deployed on Google Cloud Dataproc.
+- **February 2024 — rtmp-gcloud.** nginx-rtmp live streaming behind nginx-proxy with Let's Encrypt, first tried on Google Cloud.
 - **Late 2024 — Chiro, offline-first.** Same architecture with Expo, applied to personal finance.
 - **July 2025 — Frontend Mentor challenges.** 9 UI challenges with Next.js, React, TypeScript and Tailwind CSS.
 - **August 2025 — tims.** Official website for the IT Engineering program at ESPOCH Morona Santiago, with an admin CMS in development.

@@ -20,7 +20,12 @@ import {
   siEspressif,
   siHomeassistant,
   siMqtt,
-  siCplusplus
+  siCplusplus,
+  siMysql,
+  siMongodb,
+  siGooglecloud,
+  siNginx,
+  siLetsencrypt
 } from 'simple-icons';
 
 // Lookup used by skillChips / deploymentStack entries (see $constants), which
@@ -47,5 +52,10 @@ export const brandIcons: Record<string, { path: string; title: string }> = {
   siEspressif,
   siHomeassistant,
   siMqtt,
-  siCplusplus
+  siCplusplus,
+  siMysql,
+  siMongodb,
+  siGooglecloud,
+  siNginx,
+  siLetsencrypt
 };

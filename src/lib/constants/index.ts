@@ -70,6 +70,42 @@ export const expCards = [
     ]
   },
   {
+    imgPaths: [],
+    stackIcons: [
+      { name: 'PHP', icon: 'siPhp', color: '#777BB4' },
+      { name: 'MySQL', icon: 'siMysql', color: '#4479A1' },
+      { name: 'MongoDB', icon: 'siMongodb', color: '#47A248' },
+      { name: 'Docker', icon: 'siDocker', color: '#2496ED' },
+      { name: 'Google Cloud', icon: 'siGooglecloud', color: '#4285F4' }
+    ],
+    icon: 'siGooglecloud',
+    color: '#4285F4',
+    title: 'server-cats — PHP site on Google Cloud Dataproc',
+    date: 'February 2024',
+    responsibilities: [
+      'Small PHP web app with login, home and logout pages served by Apache, backed by a MySQL users table.',
+      'Docker Compose stack with PHP 7.4 and Apache, MySQL 5.7 and MongoDB 4.2, plus install scripts for Docker and the containers.',
+      'Deployed on a Google Cloud Dataproc cluster created with gcloud, with a Cloud Storage bucket and the full setup documented step by step in the README.'
+    ]
+  },
+  {
+    imgPaths: [],
+    stackIcons: [
+      { name: 'nginx', icon: 'siNginx', color: '#009639' },
+      { name: "Let's Encrypt", icon: 'siLetsencrypt', color: '#FFFFFF' },
+      { name: 'Docker', icon: 'siDocker', color: '#2496ED' },
+      { name: 'Google Cloud', icon: 'siGooglecloud', color: '#4285F4' }
+    ],
+    icon: 'siNginx',
+    color: '#009639',
+    title: 'rtmp-gcloud — live streaming server',
+    date: 'February 2024',
+    responsibilities: [
+      'Docker Compose stack for live streaming: an nginx-rtmp server behind nginx-proxy, with automatic Let\'s Encrypt certificates.',
+      'First attempt at running it on Google Cloud, with a script to install Docker and the configuration for the proxy and the RTMP server.'
+    ]
+  },
+  {
     imgPaths: ['/images/projects/chiro.webp'],
     icon: 'siReact',
     color: '#61DAFB',
