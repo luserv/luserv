@@ -26,6 +26,7 @@
 | [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login) | IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and transfer history | NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext) | Live |
 | [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
 | [**service-desk**](https://github.com/luserv/service-desk) | IT service management portal on iTop with ITIL modules, service catalog and role-based users | iTop 3.2, PHP, MariaDB, Docker Compose | Source available |
+| [**Smart safe**](https://github.com/luserv/home-asisstant) | Keypad-controlled safe with temperature sensing, MQTT telemetry and Home Assistant automations | ESP32, C++, MQTT, Home Assistant, Docker Compose | Source available |
 | [**Planner**](https://planner-etr.pages.dev) | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | Live |
 | [**Clean Classroom Reporter**](https://clean-classroom-reporter.pages.dev) | Class presidents report classroom cleanliness by QR code, with photo evidence and an admin history ([source](https://github.com/c0mv4ty/clean-classroom-reporter)) | SvelteKit 5, Supabase (Auth, Postgres RLS, Storage) · Cloudflare Pages | Live |
 
@@ -40,6 +41,7 @@ Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel
 - **March 2026 — Parque Informático.** IT asset management with NestJS, Next.js and PostgreSQL; frontend on Cloudflare Workers.
 - **June 2026 — grapi.** Instagram follower analyzer with FastAPI, PostgreSQL, Next.js and Docker Compose.
 - **June 2026 — service-desk.** iTop service management with ITIL modules, deployed with Docker Compose and MariaDB.
+- **June 2026 — Smart safe.** ESP32 firmware publishing over MQTT to Home Assistant running in Docker.
 - **July 2026 — Scaling to the web.** Both apps rebuilt with a SvelteKit frontend, a Go API and PostgreSQL.
 - **September 2026 — Planner.** Go, SvelteKit 5 and PostgreSQL.
 - **October 2026 — Clean Classroom Reporter.** SvelteKit 5 and Supabase on Cloudflare Pages.

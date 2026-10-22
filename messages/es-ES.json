@@ -142,6 +142,15 @@
                 ]
             },
             {
+                "title": "Caja fuerte inteligente — ESP32 y Home Assistant",
+                "date": "Junio de 2026",
+                "responsibilities": [
+                    "Caja fuerte controlada por teclado, construida sobre un ESP32 con teclado matricial 4x4, un sensor DHT11 de temperatura y humedad, una pantalla LCD I2C, un LED y un buzzer; tres PIN incorrectos activan una alarma.",
+                    "El firmware en C++ publica el estado del cerrojo, la temperatura, la humedad y las alarmas por MQTT hacia Mosquitto, y acepta los comandos LOCK y UNLOCK.",
+                    "Mosquitto y Home Assistant corren en Docker; los sensores se registran solos con MQTT Discovery y las automatizaciones anuncian los eventos con un Alexa Echo Dot."
+                ]
+            },
+            {
                 "title": "Escalando a la web: Go, SvelteKit y PostgreSQL",
                 "date": "Julio de 2026",
                 "responsibilities": [

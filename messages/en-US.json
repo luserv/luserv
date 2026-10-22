@@ -142,6 +142,15 @@
                 ]
             },
             {
+                "title": "Smart safe — ESP32 and Home Assistant",
+                "date": "June 2026",
+                "responsibilities": [
+                    "Keypad-controlled safe built on an ESP32 with a 4x4 matrix keypad, a DHT11 temperature and humidity sensor, an I2C LCD, an LED and a buzzer; three wrong PINs trigger an alarm.",
+                    "C++ firmware publishes the lock state, temperature, humidity and alarms over MQTT to Mosquitto, and accepts LOCK and UNLOCK commands.",
+                    "Mosquitto and Home Assistant run in Docker; the sensors register themselves through MQTT Discovery and automations announce events through an Alexa Echo Dot."
+                ]
+            },
+            {
                 "title": "Scaling to the web: Go, SvelteKit and PostgreSQL",
                 "date": "July 2026",
                 "responsibilities": [

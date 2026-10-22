@@ -155,6 +155,25 @@ export const expCards = [
     ]
   },
   {
+    imgPaths: [],
+    stackIcons: [
+      { name: 'C++', icon: 'siCplusplus', color: '#659AD2' },
+      { name: 'ESP32', icon: 'siEspressif', color: '#E7352C' },
+      { name: 'MQTT', icon: 'siMqtt', color: '#FFFFFF' },
+      { name: 'Home Assistant', icon: 'siHomeassistant', color: '#18BCF2' },
+      { name: 'Docker', icon: 'siDocker', color: '#2496ED' }
+    ],
+    icon: 'siHomeassistant',
+    color: '#18BCF2',
+    title: 'Smart safe — ESP32 and Home Assistant',
+    date: 'June 2026',
+    responsibilities: [
+      'Keypad-controlled safe built on an ESP32 with a 4x4 matrix keypad, a DHT11 temperature and humidity sensor, an I2C LCD, an LED and a buzzer; three wrong PINs trigger an alarm.',
+      'C++ firmware publishes the lock state, temperature, humidity and alarms over MQTT to Mosquitto, and accepts LOCK and UNLOCK commands.',
+      'Mosquitto and Home Assistant run in Docker; the sensors register themselves through MQTT Discovery and automations announce events through an Alexa Echo Dot.'
+    ]
+  },
+  {
     imgPaths: ['/images/projects/chiro.webp', '/images/projects/contacts.webp'],
     icon: 'siGo',
     color: '#00ADD8',
