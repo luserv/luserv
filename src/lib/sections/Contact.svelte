@@ -2,11 +2,8 @@
   import { t } from '$lib/i18n';
   import emailjs from '@emailjs/browser';
   import TitleHeader from '$components/TitleHeader.svelte';
-  import { Canvas } from '@threlte/core';
-  import { inview } from '$lib/inview';
   import { CircleCheck, CircleAlert } from '@lucide/svelte';
 
-  let HeroExperience: any = $state(null);
   let formEl: HTMLFormElement;
   let loading = $state(false);
   let status: 'idle' | 'success' | 'error' = $state('idle');
@@ -41,19 +38,13 @@
       loading = false;
     }
   }
-
-  function loadScene() {
-    import('$components/models/hero_models/HeroExperience.svelte').then((mod) => {
-      HeroExperience = mod.default;
-    });
-  }
 </script>
 
 <section id="contact" class="flex-center section-padding">
   <div class="w-full h-full md:px-10 px-5">
     <TitleHeader title={t('contact.title')} sub={t('contact.sub')} />
-    <div class="grid-12-cols mt-16">
-      <div class="xl:col-span-5">
+    <div class="mt-16 mx-auto w-full max-w-2xl">
+      <div>
         <div class="flex-center card-border rounded-xl p-10">
           <form bind:this={formEl} onsubmit={handleSubmit} class="w-full flex flex-col gap-7">
             <div>
@@ -116,15 +107,6 @@
             </div>
             <p class="text-white-50 text-sm">{t('contact.privacy')}</p>
           </form>
-        </div>
-      </div>
-      <div class="xl:col-span-7 min-h-96">
-        <div use:inview={loadScene} class="bg-black-100 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-          {#if HeroExperience}
-            <Canvas>
-              <HeroExperience />
-            </Canvas>
-          {/if}
         </div>
       </div>
     </div>
