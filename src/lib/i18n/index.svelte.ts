@@ -13,17 +13,9 @@ export function setLocale(locale: Locale) {
   }
 }
 
-export function initLocale(cookieHeader: string | null) {
-  if (cookieHeader) {
-    const match = cookieHeader.split(';').map(s => s.trim()).find(s => s.startsWith('locale='));
-    if (match) {
-      const val = match.split('=')[1];
-      if (isValidLocale(val)) {
-        _locale = val;
-        return;
-      }
-    }
-  }
+// Applies the locale resolved on the server (cookie, then Accept-Language).
+export function initLocale(locale: string) {
+  if (isValidLocale(locale)) _locale = locale;
 }
 
 export function toggleLocale() {

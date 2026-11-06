@@ -1,14 +1,13 @@
 <script lang="ts">
   import { initLocale } from '$lib/i18n';
-  import { onMount } from 'svelte';
   import { page } from '$app/state';
   import '../styles/globals.css';
 
   let { data, children } = $props();
 
-  onMount(() => {
-    initLocale(data.cookie);
-  });
+  // Runs during SSR too, so the first paint is already in the detected language.
+  // svelte-ignore state_referenced_locally
+  initLocale(data.locale);
 </script>
 
 <svelte:head>
