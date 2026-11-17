@@ -35,18 +35,32 @@
       });
     });
 
-    gsap.to('.timeline', {
-      transformOrigin: 'bottom bottom',
-      ease: 'power1.inOut',
-      scrollTrigger: {
-        trigger: '.timeline',
-        start: 'top center',
-        end: '70% center',
-        onUpdate: (self) => {
-          gsap.to('.timeline', { scaleY: 1 - self.progress });
-        }
-      }
-    });
+    // The line is revealed by a page-colored mask that shrinks upward. Size it so the
+    // tip of the line always sits at the vertical center of the viewport, whatever
+    // the section height is (it changes with images, fonts and expanded details).
+    // Every card renders its own wrapper and mask, all stacked on the same spot, so
+    // they must all shrink together or the leftover ones keep covering the line.
+    const masks = gsap.utils.toArray<HTMLElement>('.timeline');
+    const wrapper = document.querySelector<HTMLElement>('.timeline-wrapper');
+    if (masks.length && wrapper) {
+      gsap.set(masks, { transformOrigin: 'bottom center' });
+      const scaleTo = masks.map((m) => gsap.quickTo(m, 'scaleY', { duration: 0.25, ease: 'power1.out' }));
+      const update = () => {
+        const maskTop = wrapper.getBoundingClientRect().top + masks[0].offsetTop;
+        const maskBottom = maskTop + masks[0].offsetHeight;
+        const covered = (maskBottom - window.innerHeight / 2) / masks[0].offsetHeight;
+        const value = Math.min(1, Math.max(0, covered));
+        scaleTo.forEach((to) => to(value));
+      };
+      ScrollTrigger.create({
+        trigger: '#experience',
+        start: 'top bottom',
+        end: 'bottom top',
+        onUpdate: update,
+        onRefresh: update
+      });
+      update();
+    }
 
     gsap.utils.toArray<HTMLElement>('.expText').forEach((text) => {
       gsap.from(text, {

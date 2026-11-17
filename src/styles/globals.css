@@ -383,6 +383,11 @@ section {
 
   .timeline {
     @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+
+    /* Without motion there is nothing to reveal the line, so show it fully. */
+    @media (prefers-reduced-motion: reduce) {
+      @apply hidden;
+    }
   }
 
   .timeline-logo {
