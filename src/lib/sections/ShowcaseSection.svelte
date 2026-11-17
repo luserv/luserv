@@ -92,7 +92,7 @@
 
         <div bind:this={project3El}>
           <a href={PLANNER_URL} target="_blank" rel="noopener noreferrer">
-            <div class="image-wrapper bg-[#FFE7EB]">
+            <div class="image-wrapper bg-[#000000]">
               <img loading="lazy" decoding="async" src="/images/projects/planner.webp" width={projectImageSizes['/images/projects/planner.webp'][0]} height={projectImageSizes['/images/projects/planner.webp'][1]} alt="Planner dashboard" />
             </div>
             <h2>{t('showcase.project3Title')}</h2>
