@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://luserv.pages.dev"><img src="https://img.shields.io/badge/Portfolio-luserv.pages.dev-1793d1?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
+  <a href="https://treis.cc"><img src="https://img.shields.io/badge/Portfolio-treis.cc-1793d1?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
   <a href="mailto:u3.dev@icloud.com"><img src="https://img.shields.io/badge/Email-u3.dev%40icloud.com-1793d1?style=for-the-badge&logo=icloud&logoColor=white&labelColor=0e0e10" alt="Email"/></a>
 </p>
 
