@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://luserv.pages.dev"><img src="https://img.shields.io/badge/Portfolio-luserv.pages.dev-00e5ff?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
-  <a href="mailto:u3.dev@icloud.com"><img src="https://img.shields.io/badge/Email-u3.dev%40icloud.com-00e5ff?style=for-the-badge&logo=icloud&logoColor=white&labelColor=0e0e10" alt="Email"/></a>
+  <a href="https://luserv.pages.dev"><img src="https://img.shields.io/badge/Portfolio-luserv.pages.dev-1793d1?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
+  <a href="mailto:u3.dev@icloud.com"><img src="https://img.shields.io/badge/Email-u3.dev%40icloud.com-1793d1?style=for-the-badge&logo=icloud&logoColor=white&labelColor=0e0e10" alt="Email"/></a>
 </p>
 
 ## About me
@@ -17,20 +17,35 @@
 
 ## Projects
 
-| Project | What it is | Stack | Status |
-| --- | --- | --- | --- |
-| [**Chiro**](https://chiro-4rs.pages.dev) | Personal finance app for expenses, budgets and loans | SvelteKit, Go, PostgreSQL · Android app with Expo / React Native | Live · Android in closed testing on Google Play |
-| [**Contacts**](https://contacts-9m7.pages.dev) | Contact management SaaS | SvelteKit, Go, PostgreSQL | Live |
-| [**server-cats**](https://github.com/luserv/server-cats) | PHP login site deployed on a Google Cloud Dataproc cluster with Docker Compose | PHP 7.4, MySQL, MongoDB, Docker Compose, Google Cloud | Source available |
-| [**rtmp-gcloud**](https://github.com/luserv/rtmp-gcloud) | Live streaming server with nginx-rtmp, nginx-proxy and automatic HTTPS | nginx, Docker Compose, Let's Encrypt, Google Cloud | Source available |
-| [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app) | 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)) | Next.js 15, React 19, TypeScript, Tailwind CSS 4 | Live |
-| [**tims**](https://timacas.vercel.app) | Official website for the IT Engineering program at ESPOCH Morona Santiago; admin CMS in development | Next.js 15, TypeScript, PostgreSQL, Prisma, NextAuth v5, next-intl, Cloudinary | Live · CMS in progress |
-| [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login) | IT asset management system for GPMS in Morona Santiago: assets, custodians, locations and transfer history | NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext) | Live |
-| [**grapi**](https://github.com/luserv/grapi) | Instagram follower analyzer with gallery and story downloads | FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose | Source available |
-| [**service-desk**](https://github.com/luserv/service-desk) | IT service management portal on iTop with ITIL modules, service catalog and role-based users | iTop 3.2, PHP, MariaDB, Docker Compose | Source available |
-| [**Smart safe**](https://github.com/luserv/home-asisstant) | Keypad-controlled safe with temperature sensing, MQTT telemetry and Home Assistant automations | ESP32, C++, MQTT, Home Assistant, Docker Compose | Source available |
-| [**Planner**](https://planner-etr.pages.dev) | Task planner with visual countdown timers, class schedules and day planning | SvelteKit 5, Go (Chi, pgx), PostgreSQL | Live |
-| [**Clean Classroom Reporter**](https://clean-classroom-reporter.pages.dev) | Class presidents report classroom cleanliness by QR code, with photo evidence and an admin history ([source](https://github.com/c0mv4ty/clean-classroom-reporter)) | SvelteKit 5, Supabase (Auth, Postgres RLS, Storage) · Cloudflare Pages | Live |
+### Live
+
+- [**Parque Informático**](https://informaticpark.systempwa.workers.dev/login): IT asset management for the provincial government (GPMS) of Morona Santiago: assets, custodians, locations and transfer history.
+  <br><sub>NestJS 11, Prisma, Next.js 16, PostgreSQL · Cloudflare Workers (OpenNext)</sub>
+- [**Chiro**](https://chiro-4rs.pages.dev): personal finance app for expenses, budgets and loans. Android app in closed testing on Google Play.
+  <br><sub>SvelteKit, Go, PostgreSQL · Expo / React Native</sub>
+- [**Contacts**](https://contacts-9m7.pages.dev): contact management SaaS.
+  <br><sub>SvelteKit, Go, PostgreSQL</sub>
+- [**Planner**](https://planner-etr.pages.dev): task planner with visual countdown timers, class schedules and day planning.
+  <br><sub>SvelteKit 5, Go (Chi, pgx), PostgreSQL</sub>
+- [**Clean Classroom Reporter**](https://clean-classroom-reporter.pages.dev): class presidents report classroom cleanliness by QR code, with photo evidence and an admin history ([source](https://github.com/c0mv4ty/clean-classroom-reporter)).
+  <br><sub>SvelteKit 5, Supabase (Auth, Postgres RLS, Storage) · Cloudflare Pages</sub>
+- [**tims**](https://timacas.vercel.app): official website for the IT Engineering program at ESPOCH Morona Santiago. Admin CMS in progress.
+  <br><sub>Next.js 15, TypeScript, PostgreSQL, Prisma, NextAuth v5, next-intl, Cloudinary</sub>
+- [**Frontend Mentor challenges**](https://frontendmentor-sandy.vercel.app): 9 UI challenges from newbie to intermediate ([source](https://github.com/luserv/frontendmentor)).
+  <br><sub>Next.js 15, React 19, TypeScript, Tailwind CSS 4</sub>
+
+### Source available
+
+- [**grapi**](https://github.com/luserv/grapi): Instagram follower analyzer with gallery and story downloads.
+  <br><sub>FastAPI, PostgreSQL, Next.js 15 (migrated from Vue), Docker Compose</sub>
+- [**service-desk**](https://github.com/luserv/service-desk): IT service management portal on iTop with ITIL modules, service catalog and role-based users.
+  <br><sub>iTop 3.2, PHP, MariaDB, Docker Compose</sub>
+- [**Smart safe**](https://github.com/luserv/home-asisstant): keypad-controlled safe with temperature sensing, MQTT telemetry and Home Assistant automations.
+  <br><sub>ESP32, C++, MQTT, Home Assistant, Docker Compose</sub>
+- [**server-cats**](https://github.com/luserv/server-cats): PHP login site deployed on a Google Cloud Dataproc cluster with Docker Compose.
+  <br><sub>PHP 7.4, MySQL, MongoDB, Docker Compose, Google Cloud</sub>
+- [**rtmp-gcloud**](https://github.com/luserv/rtmp-gcloud): live streaming server with nginx-rtmp, nginx-proxy and automatic HTTPS.
+  <br><sub>nginx, Docker Compose, Let's Encrypt, Google Cloud</sub>
 
 Chiro, Contacts and Planner deploy the frontend on Cloudflare, the API on Vercel and the database on Supabase.
 
