@@ -55,13 +55,13 @@ body {
   color: var(--ink);
   scroll-behavior: smooth;
   /* Keep anchor targets (#work, #experience, #skills) clear of the fixed navbar */
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 9.5rem;
   font-family: "Mona Sans", sans-serif;
 }
 
 @media (min-width: 768px) {
   html {
-    scroll-padding-top: 9rem;
+    scroll-padding-top: 9.5rem;
   }
 }
 

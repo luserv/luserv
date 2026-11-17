@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { t } from '$lib/i18n';
-  import { CHIRO_URL, CONTACTS_URL, PLANNER_URL, deploymentStack } from '$constants';
+  import { CHIRO_URL, CONTACTS_URL, PLANNER_URL, deploymentStack, projectImageSizes } from '$constants';
   import { brandIcons } from '$lib/icons';
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -45,7 +45,7 @@
       <div bind:this={project1El} class="first-project-wrapper">
         <a href={CHIRO_URL} target="_blank" rel="noopener noreferrer" class="flex h-full flex-col justify-between">
           <div class="image-wrapper">
-            <img loading="lazy" decoding="async" src="/images/projects/chiro.webp" alt="Chiro landing page" />
+            <img loading="lazy" decoding="async" src="/images/projects/chiro.webp" width={projectImageSizes['/images/projects/chiro.webp'][0]} height={projectImageSizes['/images/projects/chiro.webp'][1]} alt="Chiro landing page" />
           </div>
           <div class="text-content">
             <h2>{t('showcase.project1Title')}</h2>
@@ -71,7 +71,7 @@
         <div bind:this={project2El}>
           <a href={CONTACTS_URL} target="_blank" rel="noopener noreferrer">
             <div class="image-wrapper bg-[#F2F2F7]">
-              <img loading="lazy" decoding="async" src="/images/projects/contacts.webp" alt="Contacts sign-in screen" />
+              <img loading="lazy" decoding="async" src="/images/projects/contacts.webp" width={projectImageSizes['/images/projects/contacts.webp'][0]} height={projectImageSizes['/images/projects/contacts.webp'][1]} alt="Contacts sign-in screen" />
             </div>
             <h2>{t('showcase.project2Title')}</h2>
             <div class="deployment-badges">
@@ -93,7 +93,7 @@
         <div bind:this={project3El}>
           <a href={PLANNER_URL} target="_blank" rel="noopener noreferrer">
             <div class="image-wrapper bg-[#FFE7EB]">
-              <img loading="lazy" decoding="async" src="/images/projects/planner.webp" alt="Planner dashboard" />
+              <img loading="lazy" decoding="async" src="/images/projects/planner.webp" width={projectImageSizes['/images/projects/planner.webp'][0]} height={projectImageSizes['/images/projects/planner.webp'][1]} alt="Planner dashboard" />
             </div>
             <h2>{t('showcase.project3Title')}</h2>
             <div class="deployment-badges">

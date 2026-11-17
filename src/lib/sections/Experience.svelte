@@ -3,7 +3,7 @@
   import gsap from 'gsap';
   import { t, tRaw } from '$lib/i18n';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import { expCards } from '$lib/constants';
+  import { expCards, projectImageSizes } from '$lib/constants';
   import { brandIcons } from '$lib/icons';
   import { ExternalLink } from '@lucide/svelte';
   import TitleHeader from '$components/TitleHeader.svelte';
@@ -74,7 +74,15 @@
                 {#if card.imgPaths.length}
                   <div class="flex flex-col gap-4">
                     {#each card.imgPaths as imgPath (imgPath)}
-                      <img loading="lazy" decoding="async" src={imgPath} alt={card.title} />
+                      {@const size = projectImageSizes[imgPath]}
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={imgPath}
+                        alt={card.title}
+                        width={size?.[0]}
+                        height={size?.[1]}
+                      />
                     {/each}
                   </div>
                 {:else if card.stackIcons}

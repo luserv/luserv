@@ -32,6 +32,18 @@ export const deploymentStack = [
 
 // Real project & learning timeline (no formal jobs — see odd/tasks/portfolio-real-content.md).
 // icon/color follow the same brandIcons lookup as skillChips/deploymentStack.
+// Intrinsic size of each project screenshot. Passed as width/height so the browser
+// reserves the space before the lazy image loads (no layout shift, anchors land right).
+export const projectImageSizes: Record<string, [number, number]> = {
+  '/images/projects/chiro.webp': [1265, 800],
+  '/images/projects/contacts.webp': [1265, 800],
+  '/images/projects/planner.webp': [1200, 1164],
+  '/images/projects/cleanclassroom.webp': [1280, 800],
+  '/images/projects/frontend-mentor.webp': [1200, 750],
+  '/images/projects/informaticpark.webp': [1200, 750],
+  '/images/projects/tims.webp': [1200, 750]
+};
+
 export const expCards = [
   {
     imgPaths: ['/images/projects/contacts.webp'],
