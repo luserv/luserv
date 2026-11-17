@@ -1,6 +1,6 @@
 ---
 name: trace, by Vidal
-description: Dark, flat, bordered portfolio for a backend engineer; Mona Sans on graphite with one blue accent. Brand: trace, by Vidal.
+description: Dark, flat, bordered portfolio for a web application developer; Mona Sans on graphite with one blue accent. Brand: trace, by Vidal.
 colors:
   trace-blue: "#1793d1"
   graphite-deep: "#0e0e10"

@@ -15,19 +15,19 @@
         "themeDark": "Dark"
     },
     "LocaleLayout": {
-        "title": "trace | Backend Engineering by Vidal",
+        "title": "trace | Web Application Developer by Vidal",
         "description": "Full-stack developer specializing in Next.js, NestJS, Node.js, PostgreSQL, and cloud infrastructure.",
-        "keywords": "trace, vidal, backend, go, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "trace, vidal, web applications, go, sveltekit, nextjs, nestjs, postgresql, typescript"
     },
     "home": {
-        "title": "trace - Backends that leave a trace",
+        "title": "trace - Web apps that leave a trace",
         "welcomeMessage": "Welcome to my portfolio!"
     },
     "hero": {
         "line1": "Shaping",
         "line2": "into Real Projects",
         "line3": "that Deliver Results",
-        "description": "I am Vidal. Backends that leave a trace: data integrity, audit trails and offline-first apps with Go, SvelteKit and PostgreSQL, from the model to production.",
+        "description": "I am Vidal. Web apps that leave a trace: reliable data and a clear history of every change, built with Go, SvelteKit and PostgreSQL, from the model to production.",
         "cta": "See My Work",
         "words": [
             "Ideas",

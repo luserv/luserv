@@ -1,7 +1,7 @@
 <h1 align="center">trace, by Vidal</h1>
 
 <p align="center">
-  Backends that leave a trace: data integrity, audit trails and <strong>offline-first</strong> apps with Go, SvelteKit and PostgreSQL, from the model to production.
+  Web apps that leave a trace: reliable data and a clear history of every change, built with Go, SvelteKit and PostgreSQL, from the model to production.
 </p>
 
 <p align="center">
