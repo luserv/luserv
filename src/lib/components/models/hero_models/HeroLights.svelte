@@ -3,11 +3,11 @@
 </script>
 
 <T.SpotLight position={[2, 5, 6]} angle={0.15} penumbra={0.2} intensity={100} color="white" />
-<T.SpotLight position={[4, 5, 4]} angle={0.3} penumbra={0.5} intensity={40} color="#d9ecff" />
+<T.SpotLight position={[4, 5, 4]} angle={0.3} penumbra={0.5} intensity={40} color="#f2f3f5" />
 <T.SpotLight position={[-3, 5, 5]} angle={0.4} penumbra={1} intensity={60} color="#839cb5" />
 
 <T.RectAreaLight
-  color="#d9ecff"
+  color="#f2f3f5"
   intensity={15}
   width={3}
   height={2}

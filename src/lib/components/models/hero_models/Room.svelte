@@ -13,7 +13,7 @@
   const tableMaterial = new THREE.MeshPhongMaterial({ color: '#3a3a46' });
   const radiatorMaterial = new THREE.MeshPhongMaterial({ color: '#fff' });
   const compMaterial = new THREE.MeshStandardMaterial({ color: '#fff' });
-  const pillowMaterial = new THREE.MeshPhongMaterial({ color: '#d9ecff' });
+  const pillowMaterial = new THREE.MeshPhongMaterial({ color: '#f2f3f5' });
   const wallMaterial = new THREE.MeshStandardMaterial({ color: '#282732', roughness: 0.9 });
   const chairMaterial = new THREE.MeshPhongMaterial({ color: '#000' });
 </script>

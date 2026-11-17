@@ -29,7 +29,7 @@
     </div>
     <div class="flex flex-col justify-center">
       <p class="text-center md:text-end">
-        © {new Date().getFullYear()} LUSER. {t('footer.rights')}
+        © {new Date().getFullYear()} trace, by Vidal. {t('footer.rights')}
       </p>
     </div>
   </div>

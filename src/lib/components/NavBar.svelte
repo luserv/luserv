@@ -3,6 +3,8 @@
   import { locales } from '$lib/i18n/locales';
   import { navLinks } from '$lib/constants';
   import { Languages } from '@lucide/svelte';
+  import TraceMark from '$lib/components/TraceMark.svelte';
+  import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 
   let scrollY = $state(0);
   const scrolled = $derived(scrollY > 10);
@@ -18,7 +20,10 @@
 
 <header class="navbar {scrolled ? 'scrolled' : 'not-scrolled'}">
   <div class="inner">
-    <a href="#hero" class="logo">LUSER</a>
+    <a href="#hero" class="logo" aria-label="trace, by Vidal">
+      <TraceMark />
+      <span>trace<span class="dot">.</span></span>
+    </a>
 
     <nav class="primary" aria-label="Primary">
       <ul>
@@ -33,20 +38,23 @@
       </ul>
     </nav>
 
-    <div class="lang-switch" role="group" aria-label="Language">
-      <Languages size={18} class="lang-icon" aria-hidden="true" />
-      <div class="lang-track">
-        <span class="lang-pill {getLocale() === 'es-ES' ? 'is-right' : ''}" aria-hidden="true"></span>
-        {#each locales as { code, label } (code)}
-          <button
-            type="button"
-            class="lang-option {getLocale() === code ? 'is-active' : ''}"
-            aria-pressed={getLocale() === code}
-            onclick={() => setLocale(code)}
-          >
-            {label}
-          </button>
-        {/each}
+    <div class="controls">
+      <ThemeSwitch />
+      <div class="lang-switch" role="group" aria-label="Language">
+        <Languages size={18} class="lang-icon" aria-hidden="true" />
+        <div class="lang-track">
+          <span class="lang-pill {getLocale() === 'es-ES' ? 'is-right' : ''}" aria-hidden="true"></span>
+          {#each locales as { code, label } (code)}
+            <button
+              type="button"
+              class="lang-option {getLocale() === code ? 'is-active' : ''}"
+              aria-pressed={getLocale() === code}
+              onclick={() => setLocale(code)}
+            >
+              {label}
+            </button>
+          {/each}
+        </div>
       </div>
     </div>
   </div>

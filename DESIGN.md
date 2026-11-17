@@ -1,15 +1,15 @@
 ---
-name: LUSER Portfolio
-description: Dark, flat, bordered portfolio for a full-stack developer; Mona Sans on graphite with one pale-blue accent.
+name: trace, by Vidal
+description: Dark, flat, bordered portfolio for a backend engineer; Mona Sans on graphite with one blue accent. Brand: trace, by Vidal.
 colors:
-  frost-ink: "#d9ecff"
+  trace-blue: "#1793d1"
   graphite-deep: "#0e0e10"
   graphite: "#1c1c21"
   graphite-raised: "#282732"
   slate-field: "#2d2d38"
-  mist-blue: "#839cb5"
-  void: "#000000"
-  white: "#ffffff"
+  void: "#060607"
+  paper: "#f2f3f5"
+  ash: "#9a9cab"
 typography:
   display:
     fontFamily: "Mona Sans, sans-serif"
@@ -53,36 +53,36 @@ components:
     rounded: "{rounded.lg}"
     padding: "16px"
   button-contact:
-    backgroundColor: "{colors.white}"
+    backgroundColor: "{colors.paper}"
     textColor: "{colors.void}"
     rounded: "{rounded.lg}"
     padding: "8px 20px"
   button-contact-hover:
     backgroundColor: "{colors.graphite}"
-    textColor: "{colors.white}"
+    textColor: "{colors.paper}"
   card:
     backgroundColor: "{colors.graphite-deep}"
     rounded: "{rounded.xl}"
     padding: "40px"
   input:
     backgroundColor: "{colors.slate-field}"
-    textColor: "{colors.white}"
+    textColor: "{colors.paper}"
     rounded: "{rounded.md}"
     padding: "16px"
   badge:
     backgroundColor: "{colors.graphite-raised}"
-    textColor: "{colors.frost-ink}"
+    textColor: "{colors.trace-blue}"
     rounded: "{rounded.full}"
     padding: "8px 16px"
 ---
 
-# Design System: LUSER Portfolio
+# Design System: trace, by Vidal
 
 ## 1. Overview
 
 **Creative North Star: "The Quiet Workbench"**
 
-A dark, tidy bench where the work is laid out and lit. Surfaces are near-black and flat; depth comes from tonal tiers and 1px borders, not shadow. One pale blue, Frost Ink, marks what matters: headings, icons, the language pill. Everything else recedes so the projects, stacks and dates are the loudest things on the page.
+A dark, tidy bench where the work is laid out and lit. Surfaces are near-black and flat; depth comes from tonal tiers and 1px borders, not shadow. One blue, Trace Blue, marks what matters: headings, icons, the language pill. Everything else recedes so the projects, stacks and dates are the loudest things on the page.
 
 The system is precise and calm. Mona Sans carries all text in a single family with weight contrast. Motion (GSAP, a Three.js hero, a rotating word slider) is allowed to be rich, but it decorates a page that already reads without it.
 
@@ -97,22 +97,36 @@ It explicitly rejects template dev portfolios (gradient hero, identical project 
 
 ## 2. Colors
 
-A near-monochrome graphite palette with a single pale-blue accent.
+A near-monochrome graphite palette with a single blue accent (the Arch Linux blue).
 
 ### Primary
-- **Frost Ink** (#d9ecff): The only accent. Used for the logo, nav text, icons, badges, the language-pill fill and card titles.
+- **Trace Blue** (#1793d1): The only accent. Used for the logo point, nav text, icons, badges, the language-pill fill and card titles. Contrast: 5.9:1 on Void, 5.6:1 on Graphite Deep; Void text on it is 6.1:1. In a light theme use #0f6fa3. No glow or shadow effects on it.
 
 ### Neutral
-- **Void** (#000000): Page background and text on light buttons.
+- **Void** (#060607): Page background and text on light buttons.
 - **Graphite Deep** (#0e0e10): Card and icon-well surfaces.
 - **Graphite** (#1c1c21): Borders, dividers and hover surfaces.
 - **Graphite Raised** (#282732): Badges and the CTA button base.
 - **Slate Field** (#2d2d38): Form field backgrounds.
-- **Mist Blue** (#839cb5): Placeholder text. Verify 4.5:1 against Slate Field before using for anything longer than a placeholder.
-- **White** (#ffffff): Body text and the contact button.
+- **Ash** (#9a9cab): Secondary text and placeholders (7.1:1 on Graphite Deep). Verify 4.5:1 against Slate Field before using for anything longer than a placeholder.
+- **Paper** (#f2f3f5): Body text, the T of the logo and the contact button.
+
+### Themes
+Three modes via the navbar switch: **System** (default, follows prefers-color-scheme), **Light** and **Dark**. The choice is stored in localStorage and applied as `data-theme` on `<html>` before first paint. Components use semantic tokens (`--page`, `--ink`, `--line`, `--surface`, `--raised`, `--muted`, `--field`, `--accent`); the Tailwind names (`black`, `white`, `black-50`…, `trace`) map to them, so `text-white` means "ink" and `bg-black` means "page" in both themes.
+
+| Token | Dark | Light |
+|---|---|---|
+| page | #060607 | #f4f6f9 |
+| ink | #f2f3f5 | #0e0e10 |
+| line | #1c1c21 | #d9dde4 |
+| surface | #0e0e10 | #ffffff |
+| raised | #282732 | #e6e9ef |
+| muted | #9a9cab | #555869 |
+| field | #2d2d38 | #e9ecf1 |
+| accent (Trace Blue) | #1793d1 | #0f6fa3 |
 
 ### Named Rules
-**The One Voice Rule.** Frost Ink is the sole accent. No second hue, no gradient accents.
+**The One Voice Rule.** Trace Blue is the sole accent. No second hue, no gradient accents.
 
 **The Border Not Shadow Rule.** Separation between surfaces is a 1px Graphite border, not a shadow.
 
@@ -147,9 +161,9 @@ Flat by default. Depth is tonal: Void page, Graphite Deep cards, Graphite Raised
 
 ### Buttons
 - **Shape:** 8px radius.
-- **Primary (CTA):** Graphite Raised base with Frost Ink circle that fills on hover while the arrow slides in (500ms). Label is uppercase.
-- **Contact:** White fill, black text; hover shifts to Graphite with white text (300ms).
-- **Focus:** Needs a visible 2px Frost Ink outline on every interactive element.
+- **Primary (CTA):** Graphite Raised base with Trace Blue circle that fills on hover while the arrow slides in (500ms). Label is uppercase.
+- **Contact:** Paper fill, Void text; hover shifts to Graphite with Paper text (300ms).
+- **Focus:** Needs a visible 2px Trace Blue outline on every interactive element.
 
 ### Cards / Containers
 - **Corner Style:** 12px.
@@ -158,19 +172,19 @@ Flat by default. Depth is tonal: Void page, Graphite Deep cards, Graphite Raised
 - **Internal Padding:** 40px.
 
 ### Inputs / Fields
-- **Style:** Slate Field fill, 6px radius, 16px padding, Mist Blue placeholder.
-- **Focus:** Needs a visible Frost Ink outline.
+- **Style:** Slate Field fill, 6px radius, 16px padding, Ash placeholder.
+- **Focus:** Needs a visible Trace Blue outline.
 
 ### Navigation
-- Fixed top bar, Frost Ink text. Transparent at top, Black 75% with blur and bottom border once scrolled. Underline grows in on hover. Language switch is a pill with a sliding Frost Ink indicator and 44px touch targets.
+- Fixed top bar, Trace Blue text. Transparent at top, Black 75% with blur and bottom border once scrolled. Underline grows in on hover. Language switch is a pill with a sliding Trace Blue indicator and 44px touch targets.
 
 ### Badges and Deployment Icons
-- Pill (full radius), Graphite Raised fill, Frost Ink text. Deployment icons sit in 28px circles with a Graphite border.
+- Pill (full radius), Graphite Raised fill, Trace Blue text. Deployment icons sit in 28px circles with a Graphite border.
 
 ## 6. Do's and Don'ts
 
 ### Do:
-- **Do** keep Frost Ink (#d9ecff) as the only accent and use it sparingly.
+- **Do** keep Trace Blue (#1793d1) as the only accent and use it sparingly.
 - **Do** separate surfaces with 1px Graphite (#1c1c21) borders and tonal tiers.
 - **Do** put a live link, stack and date next to every project claim.
 - **Do** provide `prefers-reduced-motion` alternatives for GSAP, the word slider and the Three.js hero.

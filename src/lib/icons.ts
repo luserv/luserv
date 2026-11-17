@@ -25,7 +25,12 @@ import {
   siMongodb,
   siGooglecloud,
   siNginx,
-  siLetsencrypt
+  siLetsencrypt,
+  siPrisma,
+  siSqlite,
+  siK6,
+  siGit,
+  siLinux
 } from 'simple-icons';
 
 // Lookup used by skillChips / deploymentStack entries (see $constants), which
@@ -57,5 +62,10 @@ export const brandIcons: Record<string, { path: string; title: string }> = {
   siMongodb,
   siGooglecloud,
   siNginx,
-  siLetsencrypt
+  siLetsencrypt,
+  siPrisma,
+  siSqlite,
+  siK6,
+  siGit,
+  siLinux
 };

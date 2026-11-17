@@ -2,20 +2,27 @@
 <html lang="%lang%">
   <head>
     <meta charset="utf-8" />
+    <script>
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    </script>
+    <link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="%sveltekit.assets%/favicon.ico" sizes="48x48" />
     <link rel="icon" href="%sveltekit.assets%/icon-512.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LUSER | Software Developer</title>
+    <title>trace | Backend Engineering by Vidal</title>
     <meta name="description" content="Full-stack developer specializing in Next.js, NestJS, Node.js, PostgreSQL, and cloud infrastructure." />
-    <meta name="keywords" content="luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops" />
-    <meta name="author" content="LUSER" />
+    <meta name="keywords" content="trace, vidal, backend, go, nextjs, nestjs, nodejs, postgresql, typescript, devops" />
+    <meta name="author" content="Vidal" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Desarrollador de Software y Servicios en la Nube - LUSER" />
-    <meta property="og:description" content="Desarrollador de software especializado en NextJS, PostgreSQL, NodeJS, NestJS, Debian - LUSER" />
+    <meta property="og:title" content="Desarrollador de Software y Servicios en la Nube - trace, by Vidal" />
+    <meta property="og:description" content="Desarrollador de software especializado en NextJS, PostgreSQL, NodeJS, NestJS, Debian - trace, by Vidal" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Desarrollador de Software y Servicios en la Nube - LUSER" />
-    <meta name="twitter:description" content="Desarrollador de software especializado en NextJS, PostgreSQL, NodeJS, NestJS, Debian - LUSER" />
+    <meta name="twitter:title" content="Desarrollador de Software y Servicios en la Nube - trace, by Vidal" />
+    <meta name="twitter:description" content="Desarrollador de software especializado en NextJS, PostgreSQL, NodeJS, NestJS, Debian - trace, by Vidal" />
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

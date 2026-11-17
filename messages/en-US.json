@@ -1,6 +1,6 @@
 {
     "Manifest": {
-        "name": "LUSER - Portfolio"
+        "name": "trace - Portfolio"
     },
     "navbar": {
         "home": "Home",
@@ -8,22 +8,26 @@
         "experience": "Experience",
         "skills": "Skills",
         "contact": "Contact",
-        "contactMe": "Contact me"
+        "contactMe": "Contact me",
+        "themeLabel": "Theme",
+        "themeSystem": "System",
+        "themeLight": "Light",
+        "themeDark": "Dark"
     },
     "LocaleLayout": {
-        "title": "LUSER | Software Developer",
+        "title": "trace | Backend Engineering by Vidal",
         "description": "Full-stack developer specializing in Next.js, NestJS, Node.js, PostgreSQL, and cloud infrastructure.",
-        "keywords": "luserv, nextjs, nestjs, nodejs, postgresql, typescript, devops"
+        "keywords": "trace, vidal, backend, go, nextjs, nestjs, nodejs, postgresql, typescript, devops"
     },
     "home": {
-        "title": "LUSER - Full Stack Developer",
+        "title": "trace - Backends that leave a trace",
         "welcomeMessage": "Welcome to my portfolio!"
     },
     "hero": {
         "line1": "Shaping",
         "line2": "into Real Projects",
         "line3": "that Deliver Results",
-        "description": "I am LUSER, a full-stack developer. I build offline-first and web apps with Go, SvelteKit and PostgreSQL, from idea to deployment.",
+        "description": "I am Vidal. Backends that leave a trace: data integrity, audit trails and offline-first apps with Go, SvelteKit and PostgreSQL, from the model to production.",
         "cta": "See My Work",
         "words": [
             "Ideas",
@@ -35,22 +39,7 @@
             "Designs",
             "Code"
         ],
-        "contactCta": "Email me",
-        "proofTitle": "Live now",
-        "proof": [
-            {
-                "name": "Chiro",
-                "status": "Live · Android in closed testing"
-            },
-            {
-                "name": "Contacts",
-                "status": "Live"
-            },
-            {
-                "name": "Planner",
-                "status": "Live"
-            }
-        ]
+        "contactCta": "Email me"
     },
     "showcase": {
         "project1Title": "Chiro: Personal Finance App for Expenses, Budgets and Loans",
@@ -200,18 +189,77 @@
     "techStack": {
         "title": "Skills and stack",
         "sub": "What I work with",
-        "items": [
+        "skillsTitle": "Core stack",
+        "categories": [
             {
-                "name": "React, Next.js & React Native"
+                "title": "Backend",
+                "items": [
+                    "Go (Chi)",
+                    "TypeScript",
+                    "NestJS",
+                    "FastAPI",
+                    "PHP"
+                ]
             },
             {
-                "name": "Node.js & NestJS"
+                "title": "Data",
+                "items": [
+                    "PostgreSQL",
+                    "Prisma and pgx",
+                    "SQLite",
+                    "MySQL and MongoDB",
+                    "Supabase"
+                ]
             },
             {
-                "name": "Git, CI/CD & Linux"
+                "title": "Quality and security",
+                "items": [
+                    "Integration tests against a real database",
+                    "Load testing with k6",
+                    "Static analysis with Semgrep"
+                ]
+            },
+            {
+                "title": "Frontend",
+                "items": [
+                    "SvelteKit",
+                    "Next.js",
+                    "React Native"
+                ]
+            },
+            {
+                "title": "Cloud and deployment",
+                "items": [
+                    "Cloudflare",
+                    "Vercel",
+                    "Google Cloud",
+                    "Docker Compose",
+                    "nginx and Let's Encrypt"
+                ]
+            },
+            {
+                "title": "Systems",
+                "items": [
+                    "Linux",
+                    "Git"
+                ]
+            },
+            {
+                "title": "IoT and automation",
+                "items": [
+                    "ESP32 (C++)",
+                    "MQTT",
+                    "Home Assistant"
+                ]
+            },
+            {
+                "title": "Service management",
+                "items": [
+                    "ITIL",
+                    "iTop"
+                ]
             }
-        ],
-        "skillsTitle": "Full Stack"
+        ]
     },
     "contact": {
         "title": "Get in touch",

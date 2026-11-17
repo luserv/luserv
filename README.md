@@ -1,12 +1,12 @@
-<h1 align="center">Hi, I'm LUSER</h1>
+<h1 align="center">trace, by Vidal</h1>
 
 <p align="center">
-  Full-stack developer building <strong>offline-first</strong> and <strong>web</strong> apps with Go, SvelteKit and PostgreSQL, from idea to deployment.
+  Backends that leave a trace: data integrity, audit trails and <strong>offline-first</strong> apps with Go, SvelteKit and PostgreSQL, from the model to production.
 </p>
 
 <p align="center">
-  <a href="https://luserv.pages.dev"><img src="https://img.shields.io/badge/Portfolio-luserv.pages.dev-d9ecff?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
-  <a href="mailto:u3.dev@icloud.com"><img src="https://img.shields.io/badge/Email-u3.dev%40icloud.com-d9ecff?style=for-the-badge&logo=icloud&logoColor=white&labelColor=0e0e10" alt="Email"/></a>
+  <a href="https://luserv.pages.dev"><img src="https://img.shields.io/badge/Portfolio-luserv.pages.dev-00e5ff?style=for-the-badge&logo=svelte&logoColor=white&labelColor=0e0e10" alt="Portfolio"/></a>
+  <a href="mailto:u3.dev@icloud.com"><img src="https://img.shields.io/badge/Email-u3.dev%40icloud.com-00e5ff?style=for-the-badge&logo=icloud&logoColor=white&labelColor=0e0e10" alt="Email"/></a>
 </p>
 
 ## About me

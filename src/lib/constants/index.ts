@@ -21,30 +21,6 @@ export const abilities = [
   { icon: 'layers', title: 'End-to-end', desc: 'Frontend, API, database and deployment, all owned by me.' }
 ];
 
-export const techStackIcons = [
-  { name: 'React, Next.js & React Native', modelPath: '/models/react_logo-transformed.glb', scale: 1, rotation: [0, 0, 0] as [number, number, number] },
-  { name: 'Node.js & NestJS', modelPath: '/models/node-transformed.glb', scale: 5, rotation: [0, -Math.PI / 2, 0] as [number, number, number] },
-  { name: 'Git, CI/CD & Linux', modelPath: '/models/git-svg-transformed.glb', scale: 0.05, rotation: [0, -Math.PI / 4, 0] as [number, number, number] }
-];
-
-// Brand-icon skill chips shown below the 3D tech cards. Colors are the
-// official brand hex, except black logos (Next.js, Vercel) which render
-// white to stay readable on the dark background.
-export const skillChips = [
-  { name: 'Go', icon: 'siGo', color: '#00ADD8' },
-  { name: 'TypeScript', icon: 'siTypescript', color: '#3178C6' },
-  { name: 'SvelteKit', icon: 'siSvelte', color: '#FF3E00' },
-  { name: 'Next.js', icon: 'siNextdotjs', color: '#FFFFFF' },
-  { name: 'NestJS', icon: 'siNestjs', color: '#E0234E' },
-  { name: 'PostgreSQL', icon: 'siPostgresql', color: '#4169E1' },
-  { name: 'React Native', icon: 'siReact', color: '#61DAFB' },
-  { name: 'Python', icon: 'siPython', color: '#3776AB' },
-  { name: 'Docker', icon: 'siDocker', color: '#2496ED' },
-  { name: 'Supabase', icon: 'siSupabase', color: '#3FCF8E' },
-  { name: 'Cloudflare', icon: 'siCloudflare', color: '#F38020' },
-  { name: 'Vercel', icon: 'siVercel', color: '#FFFFFF' }
-];
-
 // Deployment stack shown on project cards that are actually live on this
 // infrastructure (Chiro, Contacts). Do not add cards here without a verified
 // live deployment.

@@ -88,7 +88,7 @@
                 <div class="bg-circle"></div>
                 <p class="text">{loading ? t('contact.sending') : t('contact.send')}</p>
                 <div class="arrow-wrapper">
-                  <img src="/images/arrow-down.svg" alt="" aria-hidden="true" />
+                  <span class="arrow-icon" aria-hidden="true"></span>
                 </div>
               </div>
             </button>
@@ -105,7 +105,7 @@
                 </p>
               {/if}
             </div>
-            <p class="text-white-50 text-sm">{t('contact.privacy')}</p>
+            <p class="text-trace text-sm">{t('contact.privacy')}</p>
           </form>
         </div>
       </div>

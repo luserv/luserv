@@ -49,7 +49,7 @@
           </div>
           <div class="text-content">
             <h2>{t('showcase.project1Title')}</h2>
-            <p class="text-white-50 md:text-xl">{t('showcase.project1Desc')}</p>
+            <p class="text-trace md:text-xl">{t('showcase.project1Desc')}</p>
             <div class="deployment-badges">
               {#each deploymentStack as chip (chip.name)}
                 {@const icon = brandIcons[chip.icon]}

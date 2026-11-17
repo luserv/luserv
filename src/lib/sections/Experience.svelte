@@ -81,7 +81,7 @@
                   <ul class="grid grid-cols-3 gap-4 md:grid-cols-5 xl:grid-cols-3" aria-label={card.title}>
                     {#each card.stackIcons as tech (tech.name)}
                       {@const brand = brandIcons[tech.icon]}
-                      <li class="flex flex-col items-center gap-2 text-sm text-white-50">
+                      <li class="flex flex-col items-center gap-2 text-sm text-trace">
                         {#if brand}
                           <svg viewBox="0 0 24 24" width="40" height="40" fill={tech.color} aria-hidden="true"><path d={brand.path} /></svg>
                         {/if}
@@ -108,26 +108,26 @@
                   </div>
                   <div>
                     <h3 class="font-semibold text-2xl md:text-3xl">{card.title}</h3>
-                    <p class="my-5 text-white-50">{card.date}</p>
+                    <p class="my-5 text-trace">{card.date}</p>
                     {#if card.url}
                       <a
                         href={card.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="mb-5 inline-flex min-h-11 items-center gap-2 rounded-lg border border-black-50 bg-black-100 px-4 text-white-50 transition-colors duration-300 hover:bg-black-50"
+                        class="mb-5 inline-flex min-h-11 items-center gap-2 rounded-lg border border-black-50 bg-black-100 px-4 text-trace transition-colors duration-300 hover:bg-black-50"
                       >
                         <ExternalLink size={18} aria-hidden="true" />
                         <span>{t('experience.visitSite')}</span>
                       </a>
                     {/if}
-                    <p class="text-[#839CB5] italic">{t('experience.responsibilities')}</p>
-                    <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                    <p class="text-blue-50 italic">{t('experience.responsibilities')}</p>
+                    <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-trace">
                       <li class="text-lg break-words">{card.responsibilities[0]}</li>
                     </ul>
                     {#if card.responsibilities.length > 1}
                       <details class="exp-details" ontoggle={() => ScrollTrigger.refresh()}>
                         <summary>{t('experience.showMore')} ({card.responsibilities.length - 1})</summary>
-                        <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                        <ul class="list-disc ms-5 mt-5 flex flex-col gap-5 text-trace">
                           {#each card.responsibilities.slice(1) as responsibility}
                             <li class="text-lg break-words">{responsibility}</li>
                           {/each}

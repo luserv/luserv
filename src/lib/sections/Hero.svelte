@@ -3,22 +3,27 @@
   import { t, tRaw } from '$lib/i18n';
   import gsap from 'gsap';
   import Button from '$components/Button.svelte';
-  import { words as wordImgPaths, socialLinks, CHIRO_URL, CONTACTS_URL, PLANNER_URL } from '$lib/constants';
-  import { ArrowUpRight } from '@lucide/svelte';
+  import { words as wordImgPaths, socialLinks } from '$lib/constants';
   import { NO_REDUCED_MOTION_QUERY } from '$lib/motion';
 
   const wordTexts = $derived(tRaw('hero.words') as string[]);
   const emailHref = socialLinks.find((l) => l.name === 'Email')?.href ?? '';
-  const proofUrls = [CHIRO_URL, CONTACTS_URL, PLANNER_URL];
-  const proofItems = $derived(
-    ((tRaw('hero.proof') as Array<{ name: string; status: string }>) ?? []).map((item, i) => ({
-      ...item,
-      href: proofUrls[i]
-    }))
-  );
+  let HeroArch: any = $state(null);
+
   const words = $derived(wordImgPaths.map((w, i) => ({ ...w, text: wordTexts[i] })));
 
   onMount(() => {
+    // The 3D mark only shows from the lg breakpoint, so skip loading three.js below it.
+    // Listen for width changes too: the window can be resized or zoomed after load.
+    const wide = window.matchMedia('(min-width: 1024px)');
+    const loadArch = () => {
+      if (wide.matches && !HeroArch) {
+        import('$components/models/hero_models/HeroArch.svelte').then((mod) => (HeroArch = mod.default));
+      }
+    };
+    loadArch();
+    wide.addEventListener('change', loadArch);
+
     const mm = gsap.matchMedia();
     mm.add(NO_REDUCED_MOTION_QUERY, () => {
       gsap.fromTo(
@@ -27,7 +32,10 @@
         { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power2.out' }
       );
     });
-    return () => mm.revert();
+    return () => {
+      mm.revert();
+      wide.removeEventListener('change', loadArch);
+    };
   });
 </script>
 
@@ -37,7 +45,7 @@
   </div>
 
   <div class="hero-layout">
-    <header class="grid w-full items-center gap-12 px-5 md:px-20 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-20">
+    <header class="grid w-full items-center gap-12 px-5 md:px-20 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:gap-10 xl:gap-20">
       <div class="flex flex-col gap-7">
         <div class="hero-text">
           <h1>
@@ -49,7 +57,7 @@
                     <img
                       src={word.imgPath}
                       alt={word.text}
-                      class="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                      class="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-trace"
                     />
                     <span>{word.text}</span>
                   </span>
@@ -61,7 +69,7 @@
           <h1>{t('hero.line3')}</h1>
         </div>
 
-        <p class="text-white-50 md:text-xl relative z-10 pointer-events-none">
+        <p class="text-trace md:text-xl relative z-10 pointer-events-none">
           {t('hero.description')}
         </p>
 
@@ -71,20 +79,12 @@
         </div>
       </div>
 
-      <aside class="hero-proof" aria-labelledby="hero-proof-title">
-        <h2 id="hero-proof-title">{t('hero.proofTitle')}</h2>
-        <ul>
-          {#each proofItems as item (item.name)}
-            <li>
-              <a href={item.href} target="_blank" rel="noopener noreferrer">
-                <span class="name">{item.name}</span>
-                <span class="status">{item.status}</span>
-                <ArrowUpRight size={20} aria-hidden="true" />
-              </a>
-            </li>
-          {/each}
-        </ul>
-      </aside>
+
+      <div class="hero-3d" aria-hidden="true">
+        {#if HeroArch}
+          <HeroArch />
+        {/if}
+      </div>
     </header>
   </div>
 </section>
